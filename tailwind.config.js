@@ -58,6 +58,10 @@ module.exports = {
         md: "768px",
         lg: "1024px",
       },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        lato: ["lato", "sans-serif"],
+      },
     },
   },
   plugins: [],

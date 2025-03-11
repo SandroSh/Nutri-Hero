@@ -1,0 +1,10 @@
+{
+  "navbar": {
+    "title": ["Exercise", "Nutrition", "Expertise", "App"],
+    "about": "Go to the about page"
+  },
+  "authButtons": {
+    "login": "Login",
+    "register": "Sign up"
+  }
+}
