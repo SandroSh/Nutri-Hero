@@ -1,6 +1,9 @@
 {
   "navbar": {
-    "title": ["Exercise", "Nutrition", "Expertise", "App"],
+    "link1": "Exercise",
+    "link2": "Nutrition",
+    "link3": "Expertise",
+    "link4": "App",
     "about": "Go to the about page"
   },
   "authButtons": {

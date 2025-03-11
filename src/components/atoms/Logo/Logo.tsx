@@ -1,17 +1,24 @@
+import Image from 'next/image';
 import React from 'react'
-
+import MainLogo from '../../../../public/Logo Black Full.svg'
 export interface LogoProps {
   onClick?: () => void;
+  width?: number;
+  height?: number;
   className?: string;
 }
 
 const Logo = ({
-    onClick,
-    className,
-    ...rest
-}:LogoProps) => {
+  onClick,
+  width,
+  height,
+  className,
+  ...rest
+}: LogoProps) => {
   return (
-    <div className={className} {...rest}>Logo</div>
+
+    <Image src={MainLogo} alt="logo" width={width} height={height} className={className} {...rest} />
+
   )
 }
 

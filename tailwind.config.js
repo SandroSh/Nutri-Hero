@@ -53,10 +53,11 @@ module.exports = {
         40: "40px",
         round: "50%",
       },
-      screens: {
+      sc: {
         sm: "640px",
         md: "768px",
         lg: "1024px",
+        xl: "1300px",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

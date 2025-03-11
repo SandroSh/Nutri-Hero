@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.hero-section{
+    background-image: url('/Large Hero.png');
+    background-size: cover;  
+    background-position: bottom;  
+    background-repeat: no-repeat; 
+    height: calc(100vh - 96px);
+}

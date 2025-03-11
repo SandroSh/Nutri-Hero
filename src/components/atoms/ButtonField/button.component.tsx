@@ -1,3 +1,4 @@
+"use client";
 import { Button, ButtonProps } from "antd";
 
 
@@ -18,7 +19,7 @@ const ButtonField = ({
             type={type}
             size={size}
             onClick={onClick}
-            className={className}
+            className={`border-0  ${className} `}
             {...rest}
         >
             {children}

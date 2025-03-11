@@ -1,7 +1,8 @@
-import '@ant-design/v5-patch-for-react-19';
-import { AntdRegistry } from '@ant-design/nextjs-registry';
+
+// import '@ant-design/v5-patch-for-react-19';
+// import { AntdRegistry } from '@ant-design/nextjs-registry';
 import "../globals.css";
-import "antd/dist/reset.css";
+// import "antd/dist/reset.css";
 
 
 import { NextIntlClientProvider } from 'next-intl';
@@ -30,9 +31,9 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <AntdRegistry>
+          {/* <AntdRegistry> */}
             {children}
-          </AntdRegistry>
+          {/* </AntdRegistry> */}
         </NextIntlClientProvider>
       </body>
     </html>
