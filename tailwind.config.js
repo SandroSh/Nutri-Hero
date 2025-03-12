@@ -1,3 +1,4 @@
+import {lato} from 'next/font/google'
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   important:true,
@@ -39,20 +40,6 @@ module.exports = {
           1:'#80334B',
         },
       },
-      borderRadius: {
-        DEFAULT: "16px",
-        0: "0",
-        4: "4px",
-        8: "8px",
-        10: "10px",
-        12: "12px",
-        16: "16px",
-        20: "20px",
-        24: "24px",
-        32: "32px",
-        40: "40px",
-        round: "50%",
-      },
       sc: {
         sm: "640px",
         md: "768px",
@@ -61,7 +48,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
-        lato: ["lato", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
       },
     },
   },

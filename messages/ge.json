@@ -9,5 +9,18 @@
   "authButtons": {
     "login": "შესვლა",
     "register": "რეგისტრაცია"
+  },
+  "LandingHero": {
+    "title": "Captivating header goes here!",
+    "subtitle": "A short description works best",
+    "buttonText": "Start now"
+  },
+  "Exercise Display": {
+    "title": "Exercise",
+    "link1": "Gym",
+    "link2": "Home",
+    "link3": "Yoga",
+    "pTitle": "A short title works best",
+    "paragraph": "At home to gym, crossfit to pilates, yoga to bodyweight, as well as healthy and easy to make breakfasts, lunches, dinners and snacks. We want to make sure you enjoy the journey for a healthy lifestyle."
   }
 }

@@ -17,7 +17,7 @@ const Logo = ({
 }: LogoProps) => {
   return (
 
-    <Image src={MainLogo} alt="logo" width={width} height={height} className={className} {...rest} />
+    <Image src={MainLogo} alt="logo" width={width} height={height} className={`cursor-pointer ${className}`} {...rest} />
 
   )
 }

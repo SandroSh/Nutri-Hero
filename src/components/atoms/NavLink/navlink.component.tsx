@@ -1,22 +1,27 @@
 
 
 export interface NavlinkProps {
-    children?: React.ReactNode;
-    isActive?: boolean;
-    className?: string;
-       
+  children?: React.ReactNode;
+  isActive?: boolean;
+  className?: string;
+
 }
 
 
 const Navlink = ({
-    children,
-    isActive = false,
-    className,
-    ...rest
+  children,
+  isActive = false,
+  className,
+  ...rest
 
-}:NavlinkProps) => {
+}: NavlinkProps) => {
+  const baseClasses = "text-[17px] cursor-pointer transition-all font-Lato ";
+  const activeClasses = isActive ? "border-b-[3px] font-bold border-red-10 mb-0" : "";
+  const hoverClasses = "hover:border-b-[3px] hover:border-red-10";
+
+  const combinedClasses = `${baseClasses} ${activeClasses} ${hoverClasses} ${className || ""}`;
   return (
-    <p className={`${className} text-[17px] ${isActive ? 'border-b-2 font-bold border-red-10 mb-0' : ''}`} {...rest} >{children}</p>
+    <p className={combinedClasses} {...rest} >{children}</p>
   )
 }
 

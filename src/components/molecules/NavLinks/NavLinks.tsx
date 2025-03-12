@@ -4,16 +4,19 @@ import React from 'react'
 
 
 
+export interface NavLinksProps {
+    className?: string
+    children?: React.ReactNode
+}
 
-const NavLinks = () => {
+const NavLinks = ({
+    className,
+    children
+}: NavLinksProps) => {
 
-    const t = useTranslations('navbar');
     return (
-        <div className='flex justify-center items-center gap-[30px]'>
-            <Navlink>{t('link1')}</Navlink>
-            <Navlink>{t('link2')}</Navlink>
-            <Navlink>{t('link3')}</Navlink>
-            <Navlink>{t('link4')}</Navlink>
+        <div className={`flex justify-center items-center ${className}`} >
+            {children}
         </div>
     )
 }
