@@ -1,13 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-export interface ImageFieldProps {
-    src: string
-    layout?: 'fill' | 'fixed' | 'intrinsic' | 'responsive'
-    width?: number
-    className?: string
-    height?: number
-    alt: string
-}
+import { ImageFieldProps } from './ImageField.config'
+
 const ImageField = (
     { src, layout='responsive', width=1200, height=800, alt, className }: ImageFieldProps ) => {
     return (

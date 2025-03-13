@@ -8,7 +8,7 @@ import React from 'react'
 const Navbar = () => {
     const t = useTranslations('navbar');
     return (
-        <div className='fixed top-0 w-full flex justify-center pt-[32px] pb-[32px] bg-white shadow-[0_4px_8px_rgba(0,0,0,0.1)] p-4'>
+        <div className=' z-50 fixed top-0 w-full flex justify-center pt-[32px] pb-[32px] bg-white shadow-[0_4px_8px_rgba(0,0,0,0.1)] p-4'>
             <div className=' flex justify-between  w-full  max-w-screen-xl' >
                 <Logo width={124} height={24} />
 

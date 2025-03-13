@@ -1,19 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;
-    font-family: 'Lato', 'sans-serif';
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  font-family: "Lato", "sans-serif";
 }
 
-.hero-section{
-    background-image: url('/Large Hero.png');
-    background-size: cover;  
-    background-position: center;  
-    background-repeat: no-repeat; 
-    height: 100vh;
+.hero-section {
+  background-image: url("/Large Hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.ant-reset {
+  all: unset;
+}
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: black;
+  border-bottom: 2px solid #80334b !important;
+  padding: 0 !important; 
+
+}
+.ant-tabs-ink-bar {
+  background-color: #80334b  !important;
+}
+.ant-tabs-tab:hover .ant-tabs-tab-btn {
+  color: black !important;
+}
+.ant-tabs-tab {
+  color: #676069 !important;
+}
+.ant-tabs-nav-wrap{
+  flex:none !important;
 }
