@@ -25,3 +25,10 @@ export const tabsData: TabItem[] = [
     imageUrl: "/Mail_Image.png",
   },
 ];
+
+export const footerNavData: { [key: string]: string[] } = {
+  "explore": ['1', '2', '3', '4','5'],
+  "company": ['1', '2', '3', '4'],
+  "blog": ['1', '2', '3', '4'],
+  "social": ['1', '2', '3', '4'],
+};

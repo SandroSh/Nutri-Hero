@@ -1,9 +1,5 @@
 import React from 'react'
-export interface ParagraphFieldProps { 
-    className?: string
-    title: string
-    paragraph: string
-}
+import { ParagraphFieldProps } from './Paragraph.config'
 
 const ParagraphField = (
     {
@@ -14,7 +10,7 @@ const ParagraphField = (
   return (
     <div className={`${className}`} >
         <h1 className='font-bold text-2xl'>{title}</h1>
-        <p className='mt-[19px] text-1xl '>{paragraph}</p>
+        <p className='mt-[19px] text-[15px]  font-s'>{paragraph}</p>
     </div>
   )
 }

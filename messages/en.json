@@ -35,6 +35,66 @@
         "pTitle": "Short titles, Keep it clear",
         "paragraph": "Whether it's home workouts, gym sessions, CrossFit, Pilates, yoga, or bodyweight exercises, along with simple and nutritious meals for breakfast, lunch, dinner, and snacks, we’re here to make your healthy lifestyle journey enjoyable."
       }
+    },
+
+    "title2": "Nutrition",
+    "tabLabels2": {
+      "1": "Healthy",
+      "2": "Personalised",
+      "3": "Professional"
+    },
+    "cards2": {
+      "1": {
+        "pTitle": "A short title works best",
+        "paragraph": "At home to gym, crossfit to pilates, yoga to bodyweight, as well as healthy and easy to make breakfasts, lunches, dinners and snacks. We want to make sure you enjoy the journey for a healthy lifestyle."
+      },
+      "2": {
+        "pTitle": "A concise title is most effective",
+        "paragraph": "From home workouts to the gym, CrossFit to Pilates, yoga to bodyweight exercises, plus quick and healthy breakfast, lunch, dinner, and snack ideas. We're here to help you enjoy every step of your healthy lifestyle journey."
+      },
+      "3": {
+        "pTitle": "Short titles, Keep it clear",
+        "paragraph": "Whether it's home workouts, gym sessions, CrossFit, Pilates, yoga, or bodyweight exercises, along with simple and nutritious meals for breakfast, lunch, dinner, and snacks, we’re here to make your healthy lifestyle journey enjoyable."
+      }
     }
+  },
+  "downloadAppSection":{
+    "title":"New app. New you.",
+    "pTitle":"A nutritionalist and personal trainer in your pocket",
+    "pText":"Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem."
+  },
+  "joinCard":{
+    "title":"Join the thousands of people already using Nutriheros today!",
+    "buttonText":"Get Started"
+  },
+  "footer": {
+    "nav": {
+      "explore": {
+        "1": "Explore",
+        "2": "Exercise",
+        "3": "Nutrition",
+        "4": "Expertise",
+        "5": "Mobile App"
+      },
+      "company": {
+        "1": "Company",
+        "2": "Legal",
+        "3": "Contact us",
+        "4": "Press"
+      },
+      "blog": {
+        "1": "Blog",
+        "2": "Latest Post One",
+        "3": "Latest Post Two",
+        "4": "Latest Post Three"
+      },
+      "social": {
+        "1": "Social",
+        "2": "Facebook",
+        "3": "Instagram",
+        "4": "Twitter"
+      }
+    },
+    "copyright": "© 2021 All rights reserved."
   }
 }

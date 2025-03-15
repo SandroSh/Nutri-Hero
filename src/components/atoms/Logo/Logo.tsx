@@ -1,12 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
 import MainLogo from '../../../../public/Logo Black Full.svg'
-export interface LogoProps {
-  onClick?: () => void;
-  width?: number;
-  height?: number;
-  className?: string;
-}
+import { LogoProps } from './Logo.config';
 
 const Logo = ({
   onClick,

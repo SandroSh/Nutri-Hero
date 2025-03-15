@@ -23,11 +23,10 @@
 .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
   color: black;
   border-bottom: 2px solid #80334b !important;
-  padding: 0 !important; 
-
+  padding: 0 !important;
 }
 .ant-tabs-ink-bar {
-  background-color: #80334b  !important;
+  background-color: #80334b !important;
 }
 .ant-tabs-tab:hover .ant-tabs-tab-btn {
   color: black !important;
@@ -35,6 +34,38 @@
 .ant-tabs-tab {
   color: #676069 !important;
 }
-.ant-tabs-nav-wrap{
-  flex:none !important;
+
+.ant-tabs-nav {
+  justify-content: center !important;
+}
+.ant-tabs-nav-wrap {
+  justify-content: center !important;
+}
+:where(.css-dev-only-do-not-override-49qm).ant-tabs-top
+  > .ant-tabs-nav::before {
+  border-bottom: none !important;
+}
+.second-tabs .ant-tabs-nav {
+  justify-content: flex-start !important; /* Example: Align to the left */
+}
+
+.second-tabs .ant-tabs-nav-wrap {
+  justify-content: flex-start !important;
+}
+
+ .ant-tabs .second-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: white !important;
+  border-bottom: 2px solid #80334b !important;
+  padding: 0 !important;
+}
+.second-tabs p {
+  color: white !important;
+}
+.second-tabs h1 {
+  color: white !important;
+}
+
+
+.second-tabs .ant-tabs-nav-wrap {
+  justify-content: flex-start !important;
 }
