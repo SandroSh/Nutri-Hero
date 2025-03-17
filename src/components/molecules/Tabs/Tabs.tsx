@@ -29,6 +29,7 @@ const TabsComponent: React.FC<TabsComponentProps> = ({
                 display:'flex',
             }}
             className={className}
+            animated={{ tabPane: true }}
         />
     );
 };

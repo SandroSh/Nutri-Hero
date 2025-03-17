@@ -4,6 +4,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 
+import 'antd/dist/reset.css';
 export default async function LocaleLayout({
   children,
   params

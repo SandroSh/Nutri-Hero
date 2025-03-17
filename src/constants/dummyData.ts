@@ -1,5 +1,7 @@
-import { Navlink } from "@/components/atoms/NavLink";
+
+import { carouselType } from "@/components/molecules/CarouselCard/carouselCard.config";
 import { TabItem } from "@/components/molecules/Tabs/Tab.config";
+
 import { useTranslations } from "next-intl";
 
 export const tabsData: TabItem[] = [
@@ -32,3 +34,35 @@ export const footerNavData: { [key: string]: string[] } = {
   "blog": ['1', '2', '3', '4'],
   "social": ['1', '2', '3', '4'],
 };
+
+
+export const carouselData: carouselType[] = [
+  {
+    imgUrl: "/Image 1.png",
+    i:'1'
+  },
+  {
+    imgUrl: "/Image 3.png",
+    i:'2'
+  },
+  {
+    imgUrl: "/Image 1.png",
+    i:'3'
+  },
+
+]
+export const carouselData2: carouselType[] = [
+  {
+    imgUrl: "/Image 3.png",
+    i:'2'
+  },
+  {
+    imgUrl: "/Image 1.png",
+    i:'1'
+  },
+  {
+    imgUrl: "/Image 3.png",
+    i:'3'
+  },
+
+]
