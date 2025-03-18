@@ -102,19 +102,33 @@
       "title": "Sports Expertise",
       "pTitle": "Thierry Henry",
       "p1": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem.",
-      "p2":"Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem."
+      "p2": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem."
     },
     "2": {
       "title": "Cooking Expertise",
       "pTitle": "Salt Bae",
       "p1": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem.",
-      "p2":""
+      "p2": ""
     },
     "3": {
       "title": "Sports Expertise",
       "pTitle": "Thierry Henry",
       "p1": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem.",
-      "p2":"Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem."
+      "p2": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem."
     }
+  },
+
+  "Registration": {
+    "title": "Did someone say registration?",
+    "pTitle": "That’s right! And you can register too!",
+    "pText": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem.",
+    "terms": "I have read and agree to the ",
+    "termsLink":"terms & conditions",
+    "email": "Enter your email address",
+    "google": "Continue with Google",
+    "facebook": "Continue with Facebook",
+    "button": "Get Started",
+    "loginText": "Already have an account?",
+    "login": "Login"
   }
 }

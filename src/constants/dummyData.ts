@@ -1,4 +1,5 @@
 
+import { signOption } from "@/components/atoms/SignOption/signOption.onfig";
 import { carouselType } from "@/components/molecules/CarouselCard/carouselCard.config";
 import { TabItem } from "@/components/molecules/Tabs/Tab.config";
 
@@ -35,7 +36,6 @@ export const footerNavData: { [key: string]: string[] } = {
   "social": ['1', '2', '3', '4'],
 };
 
-
 export const carouselData: carouselType[] = [
   {
     imgUrl: "/Image 1.png",
@@ -64,5 +64,17 @@ export const carouselData2: carouselType[] = [
     imgUrl: "/Image 3.png",
     i:'3'
   },
+
+]
+
+export const registrationData: signOption[] = [
+  {
+    imgUrl: "/Facebook.svg",
+    text: "facebook"
+  },
+  {
+    imgUrl:'/Google__G__Logo.svg',
+    text:'google'
+  }
 
 ]

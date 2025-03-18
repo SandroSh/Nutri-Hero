@@ -5,6 +5,8 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 
 import 'antd/dist/reset.css';
+import { Navbar } from "@/components/organisms/Navbarr";
+import { Footer } from "@/components/organisms/Footer";
 export default async function LocaleLayout({
   children,
   params
@@ -22,7 +24,9 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <Navbar/>
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

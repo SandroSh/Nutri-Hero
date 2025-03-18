@@ -34,7 +34,7 @@ const LandingPageTemplate = () => {
         </InfoDisplay>
       </SectionContainer>
 
-      <SectionContainer innerWrapperClassName='!max-w-[1701px] !w-full'>
+      <SectionContainer innerWrapperClassName='max-w-[1700px] w-full'>
         <CustomCarousel data={carouselData}/>
         <CustomCarousel data={carouselData2} reversed={true} />
       </SectionContainer>
