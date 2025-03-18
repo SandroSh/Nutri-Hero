@@ -1,0 +1,1 @@
+export const signOptionStyle = 'w-full flex items-center justify-start py-[19px] pl-[12px] border border-gray-300  rounded-md focus:outline-none focus:ring-4 hover:border-red-10 transition-all mb-[10px] cursor-pointer  duration-300 hover:scale-105';

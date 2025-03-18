@@ -130,5 +130,17 @@
     "button": "Get Started",
     "loginText": "Already have an account?",
     "login": "Login"
+  },
+  "Signin": {
+    "title": "Welcome back! Enter your details below",
+    "username": "Username",
+    "password": "Password",
+    "forget": "Forgot?",
+    "divider": "OR",
+    "google": "Continue with Google",
+    "facebook": "Continue with Facebook",
+    "button": "Login",
+    "signUpText": "Not a member yet? ",
+    "register": "Register"
   }
 }

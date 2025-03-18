@@ -1,4 +1,4 @@
-import RegistrationTemplate from '@/components/templates/RegistrationTemplate/RegistrationTemplate'
+import RegistrationTemplate from '@/components/templates/Registration/RegistrationTemplate'
 import React from 'react'
 
 const RegistrationPage = () => {

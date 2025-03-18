@@ -7,7 +7,7 @@ import React from 'react'
 const RegistrationTemplate = () => {
   return (
     <div className='mt-[96px]'>
-      <Hero innerClassName='w-full'>
+      <Hero innerClassName='!w-full mt-[50px]'>
         <RegistrationCard/>
       </Hero>
     </div>

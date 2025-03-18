@@ -16,10 +16,12 @@ const AuthButtons = ({className, ...rest}: AuthButtonsProps) => {
   const t = useTranslations('authButtons');
   return (
     <div className={`flex justify-center items-center ${className}`} {...rest}>
-      <Link href='/registration'>
+      <Link href='/signup'>
         <Button className='p-[9px] bg-red-10 rounded-[5px] text-white' >{t('register')}</Button>
       </Link>
+      <Link href='/signin'>
         <Button className='text-red-10' >{t('login')}</Button>
+      </Link>
     </div>
   )
 }

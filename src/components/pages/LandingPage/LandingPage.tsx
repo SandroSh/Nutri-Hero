@@ -1,4 +1,4 @@
-import LandingPageTemplate from '@/components/templates/LandingPageTemplate/LandingPageTemplate'
+import LandingPageTemplate from '@/components/templates/LandingPage/LandingPageTemplate'
 import React from 'react'
 
 const LandingPage = () => {

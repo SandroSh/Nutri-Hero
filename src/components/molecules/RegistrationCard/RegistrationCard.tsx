@@ -19,7 +19,7 @@ const RegistrationCard = () => {
                 <ParagraphField title={t('pTitle')} paragraph={t('pText')} className='mt-[30px]' pClassName='text-[19px] text-gray-5' />
             </div>
             <div className='max-w-[334px] w-full'>
-                <Input size='large' prefix={<img src='/Email.svg' className='mr-[10px]' />} placeholder={t('email')} className='py-[19px] pl-[12px] !rounded-md  hover:border-red-10' />
+                <Input size='large' prefix={<img src='/Email.svg' className='mr-[10px]' />} placeholder={t('email')} className='py-[19px] pl-[12px] !rounded-md mb-[10px]  hover:border-red-10' />
                 {
                     registrationData.map((item, i) => <SignOption key={i} imgUrl={item.imgUrl} text={t(`${item.text}`)} />)
                 }
@@ -33,7 +33,7 @@ const RegistrationCard = () => {
                 <ButtonField className='p-[9px] bg-red-10 rounded-[5px] text-white w-full text-center h-[40px] cursor-pointer'>{t('button')}</ButtonField>
                 <div className='flex items-center justify-center mt-[26px]'>
                     <p className='text-red-10 mr-[10px]'>{t('loginText')} </p>
-                    <Link href={'/login'} className='text-red-10 font-bold'>{t('login')}</Link>
+                    <Link href={'/signin'} className='text-red-10 font-bold'>{t('login')}</Link>
                 </div>
             </div>
         </div>
