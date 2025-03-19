@@ -13,8 +13,8 @@ import React from 'react'
 const RegistrationCard = () => {
     const t = useTranslations('Registration')
     return (
-        <div className='bg-white rounded-[5px] flex justify-evenly items-start px-[85px] pt-[119px] pb-[44px]' >
-            <div className='max-w-[410px]'>
+        <div className='bg-white rounded-[5px]  flex justify-evenly items-start pt-[119px] pb-[44px]' >
+            <div className='max-w-[400px]'>
                 <TitleField text={t('title')} className='text-5xl' />
                 <ParagraphField title={t('pTitle')} paragraph={t('pText')} className='mt-[30px]' pClassName='text-[19px] text-gray-5' />
             </div>
@@ -24,10 +24,12 @@ const RegistrationCard = () => {
                     registrationData.map((item, i) => <SignOption key={i} imgUrl={item.imgUrl} text={t(`${item.text}`)} />)
                 }
                 <div className='flex justify-between items-center'>
-                    <p className='pt-[35px] pb-[40px] text-[12px]'>
+                    <Link href={'/legal_terms'}>
+                    <p className='pt-[35px] pb-[40px] text-[12px] cursor-pointer'>
                         {t('terms')}
                         <span className='text-red-10'>{t('termsLink')}</span>
                     </p>
+                    </Link>
                     <img src="/checked.svg" alt="check img" />
                 </div>
                 <ButtonField className='p-[9px] bg-red-10 rounded-[5px] text-white w-full text-center h-[40px] cursor-pointer'>{t('button')}</ButtonField>

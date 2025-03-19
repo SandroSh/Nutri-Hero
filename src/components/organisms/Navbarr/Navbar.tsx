@@ -14,7 +14,7 @@ const Navbar = () => {
 
                 <div className='flex justify-center items-baseline gap-[30px]' >
                     <NavLinks className='gap-[30px]' >
-                        <Navlink isActive={true} >{t('link1').toUpperCase()}</Navlink>
+                        <Navlink>{t('link1').toUpperCase()}</Navlink>
                         <Navlink>{t('link2').toUpperCase()}</Navlink>
                         <Navlink>{t('link3').toUpperCase()}</Navlink>
                         <Navlink>{t('link4').toUpperCase()}</Navlink>

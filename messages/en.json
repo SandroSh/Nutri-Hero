@@ -123,7 +123,7 @@
     "pTitle": "That’s right! And you can register too!",
     "pText": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem.",
     "terms": "I have read and agree to the ",
-    "termsLink":"terms & conditions",
+    "termsLink": "terms & conditions",
     "email": "Enter your email address",
     "google": "Continue with Google",
     "facebook": "Continue with Facebook",
@@ -142,5 +142,31 @@
     "button": "Login",
     "signUpText": "Not a member yet? ",
     "register": "Register"
+  },
+  "resetAccount": {
+    "1": {
+      "title": "Enter your email to reset your password",
+      "p": "We’ll send a password reset link here",
+      "input":"Email address",
+      "button":"Send reset link"
+    },
+    "2": {
+      "title": "Create your new password",
+      "p": "Must be at 8 characters, containing 1 uppercase and 1 lowercase character or more.",
+      "input":"New password",
+      "input2":"Confirm password",
+      "button":"Reset my password"
+    }
+  },
+  "legalTermsConditions":{
+    "title":"Terms and conditions",
+    "pText":{
+      "0":"Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean at leo tellus. Morbi eu leo sapien.",
+      "1":"Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce justo ipsum, placerat vitae erat ac, porttitor tincidunt lacus. In fermentum nulla nec fermentum tempus.",
+      "2":" Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean at leo tellus. Morbi eu leo sapien.",
+      "3":"Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce justo ipsum, placerat vitae erat ac, porttitor tincidunt lacus. In fermentum nulla nec fermentum tempus.",
+      "4":"Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean at leo tellus. Morbi eu leo sapien.",
+      "5":"Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada"
+    }
   }
 }

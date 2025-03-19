@@ -1,15 +1,24 @@
+'use client'
 import { Signin } from '@/components/molecules/SignInCard'
 import Hero from '@/components/organisms/HeroSection/Hero'
-import React from 'react'
+import { ResetCard } from '@/components/organisms/Reset'
+import React, { useState } from 'react'
 
 
 
 
 const SignInPageTemplate = () => {
+  const [isReseting, setIsReseting] = useState<boolean>(false)
   return (
     <div className='mt-[96px]' >
       <Hero outerClassName='!items-start'>
-        <Signin/>
+        {
+          isReseting ?
+            <ResetCard resetFunction={setIsReseting} />
+            :
+            <Signin resetFunction={setIsReseting} />
+        }
+
       </Hero>
     </div>
 

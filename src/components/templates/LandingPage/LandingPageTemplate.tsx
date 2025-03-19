@@ -2,7 +2,7 @@
 import Title from '@/components/atoms/TitleField/title.component'
 import Intro from '@/components/molecules/IntroCard/Intro'
 import { JoinCard } from '@/components/molecules/JoinCard'
-import { NavLinks } from '@/components/molecules/NavLinks'
+
 import { Tabs } from '@/components/molecules/Tabs'
 import CustomCarousel from '@/components/organisms/Carousel/CustomCarousel'
 import { DownloadAppSection } from '@/components/organisms/DowloadAppSection'
@@ -19,7 +19,7 @@ const LandingPageTemplate = () => {
   return (
     <div className='mt-[96px]'>
 
-      <Hero>
+      <Hero outerClassName='items-center'>
         <Intro textAddress={'LandingHero'} />
       </Hero>
 
@@ -34,7 +34,7 @@ const LandingPageTemplate = () => {
         </InfoDisplay>
       </SectionContainer>
 
-      <SectionContainer innerWrapperClassName='max-w-[1700px] w-full'>
+      <SectionContainer innerWrapperClassName='max-w-[1701px] w-full'>
         <CustomCarousel data={carouselData}/>
         <CustomCarousel data={carouselData2} reversed={true} />
       </SectionContainer>
