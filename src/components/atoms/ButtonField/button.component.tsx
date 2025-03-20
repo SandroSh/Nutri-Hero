@@ -19,7 +19,7 @@ const ButtonField = ({
             type={type}
             size={size}
             onClick={onClick}
-            className={`ant-reset transition-transform duration-300 hover:scale-105 py-[15px] ${className} `}
+            className={`ant-reset transition-transform duration-300 hover:scale-105 py-[15px]  ${className} `}
             {...rest}
         >
             {children}

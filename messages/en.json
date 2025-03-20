@@ -147,26 +147,65 @@
     "1": {
       "title": "Enter your email to reset your password",
       "p": "We’ll send a password reset link here",
-      "input":"Email address",
-      "button":"Send reset link"
+      "input": "Email address",
+      "button": "Send reset link"
     },
     "2": {
       "title": "Create your new password",
       "p": "Must be at 8 characters, containing 1 uppercase and 1 lowercase character or more.",
-      "input":"New password",
-      "input2":"Confirm password",
-      "button":"Reset my password"
+      "input": "New password",
+      "input2": "Confirm password",
+      "button": "Reset my password"
     }
   },
-  "legalTermsConditions":{
-    "title":"Terms and conditions",
-    "pText":{
-      "0":"Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean at leo tellus. Morbi eu leo sapien.",
-      "1":"Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce justo ipsum, placerat vitae erat ac, porttitor tincidunt lacus. In fermentum nulla nec fermentum tempus.",
-      "2":" Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean at leo tellus. Morbi eu leo sapien.",
-      "3":"Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce justo ipsum, placerat vitae erat ac, porttitor tincidunt lacus. In fermentum nulla nec fermentum tempus.",
-      "4":"Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean at leo tellus. Morbi eu leo sapien.",
-      "5":"Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada"
+  "legalTermsConditions": {
+    "title": "Terms and conditions",
+    "pText": {
+      "0": "Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean at leo tellus. Morbi eu leo sapien.",
+      "1": "Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce justo ipsum, placerat vitae erat ac, porttitor tincidunt lacus. In fermentum nulla nec fermentum tempus.",
+      "2": " Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean at leo tellus. Morbi eu leo sapien.",
+      "3": "Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce justo ipsum, placerat vitae erat ac, porttitor tincidunt lacus. In fermentum nulla nec fermentum tempus.",
+      "4": "Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean at leo tellus. Morbi eu leo sapien.",
+      "5": "Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada"
+    }
+  },
+  "myPlanPage": {
+    "card0": {
+      "title": "Enter your email address to continue",
+      "pText": "We’ll send a confirmation link here",
+      "mail": "Email address",
+      "button": "Next"
+    },
+    "card1": {
+      "title": "Create a strong password",
+      "pText": "Must be at 8 characters, containing 1 uppercase and 1 lowercase character or more.",
+      "password": "Password",
+      "password2": "Confirm Password",
+      "button": "Next"
+    },
+    "card2": {
+      "title": "Success! Please check your email",
+      "pText": "We’ve sent a confirmation link to your email address",
+      "questionLink": "Haven’t received a link? Click here to resend"
+    },
+    "card3": {
+      "title": "Your account is ready, please login",
+      "username": "Username",
+      "password": "Password",
+      "button": "Next"
+    },
+    "card4": {
+      "title": "Now let’s get personal",
+      "username":"Username",
+      "firstname": "First Name",
+      "lastname": "Last Name",
+      "gender": {
+        "0":"Gender",
+        "1": "Male",
+        "2": "Female"
+      },
+      "dob": "Date of Birth",
+      "button": "Next"
     }
   }
 }

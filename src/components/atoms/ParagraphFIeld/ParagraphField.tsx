@@ -6,8 +6,8 @@ const ParagraphField = (
         className,
         title,
         paragraph,
-        pClassName,
-        tClassName
+        tClassName,
+        pClassName
     }:ParagraphFieldProps) => {
   return (
     <div className={`${className}`} >

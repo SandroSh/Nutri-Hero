@@ -25,14 +25,16 @@ const RegistrationCard = () => {
                 }
                 <div className='flex justify-between items-center'>
                     <Link href={'/legal_terms'}>
-                    <p className='pt-[35px] pb-[40px] text-[12px] cursor-pointer'>
-                        {t('terms')}
-                        <span className='text-red-10'>{t('termsLink')}</span>
-                    </p>
+                        <p className='pt-[35px] pb-[40px] text-[12px] cursor-pointer'>
+                            {t('terms')}
+                            <span className='text-red-10'>{t('termsLink')}</span>
+                        </p>
                     </Link>
                     <img src="/checked.svg" alt="check img" />
                 </div>
-                <ButtonField className='p-[9px] bg-red-10 rounded-[5px] text-white w-full text-center h-[40px] cursor-pointer'>{t('button')}</ButtonField>
+                <Link href='/my_plan'>
+                    <ButtonField className='p-[9px] bg-red-10 rounded-[5px] text-white w-full text-center h-[40px] cursor-pointer'>{t('button')}</ButtonField>
+                </Link>
                 <div className='flex items-center justify-center mt-[26px]'>
                     <p className='text-red-10 mr-[10px]'>{t('loginText')} </p>
                     <Link href={'/signin'} className='text-red-10 font-bold'>{t('login')}</Link>
