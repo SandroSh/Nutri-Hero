@@ -8,9 +8,11 @@ import { useTranslations } from 'next-intl'
 import { InputField } from '@/components/atoms/InputField'
 import { signInputStyle } from '@/components/molecules/SignInCard/Signin.style'
 import { PersonalInfroInputCard } from '@/components/molecules/PersonalInfoInputCard'
+import { useRouter } from '@/i18n/navigation'
 
 const MyPlan = () => {
     const t = useTranslations('myPlanPage');
+    const router = useRouter();
     const [stage, setStage] = useState<number>(0);
     const handleRenderStage = () => {
         switch (stage) {
@@ -97,7 +99,7 @@ const MyPlan = () => {
                         bText={t(myPlanCardData[4].bText)}
                         className='!h-[100vh]'
                         buttonClass='mt-[95px]'
-                        functionCall={() => setStage(5)}
+                        functionCall={() => router.push('/payment')}
                     >
                         <PersonalInfroInputCard />
                     </MyPlanCard>
@@ -110,7 +112,7 @@ const MyPlan = () => {
     }
     return (
         <div>
-            <SectionContainer innerWrapperClassName='!max-w-[1700px] !w-full'>
+            <SectionContainer innerWrapperClassName='!max-w-[1701px] !w-full'>
                 {
                     handleRenderStage()
                 }

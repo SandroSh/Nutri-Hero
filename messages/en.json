@@ -117,7 +117,6 @@
       "p2": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem."
     }
   },
-
   "Registration": {
     "title": "Did someone say registration?",
     "pTitle": "That’s right! And you can register too!",
@@ -196,16 +195,26 @@
     },
     "card4": {
       "title": "Now let’s get personal",
-      "username":"Username",
+      "username": "Username",
       "firstname": "First Name",
       "lastname": "Last Name",
       "gender": {
-        "0":"Gender",
+        "0": "Gender",
         "1": "Male",
         "2": "Female"
       },
       "dob": "Date of Birth",
       "button": "Next"
     }
+  },
+  "paymentPage": {
+    "title": "Power to you. Cancel anytime.",
+    "pTitle": "Just £9.99 per month",
+    "pText": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem.",
+    "nameOnCard": "Name on card",
+    "cardNumber": "Card number",
+    "expiryDate": "Expiry date",
+    "cvc": "CVC",
+    "bText": "Confirm Payment"
   }
 }

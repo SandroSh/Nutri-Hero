@@ -11,8 +11,8 @@ const MyPlanCard = ({ imgUrl, className, children, pTitle, pText, bText, buttonC
             <div className='w-[50%] h-[100vh] '>
                 <ImageField src={imgUrl} className='w-full h-full object-cover object-top' alt={'image'} />
             </div>
-            <div className='w-[50%] flex flex-col items-center'>
-                <ParagraphField title={pTitle} paragraph={pText ? pText : undefined} tClassName='text-4xl' pClassName='text-gray-4' className='max-w-[410px]' />
+            <div className='w-[50%] flex flex-col items-center justify-start'>
+                <ParagraphField title={pTitle} paragraph={pText ? pText : undefined} tClassName='text-4xl' pClassName='text-gray-4' className='max-w-[410px] w-full' />
 
                 <div className='max-w-[410px] w-full flex flex-col justify-start'>
                     {children}

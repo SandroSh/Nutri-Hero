@@ -79,3 +79,6 @@
   justify-content: flex-start !important;
 }
 
+.custom-date-picker .ant-picker-suffix {
+  color: #151515;
+}
