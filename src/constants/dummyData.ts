@@ -105,6 +105,12 @@ export const myPlanCardData: myPlanCardProps[] = [
     pTitle: "card4.title",
     bText: "card4.button",
   },
+  {
+    imgUrl: "/14742.png",
+    pTitle: "card4.title",
+    pText: "card4.title",
+    bText: "card4.button",
+  },
 ];
 
 

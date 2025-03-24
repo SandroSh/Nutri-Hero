@@ -173,13 +173,16 @@
       "title": "Enter your email address to continue",
       "pText": "We’ll send a confirmation link here",
       "mail": "Email address",
+      "mailRequired": "Email is required",
       "button": "Next"
     },
     "card1": {
       "title": "Create a strong password",
       "pText": "Must be at 8 characters, containing 1 uppercase and 1 lowercase character or more.",
       "password": "Password",
+      "passwordRequired": "Password is required",
       "password2": "Confirm Password",
+      "passwordRequired2": "Confirm Password is required",
       "button": "Next"
     },
     "card2": {
@@ -190,7 +193,9 @@
     "card3": {
       "title": "Your account is ready, please login",
       "username": "Username",
+      "usernameRequired":"Username is required",
       "password": "Password",
+      "passwordRequired": "Password is required",
       "button": "Next"
     },
     "card4": {
@@ -204,6 +209,17 @@
         "2": "Female"
       },
       "dob": "Date of Birth",
+      "button": "Next",
+      "usernameRequired": "Username is required",
+      "firstnameRequired": "First Name is required",
+      "lastnameRequired": "Last Name is required",
+      "genderRequired": "Gender is required",
+      "dobRequired":"Date of Birth is required"
+    },
+    "card5": {
+      "title": "How to create a goal",
+      "pTitle": "Brief description of the coming flow.",
+      "pText":"ed pretium sem libero, vel pellentesque purus ultrices ut. In quis leo id massa pulvinar euismod cursus non justo. Sed sagittis et urna non efficitur.",
       "button": "Next"
     }
   },

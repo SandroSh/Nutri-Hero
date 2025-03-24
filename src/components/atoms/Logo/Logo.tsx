@@ -12,7 +12,7 @@ const Logo = ({
   ...rest
 }: LogoProps) => {
   return (
-    <Link href={'/'} >
+    <Link href={'/'} className='mt-[10px]' >
     <Image src={MainLogo} alt="logo" width={width} height={height} className={`cursor-pointer ${className}`} {...rest} />
     </Link>
 
