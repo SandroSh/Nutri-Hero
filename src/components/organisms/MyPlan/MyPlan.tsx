@@ -11,7 +11,7 @@ import { useRouter } from '@/i18n/navigation';
 import { Form } from 'antd';
 
 const MyPlan = () => {
-  const t = useTranslations('myPlanPage');
+  const t = useTranslations('myPlanPage.signup');
   const router = useRouter();
   const [stage, setStage] = useState<number>(0);
   const [form] = Form.useForm(); 

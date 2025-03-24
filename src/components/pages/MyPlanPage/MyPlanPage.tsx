@@ -3,7 +3,7 @@ import React from 'react'
 
 const MyPlanPage = () => {
   return (
-    <MyPlanPageTemplate/>
+    <MyPlanPageTemplate  />
   )
 }
 

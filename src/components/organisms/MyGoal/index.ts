@@ -1,0 +1,1 @@
+export {default as MyGoal} from './MyGoal'

@@ -32,7 +32,7 @@ const RegistrationCard = () => {
                     </Link>
                     <img src="/checked.svg" alt="check img" />
                 </div>
-                <Link href='/my_plan'>
+                <Link href='/my_plan/sign-up'>
                     <ButtonField className='p-[9px] bg-red-10 rounded-[5px] text-white w-full text-center h-[40px] cursor-pointer'>{t('button')}</ButtonField>
                 </Link>
                 <div className='flex items-center justify-center mt-[26px]'>

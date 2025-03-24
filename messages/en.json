@@ -169,58 +169,133 @@
     }
   },
   "myPlanPage": {
-    "card0": {
-      "title": "Enter your email address to continue",
-      "pText": "We’ll send a confirmation link here",
-      "mail": "Email address",
-      "mailRequired": "Email is required",
-      "button": "Next"
-    },
-    "card1": {
-      "title": "Create a strong password",
-      "pText": "Must be at 8 characters, containing 1 uppercase and 1 lowercase character or more.",
-      "password": "Password",
-      "passwordRequired": "Password is required",
-      "password2": "Confirm Password",
-      "passwordRequired2": "Confirm Password is required",
-      "button": "Next"
-    },
-    "card2": {
-      "title": "Success! Please check your email",
-      "pText": "We’ve sent a confirmation link to your email address",
-      "questionLink": "Haven’t received a link? Click here to resend"
-    },
-    "card3": {
-      "title": "Your account is ready, please login",
-      "username": "Username",
-      "usernameRequired":"Username is required",
-      "password": "Password",
-      "passwordRequired": "Password is required",
-      "button": "Next"
-    },
-    "card4": {
-      "title": "Now let’s get personal",
-      "username": "Username",
-      "firstname": "First Name",
-      "lastname": "Last Name",
-      "gender": {
-        "0": "Gender",
-        "1": "Male",
-        "2": "Female"
+    "signup": {
+      "card0": {
+        "title": "Enter your email address to continue",
+        "pText": "We’ll send a confirmation link here",
+        "mail": "Email address",
+        "mailRequired": "Email is required",
+        "button": "Next"
       },
-      "dob": "Date of Birth",
-      "button": "Next",
-      "usernameRequired": "Username is required",
-      "firstnameRequired": "First Name is required",
-      "lastnameRequired": "Last Name is required",
-      "genderRequired": "Gender is required",
-      "dobRequired":"Date of Birth is required"
+      "card1": {
+        "title": "Create a strong password",
+        "pText": "Must be at 8 characters, containing 1 uppercase and 1 lowercase character or more.",
+        "password": "Password",
+        "passwordRequired": "Password is required",
+        "password2": "Confirm Password",
+        "password2Required": "Confirm Password is required",
+        "passwordMismatch": "Passwords are mismatched",
+        "button": "Next"
+      },
+      "card2": {
+        "title": "Success! Please check your email",
+        "pText": "We’ve sent a confirmation link to your email address",
+        "questionLink": "Haven’t received a link? Click here to resend"
+      },
+      "card3": {
+        "title": "Your account is ready, please login",
+        "username": "Username",
+        "usernameRequired": "Username is required",
+        "password": "Password",
+        "passwordRequired": "Password is required",
+        "button": "Next"
+      },
+      "card4": {
+        "title": "Now let’s get personal",
+        "username": "Username",
+        "firstname": "First Name",
+        "lastname": "Last Name",
+        "gender": {
+          "0": "Gender",
+          "1": "Male",
+          "2": "Female"
+        },
+        "dob": "Date of Birth",
+        "button": "Next",
+        "usernameRequired": "Username is required",
+        "firstnameRequired": "First Name is required",
+        "lastnameRequired": "Last Name is required",
+        "genderRequired": "Gender is required",
+        "dobRequired": "Date of Birth is required"
+      },
+      "card5": {
+        "title": "How to create a goal",
+        "pTitle": "Brief description of the coming flow.",
+        "pText": "ed pretium sem libero, vel pellentesque purus ultrices ut. In quis leo id massa pulvinar euismod cursus non justo. Sed sagittis et urna non efficitur.",
+        "button": "Next"
+      }
     },
-    "card5": {
-      "title": "How to create a goal",
-      "pTitle": "Brief description of the coming flow.",
-      "pText":"ed pretium sem libero, vel pellentesque purus ultrices ut. In quis leo id massa pulvinar euismod cursus non justo. Sed sagittis et urna non efficitur.",
-      "button": "Next"
+    "goal":{
+      "card0":{
+        "title":"How to create a goal",
+        "pTitle":"Brief description of the coming flow.",
+        "pText":"ed pretium sem libero, vel pellentesque purus ultrices ut. In quis leo id massa pulvinar euismod cursus non justo. Sed sagittis et urna non efficitur.",
+        "button":"Start"
+      },
+      "card1":{
+        "select1":{
+          "title":"What is your goal preference?",
+          "op1":"Fat loss",
+          "op2":"Gain muscle"
+        },
+        "select2":{
+          "title":"Workout frequency",
+          "op1":"Twice per week",
+          "op2":"Three times per week",
+          "op3":"Four times per week"
+        },
+        "prevButton":"Back",
+        "nextButton":"Next"
+      },
+      "card2":{
+        "select1":{
+          "title":"What’s your focus?",
+          "op1":"Predominantly gym",
+          "op2":"Predominantly home"
+        },
+        "select2":{
+          "title":"Focus muscle group",
+          "op1":"Legs",
+          "op2":"Core",
+          "op3":"Arms",
+          "op4":"Upperbody"
+        },
+        "prevButton":"Back",
+        "nextButton":"Next"
+      },
+      "card3":{
+        "select1":{
+          "title":"Select your level",
+          "op1":"Foundation",
+          "op2":"Progressive",
+          "op3":"Expert"
+        },
+        "select2":{
+          "title":"Diet",
+          "op1":"Omnivore",
+          "op2":"Vegetarian"
+        },
+        "prevButton":"Back",
+        "nextButton":"Next"
+      },
+      "card4":{
+        "select1":{
+          "title":"Include yoga?",
+          "op1":"Include",
+          "op2":"Exclude"
+        },
+        "select2":{
+          "title":"Exclusively Yoga?",
+          "op1":"Yoga only",
+          "op2":"Yoga + exercise"
+        },
+        "inputTitle":"Goal name",
+        "placeholder":"Enter a name",
+        "inputRequired":"Goal name is required",
+        "prevButton":"Back",
+        "nextButton":"Done"
+      }
+      
     }
   },
   "paymentPage": {
