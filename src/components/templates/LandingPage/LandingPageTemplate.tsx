@@ -23,20 +23,20 @@ const LandingPageTemplate = () => {
         <Intro textAddress={'LandingHero'} />
       </Hero>
 
-      <SectionContainer className='bg-blue-1' innerWrapperClassName='mt-[-70px]'>
+      <SectionContainer className='bg-blue-1' innerWrapperClassName='mt-[-70px] '>
         <InfoDisplay className='bg-white rounded-[5px] flex-col items-center justify-center  '>
           <Title text={gymDisplay('title')} className={`mt-[27px] mb-[25px]`} />
           <Tabs tabs={tabsData} translate={gymDisplay} centered={true} className={'pb-[40px]'} />
         </InfoDisplay>
         <InfoDisplay className='flex-col mt-[90px] '>
           <Title text={gymDisplay('title2')} className={`mt-[27px] mb-[25px] text-white`} />
-          <Tabs tabs={tabsData} translate={gymDisplay} centered={true} className={'second-tabs pb-[40px]'} CardClassName='flex-row-reverse' />
+          <Tabs tabs={tabsData} translate={gymDisplay}  className={'second-tabs pb-[40px] '} CardClassName='flex-row-reverse justify-between mt-[-130px] mb-[50px]' />
         </InfoDisplay>
       </SectionContainer>
 
-      <SectionContainer innerWrapperClassName='max-w-[1701px] w-full'>
+      <SectionContainer innerWrapperClassName='max-w-[1700px] w-full'>
         <CustomCarousel data={carouselData}/>
-        <CustomCarousel data={carouselData2} reversed={true} />
+        <CustomCarousel data={carouselData2} cardClassName='flex-row-reverse' />
       </SectionContainer>
 
       <SectionContainer  >

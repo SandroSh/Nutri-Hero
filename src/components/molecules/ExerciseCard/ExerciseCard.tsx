@@ -4,12 +4,12 @@ import React from 'react'
 
 const ExerciseCard = ({ pTitle, pText, imageUrl, className }: { pTitle: string, pText: string, imageUrl: string, className?:string }) => {
     return (
-        <div className={`flex justify-center gap-[100px] items-center  pt-[30px] w-full ${className}`} >
+        <div className={`flex justify-center gap-[100px] items-center pt-[30px] w-full ${className}`} >
             <ImageField src={imageUrl}
                 alt='Exercise Image'
-                className='w-[510px]  rounded-[5px]' />
+                className='w-[570px]  rounded-[5px] ' />
             <ParagraphField title={pTitle} paragraph={pText}
-                className='max-w-[340px]' />
+                className='max-w-[410px]'  />
         </div>
     )
 }

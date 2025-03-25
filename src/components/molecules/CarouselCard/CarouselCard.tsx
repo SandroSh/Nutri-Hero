@@ -10,10 +10,10 @@ import { TitleField } from '@/components/atoms/TitleField'
 
 
 
-const CarouselCard = ({data, reversed}:{data:carouselType, reversed:boolean}) => {
+const CarouselCard = ({data, outerClassName}:{data:carouselType, outerClassName?:string}) => {
   const t = useTranslations(`carousel.${data.i}`)
   return (
-    <div className={`w-full h-full max-h-[720px]  flex justify-center items-center ${reversed && 'flex-row-reverse'}`}>
+    <div className={`w-full h-full max-h-[720px]  flex justify-center items-center ${outerClassName}`}>
         <div className='w-[50%] h-[720px]'>
             <ImageField src={data.imgUrl} className='w-full h-full object-cover object-top' alt={'image'}/>
         </div>

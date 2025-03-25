@@ -47,6 +47,7 @@
 
 .ant-tabs-nav {
   justify-content: center !important;
+  z-index: 10 !important;
 }
 .ant-tabs-nav-wrap {
   justify-content: center !important;
