@@ -15,6 +15,9 @@
     "subtitle": "A short description works best",
     "buttonText": "Start now"
   },
+
+
+
   "Exercise Display": {
     "title": "Exercise",
     "tabLabels": {
@@ -58,6 +61,9 @@
       }
     }
   },
+
+
+  
   "downloadAppSection": {
     "title": "New app. New you.",
     "pTitle": "A nutritionalist and personal trainer in your pocket",

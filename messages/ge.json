@@ -2,37 +2,69 @@
   "navbar": {
     "link1": "ვარჯიში",
     "link2": "კვება",
-    "link3": "გამოცდილება",
-    "link4": "აპი",
-    "about": "გადასვლა შესახებ გვერდზე"
+    "link3": "ექსპერტიზა",
+    "link4": "აპლიკაცია",
+    "about": "გადადით შესახებ გვერდზე"
   },
   "authButtons": {
     "login": "შესვლა",
     "register": "რეგისტრაცია"
   },
   "LandingHero": {
-    "title": "Captivating header goes here!",
-    "subtitle": "A short description works best",
-    "buttonText": "Start now"
+    "title": "მომხიბვლელი სათაური აქ მოდის!",
+    "subtitle": "მოკლე აღწერა საუკეთესოდ მუშაობს",
+    "buttonText": "დაიწყე ახლა"
   },
   "Exercise Display": {
     "title": "ვარჯიში",
     "tabLabels": {
-      "1": "ფიტნეს დარბაზი",
+      "1": "სპორტდარბაზი",
       "2": "სახლი",
       "3": "იოგა"
     },
-    "pTitle": "მოკლე სათაური საუკეთესოა",
-    "paragraph": "სახლიდან დარბაზამდე, კროსფიტიდან პილატესამდე, იოგადან სხეულის წონის ვარჯიშებამდე, ასევე ჯანსაღი და მარტივად მოსამზადებელი საუზმე, სადილი, ვახშამი და წასახემსებელი. ჩვენ გვინდა, რომ ისიამოვნოთ ჯანსაღი ცხოვრების გზით."
+    "cards": {
+      "1": {
+        "pTitle": "მოკლე სათაური საუკეთესოდ მუშაობს",
+        "paragraph": "სახლიდან სპორტდარბაზამდე, კროსფიტიდან პილატესამდე, იოგადან სხეულის წონის ვარჯიშებამდე, ასევე ჯანსაღი და მარტივი საუზმეები, სადილები, ვახშმები და საჭმელები. ჩვენ გვინდა დავრწმუნდეთ, რომ თქვენ ისიამოვნებთ ჯანსაღი ცხოვრების მოგზაურობით."
+      },
+      "2": {
+        "pTitle": "მოკლე სათაური ყველაზე ეფექტურია",
+        "paragraph": "სახლის ვარჯიშებიდან სპორტდარბაზამდე, კროსფიტიდან პილატესამდე, იოგადან სხეულის წონის ვარჯიშებამდე, პლუს სწრაფი და ჯანსაღი საუზმე, სადილი, ვახშამი და საჭმლის იდეები. ჩვენ აქ ვართ, რათა დაგეხმაროთ ისიამოვნოთ თქვენი ჯანსაღი ცხოვრების მოგზაურობის ყოველი ნაბიჯით."
+      },
+      "3": {
+        "pTitle": "მოკლე სათაურები, შეინარჩუნეთ სიცხადე",
+        "paragraph": "იქნება ეს სახლის ვარჯიშები, სპორტდარბაზის სესიები, კროსფიტი, პილატესი, იოგა თუ სხეულის წონის ვარჯიშები, მარტივი და მკვებავი კერძებით საუზმის, სადილის, ვახშმისა და საჭმლისთვის, ჩვენ აქ ვართ, რათა თქვენი ჯანსაღი ცხოვრების მოგზაურობა სასიამოვნო გავხადოთ."
+      }
+    },
+    "title2": "კვება",
+    "tabLabels2": {
+      "1": "ჯანსაღი",
+      "2": "პერსონალიზებული",
+      "3": "პროფესიონალური"
+    },
+    "cards2": {
+      "1": {
+        "pTitle": "მოკლე სათაური საუკეთესოდ მუშაობს",
+        "paragraph": "სახლიდან სპორტდარბაზამდე, კროსფიტიდან პილატესამდე, იოგადან სხეულის წონის ვარჯიშებამდე, ასევე ჯანსაღი და მარტივი საუზმეები, სადილები, ვახშმები და საჭმელები. ჩვენ გვინდა დავრწმუნდეთ, რომ თქვენ ისიამოვნებთ ჯანსაღი ცხოვრების მოგზაურობით."
+      },
+      "2": {
+        "pTitle": "მოკლე სათაური ყველაზე ეფექტურია",
+        "paragraph": "სახლის ვარჯიშებიდან სპორტდარბაზამდე, კროსფიტიდან პილატესამდე, იოგადან სხეულის წონის ვარჯიშებამდე, პლუს სწრაფი და ჯანსაღი საუზმე, სადილი, ვახშამი და საჭმლის იდეები. ჩვენ აქ ვართ, რათა დაგეხმაროთ ისიამოვნოთ თქვენი ჯანსაღი ცხოვრების მოგზაურობის ყოველი ნაბიჯით."
+      },
+      "3": {
+        "pTitle": "მოკლე სათაურები, შეინარჩუნეთ სიცხადე",
+        "paragraph": "იქნება ეს სახლის ვარჯიშები, სპორტდარბაზის სესიები, კროსფიტი, პილატესი, იოგა თუ სხეულის წონის ვარჯიშები, მარტივი და მკვებავი კერძებით საუზმის, სადილის, ვახშმისა და საჭმლისთვის, ჩვენ აქ ვართ, რათა თქვენი ჯანსაღი ცხოვრების მოგზაურობა სასიამოვნო გავხადოთ."
+      }
+    }
   },
   "downloadAppSection": {
-    "title": "ახალი აპლიკაცია, ახალი შენ.",
-    "pTitle": "კვების სპეციალისტი და პერსონალური მწვრთნელი შენს ჯიბეში",
-    "pText": "გაიცანით თქვენი პერსონალური დამხმარე ჯანსაღი ცხოვრების წესისთვის. მიიღეთ პროფესიონალური რჩევები კვების და ვარჯიშის შესახებ, დაგეგმეთ თქვენი დღის რაციონი და მიაღწიეთ საუკეთესო შედეგებს მარტივად და კომფორტულად."
+    "title": "ახალი აპლიკაცია. ახალი შენ.",
+    "pTitle": "დიეტოლოგი და პერსონალური მწვრთნელი შენს ჯიბეში",
+    "pText": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem (ქართულად)."
   },
   "joinCard": {
-    "title": "შეუერთდი ათასობით ადამიანს, რომლებიც უკვე იყენებენ Nutriheros-ს!",
-    "buttonText": "დაიწყე ახლა"
+    "title": "შემოუერთდი ათასობით ადამიანს, ვინც უკვე იყენებს Nutriheros-ს დღეს!",
+    "buttonText": "დაიწყე"
   },
   "footer": {
     "nav": {
@@ -45,21 +77,21 @@
       },
       "company": {
         "1": "კომპანია",
-        "2": "იურიდიული",
-        "3": "დაგვიკავშირდით",
-        "4": "პრესი"
+        "2": "სამართლებრივი",
+        "3": "დაგვიკავშირდი",
+        "4": "პრესა"
       },
       "blog": {
         "1": "ბლოგი",
-        "2": "ბოლო პოსტი ერთი",
-        "3": "ბოლო პოსტი ორი",
-        "4": "ბოლო პოსტი სამი"
+        "2": "უახლესი პოსტი ერთი",
+        "3": "უახლესი პოსტი ორი",
+        "4": "უახლესი პოსტი სამი"
       },
       "social": {
         "1": "სოციალური",
-        "2": "Facebook",
-        "3": "Instagram",
-        "4": "Twitter"
+        "2": "ფეისბუქი",
+        "3": "ინსტაგრამი",
+        "4": "ტვიტერი"
       }
     },
     "copyright": "© 2021 ყველა უფლება დაცულია."
@@ -67,86 +99,86 @@
   "carousel": {
     "1": {
       "title": "სპორტული ექსპერტიზა",
-      "pTitle": "ტიერი ანრი",
-      "p1": "დოლორისა და მარშრუტის მეშვეობით განვითარებული მოძრაობის უნარი. იცხოვრე უპრობლემოდ, შეინარჩუნე ბალანსი. შენი ჯანმრთელობა ჩვენს ხელშია!",
-      "p2": "იზრუნე შენს სხეულზე და გაიგე, როგორ მიაღწიო საუკეთესო შედეგებს."
+      "pTitle": "თიერი ანრი",
+      "p1": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem (ქართულად).",
+      "p2": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem (ქართულად)."
     },
     "2": {
       "title": "სამზარეულოს ექსპერტიზა",
-      "pTitle": "Salt Bae",
-      "p1": "განსაკუთრებული ტექნიკით მომზადებული კერძები და უნიკალური გემო. ისწავლე საუკეთესო შეფებისგან და გახადე შენი კერძები სრულყოფილი!",
+      "pTitle": "სოლტ ბაე",
+      "p1": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem (ქართულად).",
       "p2": ""
     },
     "3": {
       "title": "სპორტული ექსპერტიზა",
-      "pTitle": "ტიერი ანრი",
-      "p1": "დოლორისა და მარშრუტის მეშვეობით განვითარებული მოძრაობის უნარი. იცხოვრე უპრობლემოდ, შეინარჩუნე ბალანსი. შენი ჯანმრთელობა ჩვენს ხელშია!",
-      "p2": "იზრუნე შენს სხეულზე და გაიგე, როგორ მიაღწიო საუკეთესო შედეგებს."
+      "pTitle": "თიერი ანრი",
+      "p1": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem (ქართულად).",
+      "p2": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem (ქართულად)."
     }
   },
   "Registration": {
-    "title": "რეგისტრაცია გინდოდა?",
-    "pTitle": "სწორედ ასე! და შენც შეგიძლია დარეგისტრირება!",
-    "pText": "გაიარეთ რეგისტრაცია და მიიღეთ წვდომა ყველა ფუნქციაზე.",
+    "title": "ვიღაცამ თქვა რეგისტრაცია?",
+    "pTitle": "სწორია! თქვენც შეგიძლიათ დარეგისტრირდეთ!",
+    "pText": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem (ქართულად).",
     "terms": "მე წავიკითხე და ვეთანხმები ",
-    "termsLink": "წესებსი და პირობები",
-    "email": "შეიყვანეთ თქვენი ელ.ფოსტის მისამართი",
-    "google": "გაგრძელება Google-ით",
-    "facebook": "გაგრძელება Facebook-ით",
-    "button": "დაწყება",
+    "termsLink": "წესებსა და პირობებს",
+    "email": "შეიყვანეთ თქვენი ელფოსტის მისამართი",
+    "google": "გააგრძელეთ Google-ით",
+    "facebook": "გააგრძელეთ Facebook-ით",
+    "button": "დაიწყე",
     "loginText": "უკვე გაქვთ ანგარიში?",
     "login": "შესვლა"
   },
   "Signin": {
-    "title": "მოგესალმებით! შეიყვანეთ თქვენი მონაცემები",
+    "title": "მოგესალმებით! შეიყვანეთ თქვენი დეტალები ქვემოთ",
     "username": "მომხმარებლის სახელი",
     "password": "პაროლი",
-    "forget": "დაგავიწყდა?",
+    "forget": "დაგავიწყდათ?",
     "divider": "ან",
-    "google": "გაგრძელება Google-ით",
-    "facebook": "გაგრძელება Facebook-ით",
+    "google": "გააგრძელეთ Google-ით",
+    "facebook": "გააგრძელეთ Facebook-ით",
     "button": "შესვლა",
     "signUpText": "ჯერ არ ხართ წევრი? ",
-    "register": "დარეგისტრირდი"
+    "register": "რეგისტრაცია"
   },
   "resetAccount": {
     "1": {
-      "title": "შეიყვანეთ თქვენი ელ.ფოსტა პაროლის აღსადგენად",
-      "p": "პაროლის აღსადგენ ბმულს გამოგიგზავნით აქ",
-      "input": "ელ.ფოსტის მისამართი",
-      "button": "ბმულის გაგზავნა"
+      "title": "შეიყვანეთ თქვენი ელფოსტა პაროლის გადასაყენებლად",
+      "p": "ჩვენ გამოგიგზავნით პაროლის გადაყენების ბმულს აქ",
+      "input": "ელფოსტის მისამართი",
+      "button": "გაგზავნეთ გადაყენების ბმული"
     },
     "2": {
-      "title": "შექმენით ახალი პაროლი",
-      "p": "უნდა შეიცავდეს მინიმუმ 8 სიმბოლოს, მათ შორის 1 დიდ და 1 პატარა ასოს.",
+      "title": "შექმენით თქვენი ახალი პაროლი",
+      "p": "უნდა იყოს მინიმუმ 8 სიმბოლო, შეიცავდეს 1 დიდ და 1 პატარა ასოს ან მეტს.",
       "input": "ახალი პაროლი",
       "input2": "დაადასტურეთ პაროლი",
-      "button": "პაროლის აღდგენა"
+      "button": "გადააყენეთ ჩემი პაროლი"
     }
   },
   "legalTermsConditions": {
     "title": "წესები და პირობები",
     "pText": {
-      "0": "მნიშვნელოვანია, რომ ყურადღებით გაეცნოთ ჩვენს წესებს და პირობებს. ჩვენი პლატფორმის გამოყენებით, თქვენ ეთანხმებით მათ.",
-      "1": "თქვენი მონაცემების უსაფრთხოება ჩვენთვის პრიორიტეტია. ჩვენ ვიცავთ კონფიდენციალურობას და ვმუშაობთ მონაცემთა დაცვის საუკეთესო პრაქტიკის მიხედვით.",
-      "2": "ჩვენ ვიტოვებთ უფლებას, განვაახლოთ და შევცვალოთ ეს პირობები ნებისმიერ დროს. ნებისმიერი ცვლილება ძალაში შევა მაშინვე, როგორც კი გამოქვეყნდება.",
-      "3": "თქვენი ანგარიშის უსაფრთხოების დაცვა თქვენი პასუხისმგებლობაა. გთხოვთ, არ გააზიაროთ თქვენი პაროლი სხვებთან.",
-      "4": "ნებისმიერი სახის არასათანადო ქცევა ან პლატფორმის ბოროტად გამოყენება გამოიწვევს ანგარიშის შეჩერებას ან წაშლას.",
-      "5": "ჩვენი სერვისის გამოყენებით, თქვენ ეთანხმებით, რომ არ გამოიყენებთ მას უკანონო ან არაეთიკური მიზნებისთვის."
+      "0": "Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean at leo tellus. Morbi eu leo sapien (ქართულად).",
+      "1": "Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce justo ipsum, placerat vitae erat ac, porttitor tincidunt lacus. In fermentum nulla nec fermentum tempus (ქართულად).",
+      "2": "Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean at leo tellus. Morbi eu leo sapien (ქართულად).",
+      "3": "Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce justo ipsum, placerat vitae erat ac, porttitor tincidunt lacus. In fermentum nulla nec fermentum tempus (ქართულად).",
+      "4": "Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean at leo tellus. Morbi eu leo sapien (ქართულად).",
+      "5": "Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada (ქართულად)."
     }
   },
   "myPlanPage": {
     "signup": {
       "card0": {
-        "title": "შეიყვანეთ თქვენი ელ.ფოსტის მისამართი გასაგრძელებლად",
-        "pText": "დადასტურების ბმულს გამოგიგზავნით აქ",
-        "mail": "ელ.ფოსტის მისამართი",
-        "mailRequired": "ელ.ფოსტა აუცილებელია",
+        "title": "შეიყვანეთ თქვენი ელფოსტის მისამართი გასაგრძელებლად",
+        "pText": "ჩვენ გამოგიგზავნით დადასტურების ბმულს აქ",
+        "mail": "ელფოსტის მისამართი",
+        "mailRequired": "ელფოსტა აუცილებელია",
         "button": "შემდეგი"
       },
       "card1": {
         "title": "შექმენით ძლიერი პაროლი",
-        "pText": "უნდა შეიცავდეს მინიმუმ 8 სიმბოლოს, მათ შორის 1 დიდ და 1 პატარა ასოს.",
+        "pText": "უნდა იყოს მინიმუმ 8 სიმბოლო, შეიცავდეს 1 დიდ და 1 პატარა ასოს ან მეტს.",
         "password": "პაროლი",
         "passwordRequired": "პაროლი აუცილებელია",
         "password2": "დაადასტურეთ პაროლი",
@@ -155,12 +187,12 @@
         "button": "შემდეგი"
       },
       "card2": {
-        "title": "წარმატება! შეამოწმეთ თქვენი ელ.ფოსტა",
-        "pText": "ჩვენ გამოგიგზავნეთ დადასტურების ბმული თქვენს ელ.ფოსტის მისამართზე",
-        "questionLink": "არ მიგიღიათ ბმული? ხელახლა გაგზავნეთ აქ"
+        "title": "წარმატება! გთხოვთ, შეამოწმოთ თქვენი ელფოსტა",
+        "pText": "ჩვენ გამოგიგზავნეთ დადასტურების ბმული თქვენს ელფოსტის მისამართზე",
+        "questionLink": "არ მიგიღიათ ბმული? დააჭირეთ აქ გადასაგზავნად"
       },
       "card3": {
-        "title": "თქვენი ანგარიში მზად არის, გთხოვთ, შედით სისტემაში",
+        "title": "თქვენი ანგარიში მზადაა, გთხოვთ, შეხვიდეთ",
         "username": "მომხმარებლის სახელი",
         "usernameRequired": "მომხმარებლის სახელი აუცილებელია",
         "password": "პაროლი",
@@ -168,14 +200,14 @@
         "button": "შემდეგი"
       },
       "card4": {
-        "title": "ახლა დავიწყოთ პერსონალიზაცია",
+        "title": "ახლა მოდით გავხდეთ პერსონალური",
         "username": "მომხმარებლის სახელი",
         "firstname": "სახელი",
         "lastname": "გვარი",
         "gender": {
           "0": "სქესი",
-          "1": "მამრობითი",
-          "2": "მდედრობითი"
+          "1": "მამაკაცი",
+          "2": "ქალი"
         },
         "dob": "დაბადების თარიღი",
         "button": "შემდეგი",
@@ -187,43 +219,43 @@
       },
       "card5": {
         "title": "როგორ შევქმნათ მიზანი",
-        "pTitle": "მოკლე აღწერა მომავალი პროცესის შესახებ.",
-        "pText": "პლატფორმის გამოყენება საშუალებას გაძლევთ შექმნათ მიზნები და თვალყური ადევნოთ მათ პროგრესს.",
+        "pTitle": "მომავალი ნაკადის მოკლე აღწერა.",
+        "pText": "ed pretium sem libero, vel pellentesque purus ultrices ut. In quis leo id massa pulvinar euismod cursus non justo. Sed sagittis et urna non efficitur (ქართულად).",
         "button": "შემდეგი"
       }
     },
     "goal": {
       "card0": {
         "title": "როგორ შევქმნათ მიზანი",
-        "pTitle": "მოკლე აღწერა მომავალი პროცესის შესახებ.",
-        "pText": "პლატფორმის გამოყენება საშუალებას გაძლევთ შექმნათ მიზნები და თვალყური ადევნოთ მათ პროგრესს.",
+        "pTitle": "მომავალი ნაკადის მოკლე აღწერა.",
+        "pText": "ed pretium sem libero, vel pellentesque purus ultrices ut. In quis leo id massa pulvinar euismod cursus non justo. Sed sagittis et urna non efficitur (ქართულად).",
         "button": "დაწყება"
       },
       "card1": {
         "select1": {
-          "title": "რა არის თქვენი მიზანი?",
-          "op1": "ცხიმის დაწვა",
-          "op2": "კუნთების ზრდა"
+          "title": "რა არის თქვენი მიზნის პრიორიტეტი?",
+          "op1": "ცხიმის დაკარგვა",
+          "op2": "კუნთების მომატება"
         },
         "select2": {
           "title": "ვარჯიშის სიხშირე",
-          "op1": "ორჯერ კვირაში",
-          "op2": "სამჯერ კვირაში",
-          "op3": "ოთხჯერ კვირაში"
+          "op1": "კვირაში ორჯერ",
+          "op2": "კვირაში სამჯერ",
+          "op3": "კვირაში ოთხჯერ"
         },
         "prevButton": "უკან",
         "nextButton": "შემდეგი"
       },
       "card2": {
         "select1": {
-          "title": "სად გირჩევნიათ ვარჯიში?",
-          "op1": "ძირითადად დარბაზში",
-          "op2": "ძირითადად სახლში"
+          "title": "რა არის თქვენი ფოკუსი?",
+          "op1": "ძირითადად სპორტდარბაზი",
+          "op2": "ძირითადად სახლი"
         },
         "select2": {
-          "title": "რომელი ჯგუფის კუნთებს ამუშავებთ?",
+          "title": "ფოკუსირებული კუნთების ჯგუფი",
           "op1": "ფეხები",
-          "op2": "ბირთვი",
+          "op2": "ძირითადი",
           "op3": "ხელები",
           "op4": "ზედა სხეული"
         },
@@ -233,13 +265,13 @@
       "card3": {
         "select1": {
           "title": "აირჩიეთ თქვენი დონე",
-          "op1": "საწყისი",
-          "op2": "პროფესიონალი",
+          "op1": "ფუძე",
+          "op2": "პროგრესული",
           "op3": "ექსპერტი"
         },
         "select2": {
-          "title": "კვების ტიპი",
-          "op1": "ყოველმჭამელი",
+          "title": "დიეტა",
+          "op1": "ყველაფრის მჭამელი",
           "op2": "ვეგეტარიანელი"
         },
         "prevButton": "უკან",
@@ -247,12 +279,12 @@
       },
       "card4": {
         "select1": {
-          "title": "გსურთ იოგას ჩართვა?",
-          "op1": "დიახ",
-          "op2": "არა"
+          "title": "ჩავრთოთ იოგა?",
+          "op1": "ჩართვა",
+          "op2": "გამორიცხვა"
         },
         "select2": {
-          "title": "იოგას ექსკლუზიურად?",
+          "title": "მხოლოდ იოგა?",
           "op1": "მხოლოდ იოგა",
           "op2": "იოგა + ვარჯიში"
         },
@@ -265,13 +297,13 @@
     }
   },
   "paymentPage": {
-    "title": "ძალა თქვენს ხელშია. გაუქმება ნებისმიერ დროს.",
+    "title": "ძალა შენთანაა. გააუქმე ნებისმიერ დროს.",
     "pTitle": "მხოლოდ £9.99 თვეში",
-    "pText": "მიიღეთ სრული წვდომა ჩვენი პლატფორმის ყველა ფუნქციაზე. შეცვალეთ ან გაუქმეთ გამოწერა ნებისმიერ დროს.",
-    "nameOnCard": "ბარათის მფლობელის სახელი",
+    "pText": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem (ქართულად).",
+    "nameOnCard": "სახელი ბარათზე",
     "cardNumber": "ბარათის ნომერი",
-    "expiryDate": "ვადის ამოწურვა",
+    "expiryDate": "ვადის გასვლის თარიღი",
     "cvc": "CVC",
-    "bText": "გადახდის დადასტურება"
+    "bText": "დაადასტურეთ გადახდა"
   }
 }

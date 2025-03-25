@@ -1,6 +1,7 @@
 import { Logo } from '@/components/atoms/Logo'
 import { Navlink } from '@/components/atoms/NavLink'
 import { AuthButtons } from '@/components/molecules/AuthButtons'
+import { LanguageSwitcher } from '@/components/molecules/LanguageSwitcher'
 import { NavLinks } from '@/components/molecules/NavLinks'
 import { useTranslations } from 'next-intl'
 import React from 'react'
@@ -20,6 +21,7 @@ const Navbar = () => {
                         <Navlink>{t('link4').toUpperCase()}</Navlink>
                     </NavLinks>
                     <AuthButtons className='gap-[30px]' />
+                    <LanguageSwitcher/>
                 </div>
             </div>
         </div>
