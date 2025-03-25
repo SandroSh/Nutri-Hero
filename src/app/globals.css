@@ -2,7 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import '../components/atoms/Checkbox/style.css';
+@import '../components/organisms/Carousel/style.css';
 * {
   margin: 0 !important;
   padding: 0 !important;
@@ -82,3 +83,10 @@
 .custom-date-picker .ant-picker-suffix {
   color: #151515;
 }
+
+
+
+
+
+
+

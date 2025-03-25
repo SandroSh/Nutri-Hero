@@ -81,7 +81,6 @@ export const myPlanCardData: myPlanCardProps[] = [
     pTitle: "card0.title",
     pText: "card0.pText",
     bText: "card0.button",
-    
   },
   {
     imgUrl: "/Rectangle 1474.png",
@@ -113,4 +112,12 @@ export const myPlanCardData: myPlanCardProps[] = [
   },
 ];
 
-
+export const goalFormData: myPlanCardProps[] = [
+  {
+    imgUrl: "/Rectangle 1478.png",
+    title: "card0.title",
+    pTitle:"card0.pTitle",
+    pText:"card0.pText",
+    bText:"card0.button"
+  }
+];

@@ -5,8 +5,11 @@ export interface myPlanCardProps {
     className?: string
     children?: React.ReactNode,
     pTitle:string;
+    pTitleClassName?:string;
     pText?:string;
+    title?:string;
     bText?:string;
     buttonClass?:string;
+    bigTitle?:string;
     functionCall?: () => void;
 }
