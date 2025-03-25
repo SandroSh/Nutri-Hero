@@ -11,7 +11,7 @@ const JoinCard = () => {
     return (
         <div className='w-full flex justify-around items-center bg-white my-[70px] rounded-[10px] py-[40px] px-[80px]' >
             <Title text={t('title')} className='text-[30px]' />
-            <ButtonField className='bg-red-10 py-[25px] px-[37px] rounded-[5px] text-white'>{t('buttonText')}</ButtonField>
+            <ButtonField className='bg-red-10 py-[25px] px-[37px] text-white'>{t('buttonText')}</ButtonField>
         </div>
     )
 }

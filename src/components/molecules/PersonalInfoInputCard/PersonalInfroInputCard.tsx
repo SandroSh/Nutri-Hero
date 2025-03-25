@@ -4,8 +4,8 @@ import { InputField } from '@/components/atoms/InputField';
 import { Dropdown, Space, Form } from 'antd';
 import { CustomDatePicker } from '@/components/atoms/DatePicker';
 import { useTranslations } from 'next-intl';
-import { signInputStyle } from '../SignInCard/Signin.style';
 import { PersonalInfoInputCardProps } from './PersonalInfoInputCard.config';
+import { signInputStyle } from '@/components/atoms/InputField/inputField.style';
 
 
 const PersonalInfroInputCard = () => {

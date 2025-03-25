@@ -1,6 +1,4 @@
-import { Button } from '@/components/atoms/ButtonField'
 import ButtonField from '@/components/atoms/ButtonField/button.component'
-import { InputField } from '@/components/atoms/InputField'
 import { ParagraphField } from '@/components/atoms/ParagraphFIeld'
 import { SignOption } from '@/components/atoms/SignOption'
 import { TitleField } from '@/components/atoms/TitleField'
@@ -33,7 +31,7 @@ const RegistrationCard = () => {
                     <img src="/checked.svg" alt="check img" />
                 </div>
                 <Link href='/my_plan/sign-up'>
-                    <ButtonField className='p-[9px] bg-red-10 rounded-[5px] text-white w-full text-center h-[40px] cursor-pointer'>{t('button')}</ButtonField>
+                    <ButtonField className='p-[9px] bg-red-10  text-white w-full text-center h-[40px]'>{t('button')}</ButtonField>
                 </Link>
                 <div className='flex items-center justify-center mt-[26px]'>
                     <p className='text-red-10 mr-[10px]'>{t('loginText')} </p>

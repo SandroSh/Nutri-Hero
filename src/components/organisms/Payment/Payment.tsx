@@ -4,11 +4,12 @@ import Title from '@/components/atoms/TitleField/title.component'
 import { InfoDisplay } from '@/components/organisms/InfoDisplay'
 import { useTranslations } from 'next-intl'
 import { ParagraphField } from '@/components/atoms/ParagraphFIeld'
-import { signInputStyle } from '@/components/molecules/SignInCard/Signin.style'
+
 import { CustomDatePicker } from '@/components/atoms/DatePicker'
 import { InputField } from '@/components/atoms/InputField'
-import { Button } from '@/components/atoms/ButtonField'
+import {  ButtonField } from '@/components/atoms/ButtonField'
 import { Link } from '@/i18n/navigation'
+import { signInputStyle } from '@/components/atoms/InputField/inputField.style'
 
 
 const Payment = () => {
@@ -33,8 +34,8 @@ const Payment = () => {
                     <InputField maxLength={3} placeholder={t('cvc')} className={`w-[50%] pr-[15px] font-bold ${signInputStyle}`} suffix={<img src='/Info.svg' alt='info img' />} />
                 </div>
                 <Link href='/my_plan/goal' className='w-full'>
-                    <Button className={`p-[9px] bg-red-10 rounded-[5px] text-white w-full  mt-[30px]  text-center h-[40px] cursor-pointer !self-end $`} >{t('bText')}
-                    </Button>
+                    <ButtonField className={`p-[9px] bg-red-10 rounded-[5px] text-white w-full  mt-[30px]  text-center h-[40px] !self-end $`} >{t('bText')}
+                    </ButtonField>
                 </Link>
             </div>
         </InfoDisplay>

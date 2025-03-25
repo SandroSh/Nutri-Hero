@@ -30,7 +30,7 @@ const LandingPageTemplate = () => {
         </InfoDisplay>
         <InfoDisplay className='flex-col mt-[90px] '>
           <Title text={gymDisplay('title2')} className={`mt-[27px] mb-[25px] text-white`} />
-          <Tabs tabs={tabsData} translate={gymDisplay}  className={'second-tabs pb-[40px] '} CardClassName='flex-row-reverse justify-between mt-[-130px] mb-[50px]' />
+          <Tabs tabs={tabsData} translate={gymDisplay}  className={'second-tabs pb-[40px] '} CardClassName='flex-row-reverse justify-between mt-[-100px] mb-[50px]' />
         </InfoDisplay>
       </SectionContainer>
 

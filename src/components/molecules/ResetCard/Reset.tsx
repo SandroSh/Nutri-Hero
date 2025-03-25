@@ -18,7 +18,7 @@ const Reset = ({ title, children, pText, bText, className, functionCall }: reset
             <TitleField text={title} className='text-[1.5em] text-center' />
             <p className='my-[30px] text-[0.9em] text-gray-4'>{pText}</p>
             {children}
-            <ButtonField className='p-[5px] bg-red-10 rounded-[5px] text-white w-full text-center h-[40px] cursor-pointer mt-[30px]' onClick={ () => functionCall((state) => !state)} >{bText}</ButtonField>
+            <ButtonField className='p-[5px] bg-red-10  text-white  text-center h-[40px]  mt-[30px]' bSize='full' onClick={ () => functionCall((state) => !state)} >{bText}</ButtonField>
         </div>
     )
 }

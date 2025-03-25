@@ -5,10 +5,10 @@ import { MyPlanCard } from '@/components/molecules/MyPlanCard';
 import { myPlanCardData } from '@/constants/dummyData';
 import { useTranslations } from 'next-intl';
 import { InputField } from '@/components/atoms/InputField';
-import { signInputStyle } from '@/components/molecules/SignInCard/Signin.style';
 import { PersonalInfroInputCard } from '@/components/molecules/PersonalInfoInputCard';
 import { useRouter } from '@/i18n/navigation';
 import { Form } from 'antd';
+import { signInputStyle } from '@/components/atoms/InputField/inputField.style';
 
 const MyPlan = () => {
   const t = useTranslations('myPlanPage.signup');
@@ -185,7 +185,7 @@ const MyPlan = () => {
 
   return (
     <div>
-      <SectionContainer innerWrapperClassName="!max-w-[1700px] !w-full">
+      <SectionContainer innerWrapperClassName="!max-w-[1701px] !w-full" >
         <Form
           form={form}
           name="myPlanForm"

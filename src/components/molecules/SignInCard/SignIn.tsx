@@ -4,9 +4,10 @@ import { registrationData } from '@/constants/dummyData'
 import { Divider, Input } from 'antd'
 import { useTranslations } from 'next-intl'
 import React, { Dispatch, SetStateAction } from 'react'
-import { inputInnerIconStyle, signInputStyle } from './Signin.style'
+
 import ButtonField from '@/components/atoms/ButtonField/button.component'
 import { Link } from '@/i18n/navigation'
+import { inputInnerIconStyle, signInputStyle } from '@/components/atoms/InputField/inputField.style'
 
 
 
@@ -23,7 +24,7 @@ const SignIn = ({resetFunction}:{resetFunction:Dispatch<SetStateAction<boolean>>
             {
                 registrationData.map((item, i) => <SignOption key={i} imgUrl={item.imgUrl} text={t(`${item.text}`)} className='!mb-[12px]' />)
             }
-            <ButtonField className='p-[5px] bg-red-10 rounded-[5px] text-white w-full text-center h-[40px] cursor-pointer mt-[15px]'>{t('button')}</ButtonField>
+            <ButtonField className='p-[5px] bg-red-10  text-white w-full text-center h-[40px]  mt-[15px]'>{t('button')}</ButtonField>
             <div className='flex items-center justify-center mt-[26px]'>
                 <p className='text-red-10 mr-[10px]'>{t('signUpText')} </p>
                 <Link href={'/signup'} className='text-red-10 font-bold'>{t('register')}</Link>

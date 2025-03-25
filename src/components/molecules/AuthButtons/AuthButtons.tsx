@@ -1,5 +1,5 @@
 'use client'
-import { Button } from '@/components/atoms/ButtonField'
+import { ButtonField } from '@/components/atoms/ButtonField'
 import { Link } from '@/i18n/navigation';
 
 
@@ -17,10 +17,10 @@ const AuthButtons = ({className, ...rest}: AuthButtonsProps) => {
   return (
     <div className={`flex justify-center items-center ${className}`} {...rest}>
       <Link href='/signup'>
-        <Button className='px-[10px] py-[22px] bg-red-10 rounded-[5px] text-white' >{t('register')}</Button>
+        <ButtonField className='px-[10px] py-[22px] bg-red-10  text-white' >{t('register')}</ButtonField>
       </Link>
       <Link href='/signin'>
-        <Button className='text-red-10' >{t('login')}</Button>
+        <ButtonField className='text-red-10'  >{t('login')}</ButtonField>
       </Link>
     </div>
   )
