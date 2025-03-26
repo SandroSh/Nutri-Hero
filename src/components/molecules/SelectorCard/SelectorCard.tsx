@@ -9,7 +9,7 @@ import { TitleField } from '@/components/atoms/TitleField'
 const SelectorCard = ({title, className, children}:ISelectorCardTypes) => {
   return (
     <div className={`w-full flex flex-col items-start justify-center ${className}`}>
-        <TitleField text={title} className='text-[15px] font-extrabold'/>
+        <TitleField text={title} className='text-[18px] font-extrabold'/>
         {children}
     </div>
   )

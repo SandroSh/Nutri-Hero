@@ -116,8 +116,37 @@ export const goalFormData: myPlanCardProps[] = [
   {
     imgUrl: "/Rectangle 1478.png",
     title: "card0.title",
-    pTitle:"card0.pTitle",
-    pText:"card0.pText",
-    bText:"card0.button"
-  }
+    pTitle: "card0.pTitle",
+    pText: "card0.pText",
+    bText: "card0.button",
+  },
+];
+
+export const selectData = [
+  [
+    {
+      0: {
+        name: "goal_card1_select1_option_1",
+        value: "card1.select1.op1",
+      },
+      1: {
+        name: "goal_card1_select1_option_1",
+        value: "card1.select1.op1",
+      },
+    },
+    {
+      0: {
+        name: "goal_card1_select2_option_1",
+        value: "card1.select2.op1",
+      },
+      1: {
+        name: "goal_card1_select2_option_1",
+        value: "card1.select2.op2",
+      },
+      3: {
+        name: "goal_card1_select2_option_3",
+        value: "card1.select2.op3",
+      },
+    },
+  ],
 ];

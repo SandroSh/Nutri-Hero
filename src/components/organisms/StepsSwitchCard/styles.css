@@ -15,3 +15,10 @@
 .ant-steps-item-wait .ant-steps-icon {
   color: black !important;
 }
+
+.ant-steps-item-title::after{
+  background-color: #efeff4 !important;
+}
+.ant-steps-finish-icon svg {
+ color:#fff !important;
+}
