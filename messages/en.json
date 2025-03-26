@@ -232,6 +232,9 @@
       }
     },
     "goal":{
+      "prev":"Back",
+      "next":"Next",
+      "submit":"Done",
       "card0":{
         "title":"How to create a goal",
         "pTitle":"Brief description of the coming flow.",
@@ -242,7 +245,8 @@
         "select1":{
           "title":"What is your goal preference?",
           "op1":"Fat loss",
-          "op2":"Gain muscle"
+          "op2":"Gain muscle",
+          "required":"Please select desired options"
         },
         "select2":{
           "title":"Workout frequency",

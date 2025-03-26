@@ -4,7 +4,7 @@ export interface myPlanCardProps {
     imgUrl: string
     className?: string
     children?: React.ReactNode,
-    pTitle:string;
+    pTitle?:string;
     pTitleClassName?:string;
     pText?:string;
     title?:string;

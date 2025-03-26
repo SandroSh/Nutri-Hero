@@ -1,7 +1,7 @@
 "use client";
 import { Button, ButtonProps } from "antd";
 import { buttonStyle } from "./button.style";
-import { Button_Size, ButtonFieldType, Margin_Top } from "./button.config";
+import { Button_Size, ButtonFieldType, Color_Type, Margin_Top } from "./button.config";
 
 
 
@@ -12,7 +12,8 @@ const ButtonField = ({
     size,
     onClick,
     children,
-    bSize = 'z',
+    bSize = 'auto',
+    cType = 'z',
     mt = 'z',
     className,
     ...rest
@@ -24,7 +25,7 @@ const ButtonField = ({
             type={type}
             size={size}
             onClick={onClick}
-            className={`${buttonStyle} ${className} ${Button_Size[bSize]} ${Margin_Top[mt]} `}
+            className={`${buttonStyle}  ${Button_Size[bSize]} ${Margin_Top[mt]}  ${className} ${Color_Type[cType]} `}
             {...rest}
         >
             {children}

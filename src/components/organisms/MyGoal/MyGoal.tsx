@@ -4,8 +4,8 @@ import { Form } from 'antd'
 import { MyPlanCard } from '@/components/molecules/MyPlanCard'
 import { useTranslations } from 'next-intl'
 import { goalFormData } from '@/constants/dummyData'
-import { TitleField } from '@/components/atoms/TitleField'
-import { CheckboxField } from '@/components/atoms/Checkbox'
+import { RadioField } from '@/components/atoms/RadioField'
+import { StepSwitchCard } from '../StepsSwitchCard'
 
 
 
@@ -17,13 +17,9 @@ const MyGoal = () => {
     const onFinish = (values: any) => {
         console.log(values);
     };
-
-    const handleStageRender = () => {
-
-    }
-
+  
     return (
-        <SectionContainer innerWrapperClassName="!max-w-[1704px] !w-full">
+        <SectionContainer innerWrapperClassName="!max-w-[1710px] !w-full">
             {
                 stage == 0 ?
                     <div>
@@ -39,7 +35,6 @@ const MyGoal = () => {
                             functionCall={() => setStage(1)}
                             bText={t(goalFormData[0].bText)}
                         >
-                            <CheckboxField/>
                         </MyPlanCard>
                     </div>
                     :
@@ -48,7 +43,9 @@ const MyGoal = () => {
                         name="myPlanForm"
                         onFinish={onFinish}
                         autoComplete="off"
+                        className='mt-[95px]'
                     >
+                        <StepSwitchCard form={form}/>
                     </Form>
             }
 

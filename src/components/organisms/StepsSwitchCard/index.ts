@@ -1,2 +1,2 @@
-export {default as StepsForm } from './StepsSwitchCard'
+export {default as StepSwitchCard} from './StepSwitchCard'
 

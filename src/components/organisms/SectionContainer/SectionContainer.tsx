@@ -8,7 +8,7 @@ export interface SectionContainerProps {
 const SectionContainer = ({ className, children, innerWrapperClassName, ...rest }: SectionContainerProps) => {
     return (
         <div className={`w-full flex justify-center ${className}`} {...rest} >
-            <div className={`max-w-screen-xl w-full ${innerWrapperClassName}`} >
+            <div className={`max-w-[1280px] w-full ${innerWrapperClassName}`} >
                 {children}
             </div>
         </div>

@@ -1,0 +1,17 @@
+.ant-steps-item-icon {
+  background-color: #409826 !important ;
+  border: none !important;
+  font-weight: 900 !important;
+  font-size: large !important;
+}
+
+.ant-steps-item-wait .ant-steps-item-icon {
+  background-color: #efeff4 !important ;
+  border: none !important;
+  font-weight: 900 !important;
+  font-size: large !important;
+}
+
+.ant-steps-item-wait .ant-steps-icon {
+  color: black !important;
+}
