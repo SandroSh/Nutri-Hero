@@ -261,7 +261,8 @@
         "select1":{
           "title":"What’s your focus?",
           "op1":"Predominantly gym",
-          "op2":"Predominantly home"
+          "op2":"Predominantly home",
+          "required":"Please select desired options"
         },
         "select2":{
           "title":"Focus muscle group",
@@ -278,12 +279,14 @@
           "title":"Select your level",
           "op1":"Foundation",
           "op2":"Progressive",
-          "op3":"Expert"
+          "op3":"Expert",
+          "required":"Please select desired options"
         },
         "select2":{
           "title":"Diet",
           "op1":"Omnivore",
-          "op2":"Vegetarian"
+          "op2":"Vegetarian",
+          "required":"Please select desired options"
         },
         "prevButton":"Back",
         "nextButton":"Next"
@@ -292,7 +295,8 @@
         "select1":{
           "title":"Include yoga?",
           "op1":"Include",
-          "op2":"Exclude"
+          "op2":"Exclude",
+          "required":"Please select desired options"
         },
         "select2":{
           "title":"Exclusively Yoga?",

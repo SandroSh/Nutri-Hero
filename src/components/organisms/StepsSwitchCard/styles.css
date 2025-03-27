@@ -22,3 +22,79 @@
 .ant-steps-finish-icon svg {
  color:#fff !important;
 }
+
+/* 
+.yoga-type-container {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.yoga-type-container.visible {
+  max-height: 200px; 
+  opacity: 1;
+} */
+/* .yoga-type-container {
+  max-height: 0;
+  opacity: 0; 
+  overflow: hidden;
+  transform: translateX(-50%); 
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
+
+.yoga-type-container.visible {
+  max-height: 200px;
+  opacity: 1;
+  transform: translateX(0); 
+} */
+
+
+
+
+.card-container0 {
+  opacity: 0; 
+  transform: translateX(-50px);
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+.card-container1 {
+  opacity: 0; 
+  transform: translateX(-50px);
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.card-container2 {
+  opacity: 0; 
+  transform: translateX(-50px);
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.card-container3 {
+  opacity: 0; 
+  transform: translateX(-50px);
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.yoga-type-container {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateX(-50%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
+
+.yoga-type-container.visible {
+  max-height: 200px; 
+  opacity: 1;
+  transform: translateX(0);
+}

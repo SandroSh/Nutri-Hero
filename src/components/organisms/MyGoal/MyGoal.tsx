@@ -4,7 +4,6 @@ import { Form } from 'antd'
 import { MyPlanCard } from '@/components/molecules/MyPlanCard'
 import { useTranslations } from 'next-intl'
 import { goalFormData } from '@/constants/dummyData'
-import { RadioField } from '@/components/atoms/RadioField'
 import { StepSwitchCard } from '../StepsSwitchCard'
 
 
@@ -15,11 +14,14 @@ const MyGoal = () => {
     const [form] = Form.useForm();
 
     const onFinish = (values: any) => {
-        console.log(values);
+        // console.log(values)
+        console.log(1)
+        console.log(form);
+        // console.log(form.getFieldValue('goal_preference'))
     };
   
     return (
-        <SectionContainer innerWrapperClassName="!max-w-[1700px] !w-full">
+        <SectionContainer innerWrapperClassName="!max-w-[1715px] !w-full">
             {
                 stage == 0 ?
                     <div>

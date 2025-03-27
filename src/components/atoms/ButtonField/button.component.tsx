@@ -13,8 +13,8 @@ const ButtonField = ({
     onClick,
     children,
     bSize = 'auto',
-    cType = 'z',
-    mt = 'z',
+    cType = 'idle',
+    mt = 'idle',
     className,
     ...rest
 }: ButtonFieldType) => {

@@ -5,7 +5,7 @@ import { Dropdown, Space, Form } from 'antd';
 import { CustomDatePicker } from '@/components/atoms/DatePicker';
 import { useTranslations } from 'next-intl';
 import { PersonalInfoInputCardProps } from './PersonalInfoInputCard.config';
-import { signInputStyle } from '@/components/atoms/InputField/inputField.style';
+import { grayInputStyle } from '@/components/atoms/InputField/inputField.style';
 
 
 const PersonalInfroInputCard = () => {
@@ -51,7 +51,7 @@ const PersonalInfroInputCard = () => {
       >
         <InputField
           placeholder={t('card4.username')}
-          className={`w-full ${signInputStyle}`}
+          className={`w-full ${grayInputStyle}`}
         />
       </Form.Item>
 
@@ -64,7 +64,7 @@ const PersonalInfroInputCard = () => {
         >
           <InputField
             placeholder={t('card4.firstname')}
-            className={signInputStyle}
+            className={grayInputStyle}
           />
         </Form.Item>
         <Form.Item
@@ -74,7 +74,7 @@ const PersonalInfroInputCard = () => {
         >
           <InputField
             placeholder={t('card4.lastname')}
-            className={signInputStyle}
+            className={grayInputStyle}
           />
         </Form.Item>
       </div>
@@ -92,7 +92,7 @@ const PersonalInfroInputCard = () => {
               onClick: (info) => handleInputChange('gender', info.key), 
             }}
             trigger={['click']}
-            className={`font-bold ${signInputStyle}`}
+            className={`font-bold ${grayInputStyle}`}
           >
             <a onClick={(e) => e.preventDefault()}>
               <Space>{selectedGender}</Space>

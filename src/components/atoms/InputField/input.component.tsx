@@ -1,5 +1,6 @@
 "use client";
-import { Input, InputProps } from "antd";
+import { Input } from "antd";
+import { Input_Size, InputFieldType, Margin_Top } from "./inputField.config";
 
 
 const InputField = ({
@@ -8,10 +9,13 @@ const InputField = ({
     type,
     size,
     onClick,
+    iSize = 'idle',
+    cType = 'idle',
+    mt = 'idle',
     children,
     className,
     ...rest
-}: InputProps) => {
+}: InputFieldType) => {
     return (
         <Input
             id={id}
@@ -19,7 +23,7 @@ const InputField = ({
             type={type}
             size={size}
             onClick={onClick}
-            className={className}
+            className={` ${Input_Size[iSize]} ${Margin_Top[mt]} ${className}`}
             {...rest}
         >
             {children}

@@ -8,7 +8,7 @@ import { InputField } from '@/components/atoms/InputField';
 import { PersonalInfroInputCard } from '@/components/molecules/PersonalInfoInputCard';
 import { useRouter } from '@/i18n/navigation';
 import { Form } from 'antd';
-import { signInputStyle } from '@/components/atoms/InputField/inputField.style';
+import { grayInputStyle } from '@/components/atoms/InputField/inputField.style';
 
 const MyPlan = () => {
   const t = useTranslations('myPlanPage.signup');
@@ -56,7 +56,7 @@ const MyPlan = () => {
             >
               <InputField
                 placeholder={t('card0.mail')}
-                className={`${signInputStyle} mt-[30px]`}
+                className={`${grayInputStyle} mt-[30px]`}
               />
             </Form.Item>
           </MyPlanCard>
@@ -79,7 +79,7 @@ const MyPlan = () => {
               <InputField
                 placeholder={t('card1.password')}
                 type="password"
-                className={`${signInputStyle} mt-[30px]`}
+                className={`${grayInputStyle} mt-[30px]`}
               />
             </Form.Item>
             <Form.Item
@@ -100,7 +100,7 @@ const MyPlan = () => {
               <InputField
                 placeholder={t('card1.password2')}
                 type="password"
-                className={`${signInputStyle} mt-[20px]`}
+                className={`${grayInputStyle} mt-[20px]`}
               />
             </Form.Item>
           </MyPlanCard>
@@ -139,7 +139,7 @@ const MyPlan = () => {
             >
               <InputField
                 placeholder={t('card3.username')}
-                className={`${signInputStyle} mt-[30px]`}
+                className={`${grayInputStyle} mt-[30px]`}
               />
             </Form.Item>
             <Form.Item
@@ -149,7 +149,7 @@ const MyPlan = () => {
               <InputField
                 placeholder={t('card3.password')}
                 type="password"
-                className={`${signInputStyle} mt-[20px]`}
+                className={`${grayInputStyle} mt-[20px]`}
               />
             </Form.Item>
           </MyPlanCard>

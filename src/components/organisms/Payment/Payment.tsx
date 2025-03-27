@@ -9,7 +9,7 @@ import { CustomDatePicker } from '@/components/atoms/DatePicker'
 import { InputField } from '@/components/atoms/InputField'
 import {  ButtonField } from '@/components/atoms/ButtonField'
 import { Link } from '@/i18n/navigation'
-import { signInputStyle } from '@/components/atoms/InputField/inputField.style'
+import { grayInputStyle } from '@/components/atoms/InputField/inputField.style'
 
 
 const Payment = () => {
@@ -23,15 +23,15 @@ const Payment = () => {
             <div className='flex flex-col items-center justify-start max-w-[325px] ' >
                 <InputField
                     placeholder={t('nameOnCard')}
-                    className={`${signInputStyle}  w-full `}
+                    className={`${grayInputStyle}  w-full `}
                 />
                 <InputField
                     placeholder={t('cardNumber')}
-                    className={`${signInputStyle}  w-full `}
+                    className={`${grayInputStyle}  w-full `}
                 />
                 <div className='flex items-center justify-center gap-[10px]' >
                     <CustomDatePicker className='w-[50%] pr-[15px] font-bold' placeholder={t('expiryDate')} />
-                    <InputField maxLength={3} placeholder={t('cvc')} className={`w-[50%] pr-[15px] font-bold ${signInputStyle}`} suffix={<img src='/Info.svg' alt='info img' />} />
+                    <InputField maxLength={3} placeholder={t('cvc')} className={`w-[50%] pr-[15px] font-bold ${grayInputStyle}`} suffix={<img src='/Info.svg' alt='info img' />} />
                 </div>
                 <Link href='/my_plan/goal' className='w-full'>
                     <ButtonField className={`p-[9px] bg-red-10 rounded-[5px] text-white w-full  mt-[30px]  text-center h-[40px] !self-end $`} >{t('bText')}

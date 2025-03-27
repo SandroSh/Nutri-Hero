@@ -7,7 +7,7 @@ import React, { Dispatch, SetStateAction } from 'react'
 
 import ButtonField from '@/components/atoms/ButtonField/button.component'
 import { Link } from '@/i18n/navigation'
-import { inputInnerIconStyle, signInputStyle } from '@/components/atoms/InputField/inputField.style'
+import { inputInnerIconStyle, grayInputStyle } from '@/components/atoms/InputField/inputField.style'
 
 
 
@@ -16,8 +16,8 @@ const SignIn = ({resetFunction}:{resetFunction:Dispatch<SetStateAction<boolean>>
     return (
         <div className='max-w-[500px] bg-white rounded-md w-full flex flex-col items-center justify-center py-[40px] px-[85px] mt-[60px]'>
             <TitleField text={t('title')} className='mb-[30px] text-center text-[1.5em]' />
-            <Input size='large' suffix={<p onClick={() => resetFunction((state) => !state)} className={inputInnerIconStyle}>{t('forget')}</p>} placeholder={t('username')} className={signInputStyle} />
-            <Input size='large' type='password' suffix={<p onClick={() => resetFunction((state) => !state)} className={inputInnerIconStyle}>{t('forget')}</p>} placeholder={t('password')} className={signInputStyle} />
+            <Input size='large' suffix={<p onClick={() => resetFunction((state) => !state)} className={inputInnerIconStyle}>{t('forget')}</p>} placeholder={t('username')} className={grayInputStyle} />
+            <Input size='large' type='password' suffix={<p onClick={() => resetFunction((state) => !state)} className={inputInnerIconStyle}>{t('forget')}</p>} placeholder={t('password')} className={grayInputStyle} />
 
             <Divider orientation='center' className='before:mx-[15px] after:mx-[15px] text-gray-3 mb-[19px]' >  {t('divider')}  </Divider>
 

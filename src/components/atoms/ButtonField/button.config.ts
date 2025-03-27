@@ -1,21 +1,23 @@
 import { ButtonProps } from "antd";
 
 export enum Button_Size {
-    z = '',
+    idle = '',
     auto = "!w-auto !px-[12px]",
     sm = "!min-w-[70px] !px-[12px]",
     md = "!min-w-[154px] !px-[24px]",
+    xl = "!min-w-[154px] !px-[55px] !py-[12px]",
     full = "!w-full !px-[12px]"
 }
+
 export enum Color_Type {
-    z = '',
-    red_white = "!bg-red-10 !text-white",
-    red_blue = "!bg-red-10 !text-blue-1",
-    gray_green = "!bg-gray-2 !text-green",
-    gray_red = "!bg-gray-2 !text-red-1",
+    idle = '',
+    red_white = "!bg-red-10 !text-white font-bold",
+    red_blue = "!bg-red-10 !text-blue-1 font-bold",
+    gray_green = "!bg-gray-2 !text-green font-bold",
+    gray_red = "!bg-gray-2 !text-red-1 font-bold",
 }
 export enum Margin_Top {
-    z= '',
+    idle = '',
     n = "!mt-0",
     nm = "!mt-[12px]",
     xl = "!mt-[24px]"
