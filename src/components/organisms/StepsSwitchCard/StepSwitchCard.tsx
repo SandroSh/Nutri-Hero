@@ -97,91 +97,91 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
             ),
 
         },
-        // {
+        {
 
-        //     content: (
-        //         <div className="card-container2" >
-        //             <Form.Item name="level" rules={[{ required: true, message: t('card3.select1.required') }]}>
-        //                 <SelectorCard title={t('card3.select1.title')} className="mt-[30px]">
-        //                     {
-        //                         [... new Array(3)].map((_, i) => (
-        //                             <RadioField
-        //                                 name={`goal_card3_select1_option_${i + 1}`}
-        //                                 value={t(`card3.select1.op${i + 1}`)}
-        //                                 label={t(`card3.select1.op${i + 1}`)}
-        //                                 checked={form.getFieldValue("level") == t(`card3.select1.op${i + 1}`)}
-        //                                 onChange={(value) => handleChange('level', value)}
-        //                                 key={i}
-        //                             />
-        //                         ))
-        //                     }
-        //                 </SelectorCard>
-        //             </Form.Item>
-        //             <Form.Item name="diet_type" rules={[{ required: true, message: t('card3.select2.required') }]}>
-        //                 <SelectorCard title={t('card3.select2.title')} className="mt-[30px]">
-        //                     {
-        //                         [... new Array(2)].map((_, i) => (
-        //                             <RadioField
-        //                                 name={`goal_card3_select2_option_${i + 1}`}
-        //                                 value={t(`card3.select2.op${i + 1}`)}
-        //                                 label={t(`card3.select2.op${i + 1}`)}
-        //                                 checked={form.getFieldValue("diet_type") == t(`card3.select2.op${i + 1}`)}
-        //                                 onChange={(value) => handleChange('diet_type', value)}
-        //                                 key={i}
-        //                             />
-        //                         ))
-        //                     }
-        //                 </SelectorCard>
-        //             </Form.Item>
+            content: (
+                <div className="card-container2" >
+                    <Form.Item name="level" rules={[{ required: true, message: t('card3.select1.required') }]}>
+                        <SelectorCard title={t('card3.select1.title')} className="mt-[30px]">
+                            {
+                                [... new Array(3)].map((_, i) => (
+                                    <RadioField
+                                        name={`goal_card3_select1_option_${i + 1}`}
+                                        value={t(`card3.select1.op${i + 1}`)}
+                                        label={t(`card3.select1.op${i + 1}`)}
+                                        checked={form.getFieldValue("level") == t(`card3.select1.op${i + 1}`)}
+                                        onChange={(value) => handleChange('level', value)}
+                                        key={i}
+                                    />
+                                ))
+                            }
+                        </SelectorCard>
+                    </Form.Item>
+                    <Form.Item name="diet_type" rules={[{ required: true, message: t('card3.select2.required') }]}>
+                        <SelectorCard title={t('card3.select2.title')} className="mt-[30px]">
+                            {
+                                [... new Array(2)].map((_, i) => (
+                                    <RadioField
+                                        name={`goal_card3_select2_option_${i + 1}`}
+                                        value={t(`card3.select2.op${i + 1}`)}
+                                        label={t(`card3.select2.op${i + 1}`)}
+                                        checked={form.getFieldValue("diet_type") == t(`card3.select2.op${i + 1}`)}
+                                        onChange={(value) => handleChange('diet_type', value)}
+                                        key={i}
+                                    />
+                                ))
+                            }
+                        </SelectorCard>
+                    </Form.Item>
 
-        //         </div>
-        //     )
+                </div>
+            )
 
-        // },
-        // {
-        //     content: (
-        //         <div>
-        //             <Form.Item name="yoga" rules={[{ required: true, message: t('card4.select1.required') }]}>
-        //                 <SelectorCard title={t('card4.select1.title')} className="mt-[30px]">
-        //                     {[...new Array(2)].map((_, i) => (
-        //                         <RadioField
-        //                             name={`goal_card4_select1_option_${i + 1}`}
-        //                             value={t(`card4.select1.op${i + 1}`)}
-        //                             label={t(`card4.select1.op${i + 1}`)}
-        //                             checked={form.getFieldValue("yoga") === t(`card4.select1.op${i + 1}`)}
-        //                             onChange={(value) => handleChange('yoga', value)}
-        //                             key={i}
-        //                         />
-        //                     ))}
-        //                 </SelectorCard>
-        //             </Form.Item>
+        },
+        {
+            content: (
+                <div>
+                    <Form.Item name="yoga" rules={[{ required: true, message: t('card4.select1.required') }]}>
+                        <SelectorCard title={t('card4.select1.title')} className="mt-[30px]">
+                            {[...new Array(2)].map((_, i) => (
+                                <RadioField
+                                    name={`goal_card4_select1_option_${i + 1}`}
+                                    value={t(`card4.select1.op${i + 1}`)}
+                                    label={t(`card4.select1.op${i + 1}`)}
+                                    checked={form.getFieldValue("yoga") === t(`card4.select1.op${i + 1}`)}
+                                    onChange={(value) => handleChange('yoga', value)}
+                                    key={i}
+                                />
+                            ))}
+                        </SelectorCard>
+                    </Form.Item>
 
-        //             <div className={`yoga-type-container ${form.getFieldValue("yoga") === t('card4.select1.op1') ? 'visible' : ''}`}>
-        //                 <Form.Item name="yoga_type" rules={[{ required: true, message: t('card4.select1.required') }]}>
-        //                     <SelectorCard title={t('card4.select2.title')} className="mt-[19px]">
-        //                         {[...new Array(2)].map((_, i) => (
-        //                             <RadioField
-        //                                 name={`goal_card4_select2_option_${i + 1}`}
-        //                                 value={t(`card4.select2.op${i + 1}`)}
-        //                                 label={t(`card4.select2.op${i + 1}`)}
-        //                                 checked={form.getFieldValue("yoga_type") === t(`card4.select2.op${i + 1}`)}
-        //                                 onChange={(value) => handleChange('yoga_type', value)}
-        //                                 key={i}
-        //                             />
-        //                         ))}
-        //                     </SelectorCard>
-        //                 </Form.Item>
-        //             </div>
+                    <div className={`yoga-type-container ${form.getFieldValue("yoga") === t('card4.select1.op1') ? 'visible' : ''}`}>
+                        <Form.Item name="yoga_type" rules={[{ required: true, message: t('card4.select1.required') }]}>
+                            <SelectorCard title={t('card4.select2.title')} className="mt-[19px]">
+                                {[...new Array(2)].map((_, i) => (
+                                    <RadioField
+                                        name={`goal_card4_select2_option_${i + 1}`}
+                                        value={t(`card4.select2.op${i + 1}`)}
+                                        label={t(`card4.select2.op${i + 1}`)}
+                                        checked={form.getFieldValue("yoga_type") === t(`card4.select2.op${i + 1}`)}
+                                        onChange={(value) => handleChange('yoga_type', value)}
+                                        key={i}
+                                    />
+                                ))}
+                            </SelectorCard>
+                        </Form.Item>
+                    </div>
 
-        //             <Form.Item name="goal_name" rules={[{ required: true, message: t('card4.select1.required') }]}>
-        //                 <div className="mt-[29px]">
-        //                     <TitleField text={t('card4.inputTitle')} className="text-[22px]" />
-        //                     <InputField onChange={(value) => handleChange('goal_name', value)} placeholder={t('card4.placeholder')} className={grayInputStyle} />
-        //                 </div>
-        //             </Form.Item>
-        //         </div>
-        //     )
-        // }
+                    <Form.Item name="goal_name" rules={[{ required: true, message: t('card4.select1.required') }]}>
+                        <div className="mt-[29px]">
+                            <TitleField text={t('card4.inputTitle')} className="text-[22px]" />
+                            <InputField onChange={(value) => handleChange('goal_name', value)} placeholder={t('card4.placeholder')} className={grayInputStyle} />
+                        </div>
+                    </Form.Item>
+                </div>
+            )
+        }
     ];
 
     const handleChange = (field: any, value: any) => {

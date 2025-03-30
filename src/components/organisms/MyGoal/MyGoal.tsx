@@ -14,10 +14,8 @@ const MyGoal = () => {
     const [form] = Form.useForm();
 
     const onFinish = (values: any) => {
-        // console.log(values)
-        console.log(1)
-        console.log(form);
-        // console.log(form.getFieldValue('goal_preference'))
+        sessionStorage.setItem('userGoalData', JSON.stringify(form.getFieldsValue(true)));
+        
     };
   
     return (
