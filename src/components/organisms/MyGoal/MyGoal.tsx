@@ -23,7 +23,6 @@ const MyGoal = () => {
             {
                 stage == 0 ?
                     <div>
-                        
                         <MyPlanCard
                             imgUrl={goalFormData[0].imgUrl}
                             bigTitle={t(goalFormData[0].title)}

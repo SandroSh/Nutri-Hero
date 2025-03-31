@@ -49,7 +49,7 @@ const RadioField: React.FC<RadioFieldProps> = ({
         value={value}
         checked={checked}
         onChange={handleClick}
-        className="hidden "
+        className="hidden"
       />
     </label>
   );

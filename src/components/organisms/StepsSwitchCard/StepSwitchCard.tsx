@@ -10,6 +10,7 @@ import { handleImgRender } from "./stepsSwitchCard";
 import { TitleField } from "@/components/atoms/TitleField";
 import { InputField } from "@/components/atoms/InputField";
 import { grayInputStyle } from "@/components/atoms/InputField/inputField.style";
+import { Link } from "@/i18n/navigation";
 
 const { Step } = Steps;
 
@@ -18,6 +19,7 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
     const t = useTranslations('myPlanPage.goal')
     const [_, setRender] = useState(false);
 
+  
     const steps = [
         {
             content: (
@@ -30,9 +32,10 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
                                         name={`goal_card1_select1_option_${i + 1}`}
                                         value={t(`card1.select1.op${i + 1}`)}
                                         label={t(`card1.select1.op${i + 1}`)}
-                                        checked={form.getFieldValue("goal_preference") == t(`card1.select1.op${i + 1}`)}
-                                        onChange={(value) => handleChange('goal_preference', value)}
+                                        checked={form.getFieldValue("goal_preference") == `card1.select1.op${i + 1}`}
+                                        onChange={() => handleChange('goal_preference', `card1.select1.op${i + 1}`)}
                                         key={i}
+                                        
                                     />
                                 ))
                             }
@@ -46,8 +49,8 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
                                         name={`goal_card1_select2_option_${i + 1}`}
                                         value={t(`card1.select2.op${i + 1}`)}
                                         label={t(`card1.select2.op${i + 1}`)}
-                                        checked={form.getFieldValue("workout_frequency") == t(`card1.select2.op${i + 1}`)}
-                                        onChange={(value) => handleChange('workout_frequency', value)}
+                                        checked={form.getFieldValue("workout_frequency") == `card1.select2.op${i + 1}`}
+                                        onChange={() => handleChange('workout_frequency', `card1.select2.op${i + 1}`)}
                                         key={i}
                                     />
                                 ))
@@ -68,8 +71,8 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
                                         name={`goal_card2_select1_option_${i + 1}`}
                                         value={t(`card2.select1.op${i + 1}`)}
                                         label={t(`card2.select1.op${i + 1}`)}
-                                        checked={form.getFieldValue("focus") == t(`card2.select1.op${i + 1}`)}
-                                        onChange={(value) => handleChange('focus', value)}
+                                        checked={form.getFieldValue("focus") == `card2.select1.op${i + 1}`}
+                                        onChange={() => handleChange('focus',`card2.select1.op${i + 1}` )}
                                         key={i}
                                     />
                                 ))
@@ -84,8 +87,8 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
                                         name={`goal_card2_select2_option_${i + 1}`}
                                         value={t(`card2.select2.op${i + 1}`)}
                                         label={t(`card2.select2.op${i + 1}`)}
-                                        checked={form.getFieldValue("focus_muscle_group") == t(`card2.select2.op${i + 1}`)}
-                                        onChange={(value) => handleChange('focus_muscle_group', value)}
+                                        checked={form.getFieldValue("focus_muscle_group") == `card2.select2.op${i + 1}`}
+                                        onChange={() => handleChange('focus_muscle_group', `card2.select2.op${i + 1}`)}
                                         key={i}
                                     />
                                 ))
@@ -109,8 +112,8 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
                                         name={`goal_card3_select1_option_${i + 1}`}
                                         value={t(`card3.select1.op${i + 1}`)}
                                         label={t(`card3.select1.op${i + 1}`)}
-                                        checked={form.getFieldValue("level") == t(`card3.select1.op${i + 1}`)}
-                                        onChange={(value) => handleChange('level', value)}
+                                        checked={form.getFieldValue("level") == `card3.select1.op${i + 1}`}
+                                        onChange={() => handleChange('level', `card3.select1.op${i + 1}`)}
                                         key={i}
                                     />
                                 ))
@@ -125,8 +128,8 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
                                         name={`goal_card3_select2_option_${i + 1}`}
                                         value={t(`card3.select2.op${i + 1}`)}
                                         label={t(`card3.select2.op${i + 1}`)}
-                                        checked={form.getFieldValue("diet_type") == t(`card3.select2.op${i + 1}`)}
-                                        onChange={(value) => handleChange('diet_type', value)}
+                                        checked={form.getFieldValue("diet_type") == `card3.select2.op${i + 1}`}
+                                        onChange={() => handleChange('diet_type', `card3.select2.op${i + 1}`)}
                                         key={i}
                                     />
                                 ))
@@ -148,15 +151,15 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
                                     name={`goal_card4_select1_option_${i + 1}`}
                                     value={t(`card4.select1.op${i + 1}`)}
                                     label={t(`card4.select1.op${i + 1}`)}
-                                    checked={form.getFieldValue("yoga") === t(`card4.select1.op${i + 1}`)}
-                                    onChange={(value) => handleChange('yoga', value)}
+                                    checked={form.getFieldValue("yoga") === `card4.select1.op${i + 1}`}
+                                    onChange={() => handleChange('yoga', `card4.select1.op${i + 1}`)}
                                     key={i}
                                 />
                             ))}
                         </SelectorCard>
                     </Form.Item>
 
-                    <div className={`yoga-type-container ${form.getFieldValue("yoga") === t('card4.select1.op1') ? 'visible' : ''}`}>
+                    <div className={`yoga-type-container ${form.getFieldValue("yoga") === `card4.select1.op1` ? 'visible' : ''}`}>
                         <Form.Item name="yoga_type" rules={[{ required: true, message: t('card4.select1.required') }]}>
                             <SelectorCard title={t('card4.select2.title')} className="mt-[19px]">
                                 {[...new Array(2)].map((_, i) => (
@@ -164,8 +167,8 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
                                         name={`goal_card4_select2_option_${i + 1}`}
                                         value={t(`card4.select2.op${i + 1}`)}
                                         label={t(`card4.select2.op${i + 1}`)}
-                                        checked={form.getFieldValue("yoga_type") === t(`card4.select2.op${i + 1}`)}
-                                        onChange={(value) => handleChange('yoga_type', value)}
+                                        checked={form.getFieldValue("yoga_type") === `card4.select2.op${i + 1}`}
+                                        onChange={() => handleChange('yoga_type', `card4.select2.op${i + 1}`)}
                                         key={i}
                                     />
                                 ))}
@@ -225,14 +228,16 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
                     </ButtonField>
                 )}
                 {currentStep < steps.length - 1 && (
-                    <ButtonField onClick={next} cType="red_white" bSize="xl">
+                    <ButtonField onClick={next} cType="red_white" bSize="xl" className="disabled:bg-gray-5">
                         {t('next')}
                     </ButtonField>
                 )}
                 {currentStep === steps.length - 1 && (
+                    <Link href={"/my_plan/goal-summary"}>
                     <ButtonField onClick={() => form.submit()}  cType="red_white" bSize="xl" className="ml-[16px]">
                         {t('submit')}
                     </ButtonField>
+                    </Link>
                 )}
             </div>
         </MyGoalCard >

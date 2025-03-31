@@ -1,5 +1,6 @@
 import { signOption } from "@/components/atoms/SignOption/signOption.onfig";
 import { carouselType } from "@/components/molecules/CarouselCard/carouselCard.config";
+import { GoalSummaryCardType } from "@/components/molecules/GoalSummaryCard/goalSummaryCard.config";
 import { myPlanCardProps } from "@/components/molecules/MyPlanCard/myPlanCard.config";
 import { PersonalInfoInputCardProps } from "@/components/molecules/PersonalInfoInputCard/PersonalInfoInputCard.config";
 import { TabItem } from "@/components/molecules/Tabs/Tab.config";
@@ -149,4 +150,52 @@ export const selectData = [
       },
     },
   ],
+];
+
+export const goalSummaryCards: GoalSummaryCardType[] = [
+  {
+    title: "myPlanPage.goalSummary.cards.0",
+    option: '',
+    img: "/Edit_Blue.svg",
+  },
+  {
+    title: "myPlanPage.goalSummary.cards.1",
+    option: "goal_preference",
+    img: "/Chevron_filter_down.svg",
+  },
+  {
+    title: "myPlanPage.goalSummary.cards.2",
+    option: "focus_muscle_group",
+    img: "/Chevron_filter_down.svg",
+  },
+  {
+    title: "myPlanPage.goalSummary.cards.3",
+    option: "level",
+    img: "/Chevron_filter_down.svg",
+  },
+  {
+    title: "myPlanPage.goalSummary.cards.4",
+    option: "diet_type",
+    img: "/Chevron_filter_down.svg",
+  },
+  {
+    title: "myPlanPage.goalSummary.cards.5",
+    option: "workout_frequency",
+    img: "/Chevron_filter_down.svg",
+  },
+  {
+    title: "myPlanPage.goalSummary.cards.6",
+    option: "focus",
+    img: "/Chevron_filter_down.svg",
+  },
+  {
+    title: "myPlanPage.goalSummary.cards.7",
+    option: "yoga",
+    img: "/Chevron_filter_down.svg",
+  },
+  {
+    title: "myPlanPage.goalSummary.cards.8",
+    option: "yoga_type",
+    img: "/Chevron_filter_down.svg",
+  },
 ];

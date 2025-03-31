@@ -309,7 +309,21 @@
         "prevButton":"Back",
         "nextButton":"Done"
       }
-      
+    },
+    "goalSummary":{
+      "title":"Goal summary",
+      "cards":{
+        "0":"Goal Name",
+        "1":"Goal Preference",
+        "2":"Muscle focus",
+        "3":"Level",
+        "4":"Diet",
+        "5":"Workout frequency",
+        "6":"Workout focus",
+        "7":"Include yoga",
+        "8":"Exclusively yoga"
+      },
+      "button":"Set Goal"
     }
   },
   "paymentPage": {
