@@ -8,7 +8,7 @@ export interface HeroProps {
 
 const Hero = ({children, innerClassName, outerClassName }:HeroProps) => {
   return (
-    <div className={`w-full hero-section flex justify-center items-start ${outerClassName}`} >
+    <div className={`w-full  flex justify-center items-start ${outerClassName}`} >
       <div className={`max-w-screen-xl ${innerClassName}`} >
       {children}
       </div>

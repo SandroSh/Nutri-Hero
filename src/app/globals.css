@@ -19,6 +19,13 @@
   background-repeat: no-repeat;
   height: 100vh;
 }
+.hero-section-2 {
+  background-image: url("/");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 .ant-reset {
   background: none ;
   border: none ;

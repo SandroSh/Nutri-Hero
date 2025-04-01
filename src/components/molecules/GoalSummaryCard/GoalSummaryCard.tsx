@@ -8,34 +8,14 @@ import { Dropdown, MenuProps, Space } from 'antd'
 
 
 
-const GoalSummaryCard = ({ data, option }: { data: GoalSummaryCardType, option: string }) => {
+const GoalSummaryCard = ({ data, option, name }: { data: GoalSummaryCardType, option: string, name?:string }) => {
     const t = useTranslations('')
-    const items: MenuProps['items'] = [
-        {
-            key: '1',
-            label: 'wefw',
-        },
-        {
-            key: '2',
-            label: 'wefw',
-        },
-        {
-            key: '3',
-            label: 'fwfe',
-        },
-    ];
     return (
-        <div className='w-full h-[50px] max-w-[650px] flex justify-between items-center rounded-[5px] border-gray-5 '>
+        <div className='w-full h-[50px] max-w-[650px] flex justify-between items-center rounded-[5px] border-gray-2 border-[1px] px-[19px] py-[16px] mb-[16px]'>
             <h3>{t(data.title)}</h3>
 
             <div className='flex gap-[19px] items-center'>
-                <Dropdown menu={{ items }}>
-                    <a onClick={(e) => e.preventDefault()}>
-                        <Space>
-                            {option}
-                        </Space>
-                    </a>
-                </Dropdown>
+                <h2 className='font-bold' >{name? name :option}</h2>
                 <div className='w-[25px]'>
                     <ImageField src={data.img} width={25} height={25} alt={'image'} />
                 </div>

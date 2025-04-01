@@ -33,7 +33,7 @@ const Payment = () => {
                     <CustomDatePicker className='w-[50%] pr-[15px] font-bold' placeholder={t('expiryDate')} />
                     <InputField maxLength={3} placeholder={t('cvc')} className={`w-[50%] pr-[15px] font-bold ${grayInputStyle}`} suffix={<img src='/Info.svg' alt='info img' />} />
                 </div>
-                <Link href='/my_plan/goal' className='w-full'>
+                <Link href='/my_plan/goal-survey' className='w-full'>
                     <ButtonField className={`p-[9px] bg-red-10 rounded-[5px] text-white w-full  mt-[30px]  text-center h-[40px] !self-end $`} >{t('bText')}
                     </ButtonField>
                 </Link>

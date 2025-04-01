@@ -11,7 +11,7 @@ const SignInPageTemplate = () => {
   const [isReseting, setIsReseting] = useState<boolean>(false)
   return (
     <div className='mt-[96px]' >
-      <Hero outerClassName='!items-start'>
+      <Hero outerClassName='!items-start hero-section'>
         {
           isReseting ?
             <ResetCard resetFunction={setIsReseting} />
