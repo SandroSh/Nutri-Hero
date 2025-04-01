@@ -1,6 +1,7 @@
 'use client'
 import { Navlink } from '@/components/atoms/NavLink'
 import Title from '@/components/atoms/TitleField/title.component'
+import { CarouselCard } from '@/components/molecules/CarouselCard'
 import { ExerciseCard } from '@/components/molecules/ExerciseCard'
 import Intro from '@/components/molecules/IntroCard/Intro'
 import { JoinCard } from '@/components/molecules/JoinCard'
@@ -47,8 +48,16 @@ const LandingPageTemplate = () => {
       </SectionContainer>
 
       <SectionContainer innerWrapperClassName='max-w-[1700px] w-full'>
-        <CustomCarousel data={carouselData} />
-        <CustomCarousel data={carouselData2} cardClassName='flex-row-reverse' />
+        <CustomCarousel>
+          {
+            carouselData.map((item, i) => <CarouselCard data={item} key={i} />)
+          }
+        </CustomCarousel>
+        <CustomCarousel>
+          {
+            carouselData.map((item, i) => <CarouselCard data={item} key={i} outerClassName='flex-row-reverse' />)
+          }
+        </CustomCarousel>
       </SectionContainer>
 
       <SectionContainer  >

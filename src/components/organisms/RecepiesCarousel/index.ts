@@ -1,0 +1,1 @@
+export {default as RecepiesCarousel } from './RecepiesCarousel' 

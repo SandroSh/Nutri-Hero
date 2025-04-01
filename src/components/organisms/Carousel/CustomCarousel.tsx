@@ -1,17 +1,13 @@
 import React from 'react'
 import { Carousel } from 'antd';
-import { CarouselCard } from '@/components/molecules/CarouselCard';
-import { carouselType } from "@/components/molecules/CarouselCard/carouselCard.config";
 
 
-const CustomCarousel = ({data, cardClassName}:{data:carouselType[], cardClassName?:string}) => {
+const CustomCarousel = ({ children, className }: { children: React.ReactNode, className: string }) => {
 
     return (
         <div className='w-full'>
-            <Carousel arrows infinite={true} autoplaySpeed={3000}  autoplay >
-                {
-                    data.map((item, i) => <CarouselCard data={item} key={i} outerClassName={cardClassName} />)
-                }
+            <Carousel arrows infinite={true} autoplaySpeed={3000} slidesToShow={3} className={className} autoplay  >
+                    {children}
             </Carousel>
         </div>
     )

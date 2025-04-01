@@ -232,7 +232,7 @@ export const recepieTabsData: TabItem[] = [
     key: "2",
     pTitle: "cards.2.pTitle",
     pText: "cards.2.paragraph",
-    imageUrl: "/Group 2264-1.png'",
+    imageUrl: "/Group2264.png",
   },
   {
     label: "tabLabels.3",
