@@ -5,12 +5,18 @@ import { TabsComponentProps } from "./Tab.config";
 import { Navlink } from "@/components/atoms/NavLink";
 import { ExerciseCard } from "../ExerciseCard";
 
+interface tabsType extends TabsComponentProps {
+    labels?:React.ReactNode;
+    children?: React.ReactNode
+}
 
-const TabsComponent: React.FC<TabsComponentProps> = ({
+const TabsComponent: React.FC<tabsType> = ({
     defaultActiveKey = "1",
     tabs,
     centered = true,
     className,
+    labels,
+    children,
     CardClassName,
     translate
 }) => {
@@ -35,3 +41,4 @@ const TabsComponent: React.FC<TabsComponentProps> = ({
 };
 
 export default TabsComponent;
+

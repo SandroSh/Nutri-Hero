@@ -1,5 +1,4 @@
-import { Navlink } from "@/components/atoms/NavLink"
-import Title from "@/components/atoms/TitleField/title.component"
+
 
 export interface InfoDisplayProps {
   className?: string

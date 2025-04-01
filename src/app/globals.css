@@ -20,9 +20,9 @@
   height: 100vh;
 }
 .hero-section-2 {
-  background-image: url("/");
+  background-image: url("/Hero Girl-1.png");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   height: 100vh;
 }

@@ -1,4 +1,5 @@
 import { signOption } from "@/components/atoms/SignOption/signOption.onfig";
+import { timeTitleType } from "@/components/atoms/TimeTitle/timeTitle.config";
 import { carouselType } from "@/components/molecules/CarouselCard/carouselCard.config";
 import { GoalSummaryCardType } from "@/components/molecules/GoalSummaryCard/goalSummaryCard.config";
 import { myPlanCardProps } from "@/components/molecules/MyPlanCard/myPlanCard.config";
@@ -197,5 +198,47 @@ export const goalSummaryCards: GoalSummaryCardType[] = [
     title: "myPlanPage.goalSummary.cards.8",
     option: "yoga_type",
     img: "/Chevron_filter_down.svg",
+  },
+];
+
+export const timeTitleData: timeTitleType [] = [
+  {
+    numText:'23',
+    text:'daysCount'
+  },
+  {
+    numText:'18',
+    text:'exercisesCount'
+  },
+  {
+    numText:'13',
+    text:'mealsCount'
+  },
+]
+
+
+
+
+export const recepieTabsData: TabItem[] = [
+  {
+    label: "tabLabels.1",
+    key: "1",
+    pTitle: "cards.1.pTitle",
+    pText: "cards.1.paragraph",
+    imageUrl: "/Rectangle 125.png",
+  },
+  {
+    label: "tabLabels.2",
+    key: "2",
+    pTitle: "cards.2.pTitle",
+    pText: "cards.2.paragraph",
+    imageUrl: "/Group 2264-1.png'",
+  },
+  {
+    label: "tabLabels.3",
+    key: "3",
+    pTitle: "cards.3.pTitle",
+    pText: "cards.3.paragraph",
+    imageUrl: "/Recipe Blank.svg",
   },
 ];

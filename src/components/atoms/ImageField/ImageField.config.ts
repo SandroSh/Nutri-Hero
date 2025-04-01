@@ -1,3 +1,5 @@
+import { CSSProperties } from "react";
+
 export interface ImageFieldProps {
   src: string;
   layout?: "fill" | "fixed" | "intrinsic" | "responsive";
@@ -5,5 +7,6 @@ export interface ImageFieldProps {
   className?: string;
   height?: number;
   alt: string;
+  style?:CSSProperties;
 
 }

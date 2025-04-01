@@ -1,0 +1,1 @@
+export {default as GoalActivityCard} from './GoalActivityCard'

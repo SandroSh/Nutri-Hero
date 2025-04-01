@@ -16,8 +16,6 @@
     "buttonText": "Start now"
   },
 
-
-
   "Exercise Display": {
     "title": "Exercise",
     "tabLabels": {
@@ -62,8 +60,6 @@
     }
   },
 
-
-  
   "downloadAppSection": {
     "title": "New app. New you.",
     "pTitle": "A nutritionalist and personal trainer in your pocket",
@@ -231,99 +227,134 @@
         "button": "Next"
       }
     },
-    "goal":{
-      "prev":"Back",
-      "next":"Next",
-      "submit":"Done",
-      "card0":{
-        "title":"How to create a goal",
-        "pTitle":"Brief description of the coming flow.",
-        "pText":"ed pretium sem libero, vel pellentesque purus ultrices ut. In quis leo id massa pulvinar euismod cursus non justo. Sed sagittis et urna non efficitur.",
-        "button":"Start"
+    "goal": {
+      "prev": "Back",
+      "next": "Next",
+      "submit": "Done",
+      "card0": {
+        "title": "How to create a goal",
+        "pTitle": "Brief description of the coming flow.",
+        "pText": "ed pretium sem libero, vel pellentesque purus ultrices ut. In quis leo id massa pulvinar euismod cursus non justo. Sed sagittis et urna non efficitur.",
+        "button": "Start"
       },
-      "card1":{
-        "select1":{
-          "title":"What is your goal preference?",
-          "op1":"Fat loss",
-          "op2":"Gain muscle",
-          "required":"Please select desired options"
+      "card1": {
+        "select1": {
+          "title": "What is your goal preference?",
+          "op1": "Fat loss",
+          "op2": "Gain muscle",
+          "required": "Please select desired options"
         },
-        "select2":{
-          "title":"Workout frequency",
-          "op1":"Twice per week",
-          "op2":"Three times per week",
-          "op3":"Four times per week"
+        "select2": {
+          "title": "Workout frequency",
+          "op1": "Twice per week",
+          "op2": "Three times per week",
+          "op3": "Four times per week"
         },
-        "prevButton":"Back",
-        "nextButton":"Next"
+        "prevButton": "Back",
+        "nextButton": "Next"
       },
-      "card2":{
-        "select1":{
-          "title":"What’s your focus?",
-          "op1":"Predominantly gym",
-          "op2":"Predominantly home",
-          "required":"Please select desired options"
+      "card2": {
+        "select1": {
+          "title": "What’s your focus?",
+          "op1": "Predominantly gym",
+          "op2": "Predominantly home",
+          "required": "Please select desired options"
         },
-        "select2":{
-          "title":"Focus muscle group",
-          "op1":"Legs",
-          "op2":"Core",
-          "op3":"Arms",
-          "op4":"Upperbody"
+        "select2": {
+          "title": "Focus muscle group",
+          "op1": "Legs",
+          "op2": "Core",
+          "op3": "Arms",
+          "op4": "Upperbody"
         },
-        "prevButton":"Back",
-        "nextButton":"Next"
+        "prevButton": "Back",
+        "nextButton": "Next"
       },
-      "card3":{
-        "select1":{
-          "title":"Select your level",
-          "op1":"Foundation",
-          "op2":"Progressive",
-          "op3":"Expert",
-          "required":"Please select desired options"
+      "card3": {
+        "select1": {
+          "title": "Select your level",
+          "op1": "Foundation",
+          "op2": "Progressive",
+          "op3": "Expert",
+          "required": "Please select desired options"
         },
-        "select2":{
-          "title":"Diet",
-          "op1":"Omnivore",
-          "op2":"Vegetarian",
-          "required":"Please select desired options"
+        "select2": {
+          "title": "Diet",
+          "op1": "Omnivore",
+          "op2": "Vegetarian",
+          "required": "Please select desired options"
         },
-        "prevButton":"Back",
-        "nextButton":"Next"
+        "prevButton": "Back",
+        "nextButton": "Next"
       },
-      "card4":{
-        "select1":{
-          "title":"Include yoga?",
-          "op1":"Include",
-          "op2":"Exclude",
-          "required":"Please select desired options"
+      "card4": {
+        "select1": {
+          "title": "Include yoga?",
+          "op1": "Include",
+          "op2": "Exclude",
+          "required": "Please select desired options"
         },
-        "select2":{
-          "title":"Exclusively Yoga?",
-          "op1":"Yoga only",
-          "op2":"Yoga + exercise"
+        "select2": {
+          "title": "Exclusively Yoga?",
+          "op1": "Yoga only",
+          "op2": "Yoga + exercise"
         },
-        "inputTitle":"Goal name",
-        "placeholder":"Enter a name",
-        "inputRequired":"Goal name is required",
-        "prevButton":"Back",
-        "nextButton":"Done"
+        "inputTitle": "Goal name",
+        "placeholder": "Enter a name",
+        "inputRequired": "Goal name is required",
+        "prevButton": "Back",
+        "nextButton": "Done"
       }
     },
-    "goalSummary":{
-      "title":"Goal summary",
-      "cards":{
-        "0":"Goal Name",
-        "1":"Goal Preference",
-        "2":"Muscle focus",
-        "3":"Level",
-        "4":"Diet",
-        "5":"Workout frequency",
-        "6":"Workout focus",
-        "7":"Include yoga",
-        "8":"Exclusively yoga"
+    "goalSummary": {
+      "title": "Goal summary",
+      "cards": {
+        "0": "Goal Name",
+        "1": "Goal Preference",
+        "2": "Muscle focus",
+        "3": "Level",
+        "4": "Diet",
+        "5": "Workout frequency",
+        "6": "Workout focus",
+        "7": "Include yoga",
+        "8": "Exclusively yoga"
       },
-      "button":"Set Goal"
+      "button": "Set Goal"
+    },
+    "goalHome": {
+      "daysCount": "Days",
+      "exercisesCount": "Exercises",
+      "mealsCount": "Meals",
+      "activeGoalLabel": "ACTIVE GOAL",
+      "goalTitle": "DROP DOWN TO SIZE 8 FOR SUMMER",
+      "goalDescription": "A progressive plan, with an omnivore diet. Exercising three times per week at the gym. Focusing on your legs with yoga included to achieve fat loss.",
+      "pastGoalsButton": "Past Goals",
+      "newGoalButton": "New Goal",
+
+      "recepieTabs": {
+        "sectionTitle": "Recipes",
+        "tabs": {
+          "today": "Today",
+          "tomorrow": "Tomorrow",
+          "weekAhead": "Week Ahead"
+        },
+        "cards": {
+          "0": {
+            "actionText": "Click here to mark a suggestion as complete",
+            "title": "Museli",
+            "category": "Breakfast"
+          },
+          "1": {
+            "actionText": "Click here to load a new suggestion",
+            "title": "Tuna Salad",
+            "category": "Lunch"
+          },
+          "2": {
+            "actionText": "Check back later for updates.",
+            "subText": "You can browse the Library for inspiration"
+          }
+        }
+      }
     }
   },
   "paymentPage": {
