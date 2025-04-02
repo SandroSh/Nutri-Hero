@@ -7,9 +7,8 @@ export interface TabItem {
 }
 export interface TabsComponentProps {
   defaultActiveKey?: string;
-  tabs: TabItem[];
   centered?: boolean;
-  className:string,
+  className?:string,
   CardClassName?:string,
-  translate: (key: string) => string; 
+  translate: (key: string) => string;
 }

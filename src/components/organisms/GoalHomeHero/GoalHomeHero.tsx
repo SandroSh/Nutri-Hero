@@ -23,8 +23,9 @@ const GoalHomeHero = () => {
 
                         <div className=' w-full text-center flex items-end justify-between gap-[10px] mt-[45px]'>
                             <ButtonField className={`${signOptionStyle} ${alignCenter} !w-[50%] !mb-0`} cType='white_red' >{t('pastGoalsButton')}</ButtonField>
-                            <Link href={'/my_plan/goal-survey'} className='w-[50%]'>
-                                <ButtonField className={`${signOptionStyle} ${alignCenter} w-[50%] !mb-0`} cType='red_white'>
+                            
+                            <Link href={'/my_plan/goal-survey'} className='!w-[100%]'>
+                                <ButtonField className={`${signOptionStyle} ${alignCenter} !w-[50%] !mb-0`} cType='red_white'>
                                     {t('newGoalButton')}
                                 </ButtonField>
                             </Link>

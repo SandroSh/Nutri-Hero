@@ -9,7 +9,7 @@ import { GoalActivityCard } from '@/components/molecules/GoalActivityCard'
 const RecepiesCarousel = () => {
   return (
     <div>
-        <CustomCarousel className='recepie-carousel' >
+        <CustomCarousel className='recepie-carousel'  slidesToShow={3} >
             {recepieTabsData.map((item) => <GoalActivityCard  data = {item} key={item.key} /> )}
         </CustomCarousel>
     </div>
