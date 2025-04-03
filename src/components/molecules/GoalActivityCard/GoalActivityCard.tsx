@@ -2,7 +2,7 @@ import { ImageField } from '@/components/atoms/ImageField';
 import { ParagraphField } from '@/components/atoms/ParagraphFIeld';
 import { Popover } from 'antd';
 import React, { useState } from 'react'
-import { TabItem } from '../Tabs/Tab.config';
+import { recepieCardDataType, RecepieTabItem, TabItem } from '../Tabs/Tab.config';
 
 interface GoalActivityCardType {
     imageUrl: string;
@@ -13,7 +13,7 @@ interface GoalActivityCardType {
 const GoalActivityCard = ({
     data
 
-}:{data:TabItem}) => {
+}:{data:recepieCardDataType}) => {
 
     const popoverContent = (
         <div className="flex items-center text-white bg-red-10 rounded-[4px] max-w-[165px] text-center ">
@@ -58,7 +58,7 @@ const GoalActivityCard = ({
                         <img
                             src={'/Refresh.svg'}
                             alt="Action 1"
-                            className="w-7 h-7 object-contain"
+                            className="w-7 h-7 object-contain cursor-pointer"
                         />
                     </Popover>
                     <Popover
@@ -72,7 +72,7 @@ const GoalActivityCard = ({
                         <img
                             src={'/Complete_inactive.svg'}
                             alt="Action 2"
-                            className="w-7 h-7 object-contain"
+                            className="w-7 h-7 object-contain cursor-pointer"
                         />
                     </Popover>
                 </div>

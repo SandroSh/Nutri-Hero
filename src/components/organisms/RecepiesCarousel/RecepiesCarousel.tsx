@@ -1,18 +1,15 @@
 import React from 'react'
 import CustomCarousel from '../Carousel/CustomCarousel'
-import { recepieTabsData } from '@/constants/dummyData'
 import { GoalActivityCard } from '@/components/molecules/GoalActivityCard'
+import { recepieCardDataType } from '@/components/molecules/Tabs/Tab.config'
 
 
-
-
-const RecepiesCarousel = () => {
+const RecepiesCarousel = ({data}:{data:recepieCardDataType[]}) => {
   return (
-    <div>
-        <CustomCarousel className='recepie-carousel'  slidesToShow={3} >
-            {recepieTabsData.map((item) => <GoalActivityCard  data = {item} key={item.key} /> )}
-        </CustomCarousel>
-    </div>
+    <CustomCarousel  slidesToShow={3} >
+      {data.map((item, i) => <GoalActivityCard data={item} key={i} />)}
+    </CustomCarousel>  
+
   )
 }
 

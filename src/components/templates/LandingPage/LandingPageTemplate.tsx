@@ -17,11 +17,7 @@ import { useTranslations } from 'next-intl'
 
 
 const LandingPageTemplate = () => {
-  const tabs = [
-    { key: "0" },
-    { key: "1" },
-    { key: "2" }
-  ];
+ 
   const gymDisplay = useTranslations('Exercise Display');
   return (
     <div className='mt-[96px]'>
@@ -34,7 +30,6 @@ const LandingPageTemplate = () => {
         <InfoDisplay className='bg-white rounded-[5px] flex-col items-center justify-center  '>
           <Title text={gymDisplay('title')} className={`mt-[27px] mb-[25px]`} />
           <Tabs
-            translate={gymDisplay}
             centered={true}
             className={'pb-[40px]'}
             labels={tabsData.map((item, i) => <Navlink className="mx-[29px] pt-[8px] pb-[8px]" hoverAnimate={false} key={i} >{gymDisplay(item.label)}</Navlink>)}
@@ -56,7 +51,6 @@ const LandingPageTemplate = () => {
             </Navlink>)}
             children={tabsData.map((item, i) => <ExerciseCard pTitle={gymDisplay(item.pTitle)} pText={gymDisplay(item.pText)} imageUrl={item.imageUrl} key={i} className='!flex-row-reverse justify-between mt-[-100px] mb-[50px]' />)}
             className='second-tabs pb-[40px]'
-            translate={gymDisplay}
           />
         </InfoDisplay>
       </SectionContainer>

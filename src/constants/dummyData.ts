@@ -3,9 +3,12 @@ import { timeTitleType } from "@/components/atoms/TimeTitle/timeTitle.config";
 import { carouselType } from "@/components/molecules/CarouselCard/carouselCard.config";
 import { GoalSummaryCardType } from "@/components/molecules/GoalSummaryCard/goalSummaryCard.config";
 import { myPlanCardProps } from "@/components/molecules/MyPlanCard/myPlanCard.config";
-import { PersonalInfoInputCardProps } from "@/components/molecules/PersonalInfoInputCard/PersonalInfoInputCard.config";
-import { TabItem } from "@/components/molecules/Tabs/Tab.config";
-
+import {
+  recepieCardDataType,
+  TabItem,
+} from "@/components/molecules/Tabs/Tab.config";
+import { RecepiesCarousel } from "@/components/organisms/RecepiesCarousel";
+import React from "react";
 export const tabsData: TabItem[] = [
   {
     label: "tabLabels.1",
@@ -156,7 +159,7 @@ export const selectData = [
 export const goalSummaryCards: GoalSummaryCardType[] = [
   {
     title: "myPlanPage.goalSummary.cards.0",
-    option: '',
+    option: "",
     img: "/Edit_Blue.svg",
   },
   {
@@ -201,44 +204,101 @@ export const goalSummaryCards: GoalSummaryCardType[] = [
   },
 ];
 
-export const timeTitleData: timeTitleType [] = [
+export const timeTitleData: timeTitleType[] = [
   {
-    numText:'23',
-    text:'daysCount'
+    numText: "23",
+    text: "daysCount",
   },
   {
-    numText:'18',
-    text:'exercisesCount'
+    numText: "18",
+    text: "exercisesCount",
   },
   {
-    numText:'13',
-    text:'mealsCount'
+    numText: "13",
+    text: "mealsCount",
   },
-]
+];
 
+export interface goalHomeTabsType {
+  component: React.ReactNode;
+}
 
-
-
-export const recepieTabsData: TabItem[] = [
+export const recepieCarouselCardData: recepieCardDataType[] = [
   {
-    label: "tabLabels.1",
     key: "1",
     pTitle: "cards.1.pTitle",
     pText: "cards.1.paragraph",
     imageUrl: "/Rectangle 125.png",
   },
   {
-    label: "tabLabels.2",
     key: "2",
     pTitle: "cards.2.pTitle",
     pText: "cards.2.paragraph",
     imageUrl: "/Group2264.png",
   },
   {
-    label: "tabLabels.3",
     key: "3",
     pTitle: "cards.3.pTitle",
     pText: "cards.3.paragraph",
     imageUrl: "/Recipe Blank.svg",
+  },
+  {
+    key: "1",
+    pTitle: "cards.1.pTitle",
+    pText: "cards.1.paragraph",
+    imageUrl: "/Rectangle 125.png",
+  },
+  {
+    key: "1",
+    pTitle: "cards.1.pTitle",
+    pText: "cards.1.paragraph",
+    imageUrl: "/Group2264.png",
+  },
+
+  {
+    key: "1",
+    pTitle: "cards.1.pTitle",
+    pText: "cards.1.paragraph",
+    imageUrl: "/Rectangle 125.png",
+  },
+];
+export const recepieCarouselCardData2: recepieCardDataType[] = [
+  {
+    key: "3",
+    pTitle: "cards.3.pTitle",
+    pText: "cards.3.paragraph",
+    imageUrl: "/Recipe Blank.svg",
+  },
+  {
+    key: "2",
+    pTitle: "cards.2.pTitle",
+    pText: "cards.2.paragraph",
+    imageUrl: "/Group2264.png",
+  },
+  {
+    key: "3",
+    pTitle: "cards.1.pTitle",
+    pText: "cards.1.paragraph",
+    imageUrl: "/Rectangle 125.png",
+  },
+
+  {
+    key: "4",
+    pTitle: "cards.1.pTitle",
+    pText: "cards.1.paragraph",
+    imageUrl: "/Group2264.png",
+  },
+  {
+    key: "5",
+    pTitle: "cards.1.pTitle",
+    pText: "cards.1.paragraph",
+    imageUrl: "/Rectangle 125.png",
+  },
+
+  {
+    key: "7",
+    pTitle: "cards.1.pTitle",
+    pText: "cards.1.paragraph",
+    imageUrl: "/Group2264.png",
   },
 ];

@@ -7,6 +7,7 @@ const Navlink = ({
   isActive = false,
   hoverAnimate = true,
   className,
+  
   ...rest
 
 }: NavlinkProps) => {
