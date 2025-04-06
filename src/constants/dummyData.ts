@@ -226,79 +226,40 @@ export interface goalHomeTabsType {
 export const recepieCarouselCardData: recepieCardDataType[] = [
   {
     key: "1",
-    pTitle: "cards.1.pTitle",
-    pText: "cards.1.paragraph",
+    pTitle: "myPlanPage.goalHome.recepieTabs.cards.1.title",
+    pText: "myPlanPage.goalHome.recepieTabs.cards.1.category",
     imageUrl: "/Rectangle 125.png",
   },
   {
     key: "2",
-    pTitle: "cards.2.pTitle",
-    pText: "cards.2.paragraph",
+    pTitle: "myPlanPage.goalHome.recepieTabs.cards.2.title",
+    pText: "myPlanPage.goalHome.recepieTabs.cards.2.category",
     imageUrl: "/Group2264.png",
   },
   {
     key: "3",
-    pTitle: "cards.3.pTitle",
-    pText: "cards.3.paragraph",
+    pTitle: "myPlanPage.goalHome.recepieTabs.cards.3.title",
+    pText: "myPlanPage.goalHome.recepieTabs.cards.3.category",
     imageUrl: "/Recipe Blank.svg",
   },
-  {
-    key: "1",
-    pTitle: "cards.1.pTitle",
-    pText: "cards.1.paragraph",
-    imageUrl: "/Rectangle 125.png",
-  },
-  {
-    key: "1",
-    pTitle: "cards.1.pTitle",
-    pText: "cards.1.paragraph",
-    imageUrl: "/Group2264.png",
-  },
-
-  {
-    key: "1",
-    pTitle: "cards.1.pTitle",
-    pText: "cards.1.paragraph",
-    imageUrl: "/Rectangle 125.png",
-  },
-];
-export const recepieCarouselCardData2: recepieCardDataType[] = [
-  {
-    key: "3",
-    pTitle: "cards.3.pTitle",
-    pText: "cards.3.paragraph",
-    imageUrl: "/Recipe Blank.svg",
-  },
-  {
-    key: "2",
-    pTitle: "cards.2.pTitle",
-    pText: "cards.2.paragraph",
-    imageUrl: "/Group2264.png",
-  },
-  {
-    key: "3",
-    pTitle: "cards.1.pTitle",
-    pText: "cards.1.paragraph",
-    imageUrl: "/Rectangle 125.png",
-  },
-
   {
     key: "4",
-    pTitle: "cards.1.pTitle",
-    pText: "cards.1.paragraph",
-    imageUrl: "/Group2264.png",
+    pTitle: "myPlanPage.goalHome.recepieTabs.cards.1.title",
+    pText: "myPlanPage.goalHome.recepieTabs.cards.1.category",
+    imageUrl: "/Rectangle 125.png",
   },
   {
     key: "5",
-    pTitle: "cards.1.pTitle",
-    pText: "cards.1.paragraph",
-    imageUrl: "/Rectangle 125.png",
+    pTitle: "myPlanPage.goalHome.recepieTabs.cards.1.title",
+    pText: "myPlanPage.goalHome.recepieTabs.cards.1.category",
+    imageUrl: "/Group2264.png",
   },
 
   {
     key: "7",
-    pTitle: "cards.1.pTitle",
-    pText: "cards.1.paragraph",
-    imageUrl: "/Group2264.png",
+    pTitle: "myPlanPage.goalHome.recepieTabs.cards.1.title",
+    pText: "myPlanPage.goalHome.recepieTabs.cards.1.category",
+    imageUrl: "/Rectangle 125.png",
   },
 ];
+

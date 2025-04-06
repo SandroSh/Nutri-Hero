@@ -7,16 +7,17 @@ import { RecepiesCarousel } from '../RecepiesCarousel'
 import { Tabs } from '@/components/molecules/Tabs'
 import { InfoDisplay } from '../InfoDisplay'
 import { Navlink } from '@/components/atoms/NavLink'
-import { recepieCarouselCardData, recepieCarouselCardData2 } from '@/constants/dummyData'
+import { recepieCarouselCardData } from '@/constants/dummyData'
 import CustomTabs from '@/components/molecules/CustomTabs/CustomTabs'
+import { shuffleArray } from '@/utils/utils'
 
 const GoalHome = () => {
   const t = useTranslations('myPlanPage.goalHome');
 
   const tabsData = [
     { key: 'tab1', title: t('recepieTabs.tabs.today'), content: <RecepiesCarousel data={recepieCarouselCardData} /> },
-    { key: 'tab2', title: t('recepieTabs.tabs.tomorrow'), content: <RecepiesCarousel data={recepieCarouselCardData2} /> },
-    { key: 'tab3', title: t('recepieTabs.tabs.weekAhead'), content: <RecepiesCarousel data={recepieCarouselCardData} /> },
+    { key: 'tab2', title: t('recepieTabs.tabs.tomorrow'), content: <RecepiesCarousel data={shuffleArray(recepieCarouselCardData)} /> },
+    { key: 'tab3', title: t('recepieTabs.tabs.weekAhead'), content: <RecepiesCarousel data={shuffleArray(recepieCarouselCardData)} /> },
   ];
   return (
     <div>

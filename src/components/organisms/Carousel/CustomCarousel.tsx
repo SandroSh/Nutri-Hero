@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import { Carousel } from 'antd';
-
+import './styles.css'
 
 
 
 const CustomCarousel = ({ children, className, slidesToShow }: { children: React.ReactNode, className?: string, slidesToShow: number }) => {
     const [isGrabbing, setIsGrabbing] = useState(false)
-    console.log(isGrabbing)
     return (
         <div className='w-full' onMouseDown={() => setIsGrabbing(true)} onMouseUp={() => setIsGrabbing(false)}>
             <Carousel

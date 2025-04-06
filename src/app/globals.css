@@ -3,8 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 @import '../components/atoms/Checkbox/style.css';
-@import '../components/molecules//SwiperCarousel/styles.css';
-@import '../components/organisms/Carousel/style.css';
+/* @import '../components/molecules/SwiperCarousel/styles.css'; */
+@import '../components/organisms/Carousel/styles.css';
 @import '../components/organisms/StepsSwitchCard/styles.css';
 * {
   margin: 0 !important;

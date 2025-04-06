@@ -34,3 +34,9 @@
   visibility: hidden !important;
 
 }
+
+.recepie-carousel:has(.hover-card:hover) .hover-card:not(:hover){
+  filter:blur(2px) brightness(50%);
+  transform: scale(0.95);
+  transition: all 1s ease;
+}

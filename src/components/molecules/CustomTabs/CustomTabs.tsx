@@ -18,7 +18,7 @@ const CustomTabs: React.FC<TabsProps> = ({ tabs }) => {
 
     return (
         <div >
-            <div className="flex justify-center">
+            <div className="flex justify-center mb-[22px]">
                 {
                     tabs.map((tab) => (
                         <Navlink
