@@ -35,16 +35,16 @@ const GoalActivityCard = ({
 
     return (
 
-        <div className="w-full max-w-[400px] mx-auto rounded-lg shadow-lg overflow-hidden mb-[15px] hover-card"> <ImageField
+        <div className="w-full max-w-[400px] mx-auto rounded-lg shadow-lg overflow-hidden mb-[15px] hover-card "> <ImageField
             src={data.imageUrl}
             alt={data.pTitle}
             className="object-contain"
 
-            style={{
-                transform: isHovered ? 'translateY(-15px) scale(1.1)' : 'translateY(0) scale(1)',
-                filter: isHovered ? 'brightness(0.9)': '',
-                transition: 'all transform 0.3s ease',
-            }}
+            // style={{
+            //     transform: isHovered ? 'translateY(-15px) scale(1.1)' : 'translateY(0) scale(1)',
+            //     filter: isHovered ? 'brightness(0.9)': '',
+            //     transition: 'all transform 0.5s ',
+            // }}
         />
             <div className=' w-full flex justify-between items-center mt-[12px] px-[12px] pb-[16px]' >
                 <ParagraphField title={data.pTitle} paragraph={data.pText} pClassName='text-gray-5 !mt-[0px]' />

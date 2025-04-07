@@ -350,8 +350,8 @@
             "category": "Lunch"
           },
           "2": {
-            "actionText": "Check back later for updates.",
-            "subText": "You can browse the Library for inspiration"
+            "title": "Check back  for updates.",
+            "category": "You can browse the Library for inspiration"
           }
         }
       }
@@ -366,5 +366,16 @@
     "expiryDate": "Expiry date",
     "cvc": "CVC",
     "bText": "Confirm Payment"
+  },
+  "date":{
+    "days": {
+      "0": "Sunday",
+      "1": "Monday",
+      "2": "Tuesday",
+      "3": "Wednesday",
+      "4": "Thursday",
+      "5": "Friday",
+      "6": "Saturday"
+    }
   }
 }

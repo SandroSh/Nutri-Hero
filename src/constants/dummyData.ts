@@ -226,20 +226,20 @@ export interface goalHomeTabsType {
 export const recepieCarouselCardData: recepieCardDataType[] = [
   {
     key: "1",
-    pTitle: "myPlanPage.goalHome.recepieTabs.cards.1.title",
-    pText: "myPlanPage.goalHome.recepieTabs.cards.1.category",
+    pTitle: "myPlanPage.goalHome.recepieTabs.cards.0.title",
+    pText: "myPlanPage.goalHome.recepieTabs.cards.0.category",
     imageUrl: "/Rectangle 125.png",
   },
   {
     key: "2",
-    pTitle: "myPlanPage.goalHome.recepieTabs.cards.2.title",
-    pText: "myPlanPage.goalHome.recepieTabs.cards.2.category",
+    pTitle: "myPlanPage.goalHome.recepieTabs.cards.1.title",
+    pText: "myPlanPage.goalHome.recepieTabs.cards.1.category",
     imageUrl: "/Group2264.png",
   },
   {
     key: "3",
-    pTitle: "myPlanPage.goalHome.recepieTabs.cards.3.title",
-    pText: "myPlanPage.goalHome.recepieTabs.cards.3.category",
+    pTitle: "myPlanPage.goalHome.recepieTabs.cards.2.title",
+    pText: "myPlanPage.goalHome.recepieTabs.cards.2.category",
     imageUrl: "/Recipe Blank.svg",
   },
   {
@@ -250,15 +250,15 @@ export const recepieCarouselCardData: recepieCardDataType[] = [
   },
   {
     key: "5",
-    pTitle: "myPlanPage.goalHome.recepieTabs.cards.1.title",
-    pText: "myPlanPage.goalHome.recepieTabs.cards.1.category",
+    pTitle: "myPlanPage.goalHome.recepieTabs.cards.0.title",
+    pText: "myPlanPage.goalHome.recepieTabs.cards.0.category",
     imageUrl: "/Group2264.png",
   },
 
   {
     key: "7",
-    pTitle: "myPlanPage.goalHome.recepieTabs.cards.1.title",
-    pText: "myPlanPage.goalHome.recepieTabs.cards.1.category",
+    pTitle: "myPlanPage.goalHome.recepieTabs.cards.2.title",
+    pText: "myPlanPage.goalHome.recepieTabs.cards.2.category",
     imageUrl: "/Rectangle 125.png",
   },
 ];

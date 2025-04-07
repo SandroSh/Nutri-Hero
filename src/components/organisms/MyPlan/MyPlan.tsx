@@ -185,7 +185,7 @@ const MyPlan = () => {
 
   return (
     <div>
-      <SectionContainer innerWrapperClassName="!max-w-[1701px] !w-full" >
+      <SectionContainer innerWrapperClassName="!max-w-[1700px] !w-full" >
         <Form
           form={form}
           name="myPlanForm"
