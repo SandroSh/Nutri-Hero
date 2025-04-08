@@ -9,8 +9,13 @@ export function shuffleArray(arr: recepieCardDataType[]) {
   return shuffled;
 }
 
-export function generateDates(currentDate: Date): string[] {
-  const days = [];
+export interface DateCardType {
+  date: string;
+  isActive: boolean;
+}
+
+export function generateDates(currentDate: Date): DateCardType[] {
+  const days:DateCardType[] = [];
   const options: Intl.DateTimeFormatOptions = { weekday: "long" };
 
   for (let i = 0; i < 15; i++) {
@@ -20,7 +25,7 @@ export function generateDates(currentDate: Date): string[] {
     const dayName = date.toLocaleDateString("en-US", options);
     const dayNumber = date.getDate();
 
-    days.push(`${dayName} ${dayNumber}`);
+    days.push({date:`${dayName} ${dayNumber}`, isActive: i === 0});
   }
 
   return days;

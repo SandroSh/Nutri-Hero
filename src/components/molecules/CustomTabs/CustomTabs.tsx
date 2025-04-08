@@ -10,14 +10,14 @@ interface Tab {
 
 interface TabsProps {
     tabs: Tab[];
-
+    className?: string;
 }
 
-const CustomTabs: React.FC<TabsProps> = ({ tabs }) => {
+const CustomTabs: React.FC<TabsProps> = ({ tabs, className }) => {
     const [activeKey, setActiveKey] = useState<string>(tabs[0].key);
 
     return (
-        <div >
+        <div  className={`${className}`} >
             <div className="flex justify-center mb-[22px]">
                 {
                     tabs.map((tab) => (

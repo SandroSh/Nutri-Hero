@@ -354,6 +354,31 @@
             "category": "You can browse the Library for inspiration"
           }
         }
+      },
+      "exerciseTabs": {
+        "sectionTitle": "Exercises",
+        "tabs": {
+          "today": "Today",
+          "tomorrow": "Tomorrow",
+          "weekAhead": "Week Ahead"
+        },
+        "cards": {
+          "0": {
+            "actionText": "Click here to mark a suggestion as complete",
+            "title": "Rope Work",
+            "category": "Arms"
+          },
+          "1": {
+            "actionText": "Click here to load a new suggestion",
+            "title": "Push Ups",
+            "category": "Chest"
+          },
+          "2": {
+            "actionText": "Click here to load a new suggestion",
+            "title": "Rest Day",
+            "category": "You can still be active, but don’t over do it."
+          }
+        }
       }
     }
   },

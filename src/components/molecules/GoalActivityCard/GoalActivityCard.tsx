@@ -38,7 +38,7 @@ const GoalActivityCard = ({data}: { data: recepieCardDataType }) => {
         // }}
         />
             <div className=' w-full flex justify-between items-center mt-[12px] px-[12px] pb-[16px]' >
-                <ParagraphField title={data.pTitle} paragraph={data.pText} pClassName='text-gray-5 !mt-[0px]' />
+                <ParagraphField title={data.pTitle} paragraph={data.pText} pClassName='text-gray-5 !mt-[5px]' />
                 <div className='flex justify-center items-center gap-[12px]' onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}>
                     <Popover

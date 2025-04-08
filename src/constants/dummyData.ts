@@ -263,3 +263,43 @@ export const recepieCarouselCardData: recepieCardDataType[] = [
   },
 ];
 
+
+export const exerciesCarouselCardData: recepieCardDataType[] = [
+  {
+    key: "1",
+    pTitle: "myPlanPage.goalHome.exerciseTabs.cards.0.title",
+    pText: "myPlanPage.goalHome.exerciseTabs.cards.0.category",
+    imageUrl: "/Group 2264.png",
+  },
+  {
+    key: "2",
+    pTitle: "myPlanPage.goalHome.exerciseTabs.cards.1.title",
+    pText: "myPlanPage.goalHome.exerciseTabs.cards.1.category",
+    imageUrl: "/Group 2264-2.png",
+  },
+  {
+    key: "3",
+    pTitle: "myPlanPage.goalHome.exerciseTabs.cards.2.title",
+    pText: "myPlanPage.goalHome.exerciseTabs.cards.2.category",
+    imageUrl: "/Rest Day.svg",
+  },
+  {
+    key: "4",
+    pTitle: "myPlanPage.goalHome.exerciseTabs.cards.1.title",
+    pText: "myPlanPage.goalHome.exerciseTabs.cards.1.category",
+    imageUrl: "/Group 2264-2.png",
+  },
+  {
+    key: "5",
+    pTitle: "myPlanPage.goalHome.exerciseTabs.cards.0.title",
+    pText: "myPlanPage.goalHome.exerciseTabs.cards.0.category",
+    imageUrl: "/Group 2264.png",
+  },
+
+  {
+    key: "7",
+    pTitle: "myPlanPage.goalHome.exerciseTabs.cards.2.title",
+    pText: "myPlanPage.goalHome.exerciseTabs.cards.2.category",
+    imageUrl: "/Rest Day.svg",
+  },
+];
