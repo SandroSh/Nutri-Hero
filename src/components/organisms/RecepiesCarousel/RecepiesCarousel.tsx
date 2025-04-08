@@ -8,7 +8,7 @@ import { useTranslations } from 'next-intl'
 const RecepiesCarousel = ({data}:{data:recepieCardDataType[]}) => {
   const t = useTranslations('');
   return (
-    <CustomCarousel  slidesToShow={3} className='recepie-carousel' >
+    <CustomCarousel  slidesToShow={3} className='recepie-carousel mt-[15px]' >
       {data.map((item, i) => <GoalActivityCard data={{...item, pText:t(item.pText), pTitle:t(item.pTitle) }} key={i} />)}
     </CustomCarousel>   
 

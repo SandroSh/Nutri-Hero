@@ -10,14 +10,21 @@ import { Navlink } from '@/components/atoms/NavLink'
 import { recepieCarouselCardData } from '@/constants/dummyData'
 import CustomTabs from '@/components/molecules/CustomTabs/CustomTabs'
 import { shuffleArray } from '@/utils/utils'
+import { DateCarousel } from '../DateCarousel'
 
 const GoalHome = () => {
   const t = useTranslations('myPlanPage.goalHome');
-
+  const currDate = new Date();
   const tabsData = [
     { key: 'tab1', title: t('recepieTabs.tabs.today'), content: <RecepiesCarousel data={recepieCarouselCardData} /> },
     { key: 'tab2', title: t('recepieTabs.tabs.tomorrow'), content: <RecepiesCarousel data={shuffleArray(recepieCarouselCardData)} /> },
-    { key: 'tab3', title: t('recepieTabs.tabs.weekAhead'), content: <RecepiesCarousel data={shuffleArray(recepieCarouselCardData)} /> },
+    {
+      key: 'tab3', title: t('recepieTabs.tabs.weekAhead'), content:
+        <div>
+          <DateCarousel slideToShow={7} date={currDate} />
+          <RecepiesCarousel data={shuffleArray(recepieCarouselCardData)}  />
+        </div>
+    },
   ];
   return (
     <div>

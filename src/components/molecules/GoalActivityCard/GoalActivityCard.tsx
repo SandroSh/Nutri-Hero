@@ -4,16 +4,7 @@ import { Popover } from 'antd';
 import React, { useState } from 'react'
 import { recepieCardDataType, RecepieTabItem, TabItem } from '../Tabs/Tab.config';
 
-interface GoalActivityCardType {
-    imageUrl: string;
-    title:string;
-    paragraph:string;
-    alt: string;
-}
-const GoalActivityCard = ({
-    data
-
-}:{data:recepieCardDataType}) => {
+const GoalActivityCard = ({data}: { data: recepieCardDataType }) => {
 
     const popoverContent = (
         <div className="flex items-center text-white bg-red-10 rounded-[4px] max-w-[165px] text-center ">
@@ -40,11 +31,11 @@ const GoalActivityCard = ({
             alt={data.pTitle}
             className="object-contain"
 
-            // style={{
-            //     transform: isHovered ? 'translateY(-15px) scale(1.1)' : 'translateY(0) scale(1)',
-            //     filter: isHovered ? 'brightness(0.9)': '',
-            //     transition: 'all transform 0.5s ',
-            // }}
+        // style={{
+        //     transform: isHovered ? 'translateY(-15px) scale(1.1)' : 'translateY(0) scale(1)',
+        //     filter: isHovered ? 'brightness(0.9)': '',
+        //     transition: 'all transform 0.5s ',
+        // }}
         />
             <div className=' w-full flex justify-between items-center mt-[12px] px-[12px] pb-[16px]' >
                 <ParagraphField title={data.pTitle} paragraph={data.pText} pClassName='text-gray-5 !mt-[0px]' />

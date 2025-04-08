@@ -9,7 +9,7 @@ export function shuffleArray(arr: recepieCardDataType[]) {
   return shuffled;
 }
 
-export function generateNext15Days(currentDate: Date): string[] {
+export function generateDates(currentDate: Date): string[] {
   const days = [];
   const options: Intl.DateTimeFormatOptions = { weekday: "long" };
 

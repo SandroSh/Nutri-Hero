@@ -4,7 +4,7 @@ import './styles.css'
 
 
 
-const CustomCarousel = ({ children, className, slidesToShow }: { children: React.ReactNode, className?: string, slidesToShow: number }) => {
+const CustomCarousel = ({ children, className, slidesToShow, autoplay = true }: { children: React.ReactNode, className?: string, slidesToShow: number, autoplay?:boolean }) => {
     const [isGrabbing, setIsGrabbing] = useState(false)
     return (
         <div className='w-full' onMouseDown={() => setIsGrabbing(true)} onMouseUp={() => setIsGrabbing(false)}>
@@ -15,7 +15,7 @@ const CustomCarousel = ({ children, className, slidesToShow }: { children: React
                 autoplaySpeed={3000}
                 slidesToShow={slidesToShow}
                 className={`${className} ${isGrabbing ? 'cursor-grabbing' : 'cursor-grab'}`}
-                autoplay
+                autoplay = {autoplay}
             >
                 {children}
             </Carousel>
