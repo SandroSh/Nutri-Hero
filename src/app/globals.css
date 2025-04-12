@@ -27,6 +27,13 @@
   background-repeat: no-repeat;
   height: 100vh;
 }
+.hero-section-3 {
+  background-image: url("/Rectangle 125.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 .ant-reset {
   background: none ;
   border: none ;

@@ -13,7 +13,7 @@ const GoalHomeHero = () => {
     const t = useTranslations('myPlanPage.goalHome')
     return (
 
-        <Hero outerClassName='hero-section-2' innerClassName='flex h-full items-end justify-center'>
+        <Hero outerClassName='hero-section-2 mt-[95px]' innerClassName='flex h-full items-end justify-center'>
             <div className=' w-full flex justify-between items-end mb-[60px]'>
                 <div className='flex items-start justify-start max-w-[50%] w-full ' >
                     <div className='w-full flex flex-col items-start justify-start'>

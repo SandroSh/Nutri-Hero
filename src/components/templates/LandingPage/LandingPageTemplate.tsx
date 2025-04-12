@@ -5,7 +5,6 @@ import { CarouselCard } from '@/components/molecules/CarouselCard'
 import { ExerciseCard } from '@/components/molecules/ExerciseCard'
 import Intro from '@/components/molecules/IntroCard/Intro'
 import { JoinCard } from '@/components/molecules/JoinCard'
-
 import { Tabs } from '@/components/molecules/Tabs'
 import CustomCarousel from '@/components/organisms/Carousel/CustomCarousel'
 import { DownloadAppSection } from '@/components/organisms/DowloadAppSection'

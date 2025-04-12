@@ -6,7 +6,7 @@ import { MyPlan } from '@/components/organisms/MyPlan'
 import { usePathname, useRouter } from '@/i18n/navigation'
 const MyPlanPageTemplate = () => {
   const pathname = usePathname();
-  console.log(pathname)
+  const id = pathname.split('#')[1]
   const renderComponents = () => {
     switch (pathname) {
       case '/my_plan/sign-up':
@@ -17,6 +17,8 @@ const MyPlanPageTemplate = () => {
         return <GoalSummary />
       case '/my_plan/goal-home':
         return <GoalHome />
+      case `/my_plan/goal-home/activity#${id}`:
+        return <MyPlan />
     }
   }
   return (
