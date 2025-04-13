@@ -2,15 +2,17 @@ import React from 'react'
 
 export interface HeroProps {
   children?: React.ReactNode
-  innerClassName?:string;
-  outerClassName?:string;
+  innerClassName?: string;
+  outerClassName?: string;
+  backgroundImg?: string;
 }
 
-const Hero = ({children, innerClassName, outerClassName }:HeroProps) => {
+const Hero = ({ children, innerClassName, outerClassName, backgroundImg }: HeroProps) => {
+  console.log(backgroundImg)
   return (
-    <div className={`w-full  flex justify-center items-start ${outerClassName}`} >
+    <div className={`w-full  flex justify-center items-start ${outerClassName} ${backgroundImg ? 'hero-section-general' : ''}`} style={backgroundImg ?{ backgroundImage: `url('${backgroundImg}')`} : undefined} >
       <div className={`max-w-screen-xl ${innerClassName}`} >
-      {children}
+        {children}
       </div>
     </div>
   )

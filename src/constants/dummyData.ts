@@ -225,38 +225,38 @@ export interface goalHomeTabsType {
 
 export const recepieCarouselCardData: recepieCardDataType[] = [
   {
-    key: "1",
+    key: "recepie-details-1",
     pTitle: "myPlanPage.goalHome.recepieTabs.cards.0.title",
     pText: "myPlanPage.goalHome.recepieTabs.cards.0.category",
     imageUrl: "/Rectangle 125.png",
   },
   {
-    key: "2",
+    key: "recepie-details-2",
     pTitle: "myPlanPage.goalHome.recepieTabs.cards.1.title",
     pText: "myPlanPage.goalHome.recepieTabs.cards.1.category",
     imageUrl: "/Group2264.png",
   },
   {
-    key: "3",
+    key: "recepie-details-3",
     pTitle: "myPlanPage.goalHome.recepieTabs.cards.2.title",
     pText: "myPlanPage.goalHome.recepieTabs.cards.2.category",
     imageUrl: "/Recipe Blank.svg",
   },
   {
-    key: "4",
+    key: "recepie-details-4",
     pTitle: "myPlanPage.goalHome.recepieTabs.cards.1.title",
     pText: "myPlanPage.goalHome.recepieTabs.cards.1.category",
     imageUrl: "/Rectangle 125.png",
   },
   {
-    key: "5",
+    key: "recepie-details-5",
     pTitle: "myPlanPage.goalHome.recepieTabs.cards.0.title",
     pText: "myPlanPage.goalHome.recepieTabs.cards.0.category",
     imageUrl: "/Group2264.png",
   },
 
   {
-    key: "7",
+    key: "recepie-details-6",
     pTitle: "myPlanPage.goalHome.recepieTabs.cards.2.title",
     pText: "myPlanPage.goalHome.recepieTabs.cards.2.category",
     imageUrl: "/Rectangle 125.png",
@@ -266,38 +266,38 @@ export const recepieCarouselCardData: recepieCardDataType[] = [
 
 export const exerciesCarouselCardData: recepieCardDataType[] = [
   {
-    key: "1",
+    key: "exercise-details-1",
     pTitle: "myPlanPage.goalHome.exerciseTabs.cards.0.title",
     pText: "myPlanPage.goalHome.exerciseTabs.cards.0.category",
     imageUrl: "/Group 2264.png",
   },
   {
-    key: "2",
+    key: "exercise-details-2",
     pTitle: "myPlanPage.goalHome.exerciseTabs.cards.1.title",
     pText: "myPlanPage.goalHome.exerciseTabs.cards.1.category",
     imageUrl: "/Group 2264-2.png",
   },
   {
-    key: "3",
+    key: "exercise-details-3",
     pTitle: "myPlanPage.goalHome.exerciseTabs.cards.2.title",
     pText: "myPlanPage.goalHome.exerciseTabs.cards.2.category",
     imageUrl: "/Rest Day.svg",
   },
   {
-    key: "4",
+    key: "exercise-details-4",
     pTitle: "myPlanPage.goalHome.exerciseTabs.cards.1.title",
     pText: "myPlanPage.goalHome.exerciseTabs.cards.1.category",
     imageUrl: "/Group 2264-2.png",
   },
   {
-    key: "5",
+    key: "exercise-details-5",
     pTitle: "myPlanPage.goalHome.exerciseTabs.cards.0.title",
     pText: "myPlanPage.goalHome.exerciseTabs.cards.0.category",
     imageUrl: "/Group 2264.png",
   },
 
   {
-    key: "7",
+    key: "exercise-details#6",
     pTitle: "myPlanPage.goalHome.exerciseTabs.cards.2.title",
     pText: "myPlanPage.goalHome.exerciseTabs.cards.2.category",
     imageUrl: "/Rest Day.svg",

@@ -27,8 +27,7 @@
   background-repeat: no-repeat;
   height: 100vh;
 }
-.hero-section-3 {
-  background-image: url("/Rectangle 125.png");
+.hero-section-general {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;

@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import { recepieCardDataType, RecepieTabItem, TabItem } from '../Tabs/Tab.config';
 import { Link } from '@/i18n/navigation';
 
-const GoalActivityCard = ({ data }: { data: recepieCardDataType }) => {
+const GoalActivityCard = ({ data }:{ data: recepieCardDataType }) => {
 
     const popoverContent = (
         <div className="flex items-center text-white bg-red-10 rounded-[4px] max-w-[165px] text-center ">
@@ -27,7 +27,7 @@ const GoalActivityCard = ({ data }: { data: recepieCardDataType }) => {
 
     return (
 
-        <Link href={`/my_plan/goal-home/details#${data.key}`} className='w-full'>
+        <Link href={`/my_plan/goal-home/${data.key}`} className='w-full'>
             <div className="w-full max-w-[400px] mx-auto rounded-lg shadow-lg overflow-hidden mb-[15px] hover-card "> <ImageField
                 src={data.imageUrl}
                 alt={data.pTitle}
