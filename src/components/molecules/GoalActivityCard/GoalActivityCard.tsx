@@ -27,7 +27,7 @@ const GoalActivityCard = ({ data }:{ data: recepieCardDataType }) => {
 
     return (
 
-        <Link href={`/my_plan/goal-home/${data.key}`} className='w-full'>
+        <Link href={`/my_plan/goal-home/${data.key}`} className='w-full reset-link'>
             <div className="w-full max-w-[400px] mx-auto rounded-lg shadow-lg overflow-hidden mb-[15px] hover-card "> <ImageField
                 src={data.imageUrl}
                 alt={data.pTitle}
@@ -40,7 +40,7 @@ const GoalActivityCard = ({ data }:{ data: recepieCardDataType }) => {
             // }}
             />
                 <div className=' w-full flex justify-between items-center mt-[12px] px-[12px] pb-[16px]' >
-                    <ParagraphField title={data.pTitle} paragraph={data.pText} pClassName='text-gray-5 !mt-[5px]' />
+                    <ParagraphField title={data.pTitle} paragraph={data.pText} pClassName='text-gray-5 !mt-[0px]' />
                     <div className='flex justify-center items-center gap-[12px]' onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}>
                         <Popover

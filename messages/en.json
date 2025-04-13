@@ -380,6 +380,216 @@
           }
         }
       }
+    },
+    "ActivityDetailsPage": {
+      "buttons": {
+        "preferenceText": "Tap the options below to save your preferences",
+        "like": "Like",
+        "dislike": "Dislike",
+        "favorite": "Favorite",
+        "complete": "Complete",
+        "printRecepie": "Print Recepie",
+        "printExercise": "Print Workout"
+      },
+      "recepie": {
+        "badges": {
+          "0": {
+            "title": "Prep Time",
+            "text": "N/A"
+          },
+          "1": {
+            "title": "Cook Time",
+            "text": "10MIN"
+          },
+          "2": {
+            "title": "Serves",
+            "text": "2"
+          },
+          "3": {
+            "title": "Difficulty",
+            "text": "Easy"
+          }
+        },
+        "tags": {
+          "tagMainTitle": "Mixed Berry Muesli",
+          "tagTitle": "Tags",
+          "0": {
+            "title": "#Breakfast"
+          },
+          "1": {
+            "title": "#Museli"
+          },
+          "2": {
+            "title": "#Berries"
+          },
+          "3": {
+            "title": "#200kcal"
+          }
+        },
+        "table": {
+          "pTitle": "Nutritional Facts",
+          "amount": "Per 100g",
+          "content": {
+            "0": {
+              "title": "Energy",
+              "value": "10.2g"
+            },
+            "1": {
+              "title": "Cal",
+              "value": "10.2g"
+            },
+            "2": {
+              "title": "Fat",
+              "value": "10.2g"
+            },
+            "3": {
+              "title": "Sat Fat",
+              "value": "10.2g"
+            },
+            "4": {
+              "title": "Carbs",
+              "value": "10.2g"
+            },
+            "5": {
+              "title": "Sugar",
+              "value": "10.2g"
+            },
+            "6": {
+              "title": "Protein",
+              "value": "10.2g"
+            },
+            "7": {
+              "title": "Salt",
+              "value": "10.2g"
+            }
+          }
+        },
+        "dividers": {
+          "0": {
+            "title": "Step 1",
+            "text": "Add the oats, desiccated coconut and nuts into a large mixing bowl (you can experiment with different types of nuts)."
+          },
+          "1": {
+            "title": "Step 2",
+            "text": "Grate the apples. After, add the grated apples, coconut yoghurt, lemon juice and zest to the mixing bowl with the oats and nuts. Add the cashew milk and stir the museli mix to make sure everything is combined."
+          },
+          "2": {
+            "title": "Step 3",
+            "text": "Clingfilm or cover the bowl, leaving it in the fridge to soak overnight."
+          },
+          "3": {
+            "title": "Step 4",
+            "text": "You can prepare the berry coulis the same time as muesli and leave them both overnight in the fridge. Heat a medium frying pan or saucepan, and add in frozen or fresh berries (both work equally well here). Cook on a medium heat."
+          },
+          "4": {
+            "title": "Step 5",
+            "text": "As the berries start to release their juices, add in the lemon juice, tossing the pan to mix."
+          }
+        },
+        "details": {
+          "Title": "Ingredients",
+          "servings": "servings",
+          "content": {
+            "0": {
+              "title": "Water",
+              "value": "150",
+              "unit": "ml"
+            },
+            "1": {
+              "title": "Honey",
+              "value": "1",
+              "unit": "teaspoon"
+            },
+            "2": {
+              "title": "Nut milk",
+              "value": "150",
+              "unit": "ml"
+            },
+            "3": {
+              "title": "Oats",
+              "value": "1",
+              "unit": "cup"
+            },
+            "4": {
+              "title": "Pitted medjool dates, chopped",
+              "value": "4"
+            },
+            "5": {
+              "title": "Banana, halved then sliced",
+              "value": "0.5"
+            }
+          },
+          "allergens": "Allergens",
+          "allergensContent": "Contains: gluten, tree nuts, sulphites.",
+          "buyButton": "Purchase from Ocodo"
+        },
+        "tips": {
+          "title": "Chef’s Tips",
+          "content": "Once you have mastered the perfect porridge base, you can enjoy experimenting with different toppings like chopped nuts, strawberries and berry coulis"
+        }
+      },
+      "exercise": {
+        "badges": {
+          "0": {
+            "title": "Calories Burnt",
+            "text": "123kcal"
+          },
+          "1": {
+            "title": "REPS",
+            "text": "3 x 6"
+          },
+          "2": {
+            "title": "Muscle",
+            "text": "Arms"
+          },
+          "3": {
+            "title": "Difficulty",
+            "text": "MEDIUM"
+          }
+        },
+        "tags": {
+          "tagMainTitle":"Intense Extended Puppy Pose",
+          "tagTitle": "Tags",
+          "0": {
+            "title": "#Breakfast"
+          },
+          "1": {
+            "title": "#Museli"
+          },
+          "2": {
+            "title": "#Berries"
+          },
+          "3": {
+            "title": "#200kcal"
+          }
+        },
+        "dividers": {
+          "0": {
+            "title": "Step 1",
+            "text": "Add the oats, desiccated coconut and nuts into a large mixing bowl (you can experiment with different types of nuts)."
+          },
+          "1": {
+            "title": "Step 2",
+            "text": "Grate the apples. After, add the grated apples, coconut yoghurt, lemon juice and zest to the mixing bowl with the oats and nuts. Add the cashew milk and stir the museli mix to make sure everything is combined."
+          },
+          "2": {
+            "title": "Step 3",
+            "text": "Clingfilm or cover the bowl, leaving it in the fridge to soak overnight."
+          },
+          "3": {
+            "title": "Step 4",
+            "text": "You can prepare the berry coulis the same time as muesli and leave them both overnight in the fridge. Heat a medium frying pan or saucepan, and add in frozen or fresh berries (both work equally well here). Cook on a medium heat."
+          },
+          "4": {
+            "title": "Step 5",
+            "text": "As the berries start to release their juices, add in the lemon juice, tossing the pan to mix."
+          }
+        },
+        "tips": {
+          "title": "Trainer Tips",
+          "content": "Once you have mastered the perfect porridge base, you can enjoy experimenting with different toppings like chopped nuts, strawberries and berry coulis"
+        }
+      }
     }
   },
   "paymentPage": {
@@ -392,7 +602,7 @@
     "cvc": "CVC",
     "bText": "Confirm Payment"
   },
-  "date":{
+  "date": {
     "days": {
       "0": "Sunday",
       "1": "Monday",
