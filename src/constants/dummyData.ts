@@ -303,3 +303,57 @@ export const exerciesCarouselCardData: recepieCardDataType[] = [
     imageUrl: "/Rest Day.svg",
   },
 ];
+
+
+export interface ActivityBadgesProps {
+  url: string;
+  title: string
+  info: string
+}
+
+export const badgesData: { recepie: ActivityBadgesProps[], exercise: ActivityBadgesProps[] } = {
+  recepie: [
+      {
+          url: '/Icon material-access-time.svg',
+          title: 'ActivityDetailsPage.recepie.badges.0.title',
+          info: 'ActivityDetailsPage.recepie.badges.0.text'
+      },
+      {
+          url: '/Icon material-access-time.svg',
+          title: 'ActivityDetailsPage.recepie.badges.1.title',
+          info: 'ActivityDetailsPage.recepie.badges.1.text'
+      },
+      {
+          url: '/Icon material-restaurant.svg',
+          title: 'ActivityDetailsPage.recepie.badges.2.title',
+          info: 'ActivityDetailsPage.recepie.badges.2.text'
+      },
+      {
+          url: '/Difficulty.svg',
+          title: 'ActivityDetailsPage.recepie.badges.3.title',
+          info: 'ActivityDetailsPage.recepie.badges.3.text'
+      }
+  ],
+  exercise: [
+      {
+          url: '/Calories.svg',
+          title: 'ActivityDetailsPage.exercise.badges.0.title',
+          info: 'ActivityDetailsPage.exercise.badges.0.text'
+      },
+      {
+          url: '/ic_fitness_center_24px.svg',
+          title: 'ActivityDetailsPage.exercise.badges.1.title',
+          info: 'ActivityDetailsPage.exercise.badges.1.text'
+      },
+      {
+          url: '/ic_accessibility_24px.svg',
+          title: 'ActivityDetailsPage.exercise.badges.2.title',
+          info: 'ActivityDetailsPage.exercise.badges.2.text'
+      },
+      {
+          url: '/Difficulty.svg',
+          title: 'ActivityDetailsPage.exercise.badges.3.title',
+          info: 'ActivityDetailsPage.exercise.badges.3.text'
+      }
+  ]
+}

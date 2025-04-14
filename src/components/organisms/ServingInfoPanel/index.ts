@@ -1,0 +1,1 @@
+export {default as ServingInfoPanel} from './ServingInfoPanel'
