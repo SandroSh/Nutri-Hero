@@ -3,6 +3,7 @@ import { InputProps } from "antd"
 export enum Input_Size {
     idle = '',
     auto = "!w-auto !px-[12px]",
+    extra_sm = "w-[35px] !px-[12px] py-[4px]",
     sm = "!min-w-[70px] !px-[12px]",
     md = "!min-w-[154px] !px-[24px]",
     full = "!w-full !px-[20px]"

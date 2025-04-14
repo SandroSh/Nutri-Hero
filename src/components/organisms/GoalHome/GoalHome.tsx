@@ -13,7 +13,7 @@ import { WeeklyMenuCarousel } from '../WeeklyMenuCarousel'
 const GoalHome = () => {
   const t = useTranslations('myPlanPage.goalHome');
 
-  const recepieTabsData = [
+   const recepieTabsData = [
     { key: 'tab1', title: t('recepieTabs.tabs.today'), content: <RecepiesCarousel data={recepieCarouselCardData} /> },
     { key: 'tab2', title: t('recepieTabs.tabs.tomorrow'), content: <RecepiesCarousel data={shuffleArray(recepieCarouselCardData)} /> },
     {

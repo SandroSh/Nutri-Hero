@@ -430,35 +430,35 @@
           "pTitle": "Nutritional Facts",
           "amount": "Per 100g",
           "content": {
-            "0": {
+            "energy": {
               "title": "Energy",
               "value": "10.2g"
             },
-            "1": {
+            "cal": {
               "title": "Cal",
               "value": "10.2g"
             },
-            "2": {
+            "fat": {
               "title": "Fat",
               "value": "10.2g"
             },
-            "3": {
+            "sat": {
               "title": "Sat Fat",
               "value": "10.2g"
             },
-            "4": {
+            "carbs": {
               "title": "Carbs",
               "value": "10.2g"
             },
-            "5": {
+            "sugar": {
               "title": "Sugar",
               "value": "10.2g"
             },
-            "6": {
+            "protein": {
               "title": "Protein",
               "value": "10.2g"
             },
-            "7": {
+            "salt": {
               "title": "Salt",
               "value": "10.2g"
             }
@@ -487,7 +487,7 @@
           }
         },
         "details": {
-          "Title": "Ingredients",
+          "title": "Ingredients",
           "servings": "servings",
           "content": {
             "0": {
@@ -517,6 +517,7 @@
             "5": {
               "title": "Banana, halved then sliced",
               "value": "0.5"
+
             }
           },
           "allergens": "Allergens",

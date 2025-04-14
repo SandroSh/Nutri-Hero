@@ -23,7 +23,8 @@ export enum Margin_Top {
     idle = '',
     n = "!mt-0",
     nm = "!mt-[12px]",
-    xl = "!mt-[24px]"
+    xl = "!mt-[24px]",
+    two_xl = "!mt-[30px]"
 }
 
 
