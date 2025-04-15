@@ -13,7 +13,7 @@ const Tags = ({ type }: { type: string }) => {
             <div className='flex justify-center items-center gap-[10px]'>
                 {
                     [... new Array(4)].map((_, index) => (
-                        <p className='text-red-10'>{t(`${index}.title`)}</p>
+                        <p className='text-red-10' key={index}>{t(`${index}.title`)}</p>
                     ))}
             </div>
         </div>

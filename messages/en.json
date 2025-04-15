@@ -512,11 +512,13 @@
             },
             "4": {
               "title": "Pitted medjool dates, chopped",
-              "value": "4"
+              "value": "4",
+              "unit":""
             },
             "5": {
               "title": "Banana, halved then sliced",
-              "value": "0.5"
+              "value": "0.5",
+              "unit":""
 
             }
           },
@@ -613,5 +615,17 @@
       "5": "Friday",
       "6": "Saturday"
     }
+  },
+
+  "library":{
+    "mainHero":{
+      "title": "Search over 500 videos",
+      "paragraph":"An ever growing library of recipes and workouts",
+      "inputPlaceholder":"Search",
+      "exerciseButton":"Workouts",
+      "recepieButton":"Recipes"
+    }
   }
+
+
 }

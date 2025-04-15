@@ -1,6 +1,6 @@
 "use client";
 import { Input } from "antd";
-import { Input_Size, InputFieldType, Margin_Top } from "./inputField.config";
+import { Color_Type, Input_Size, InputFieldType, Margin_Top } from "./inputField.config";
 
 
 const InputField = ({
@@ -23,7 +23,7 @@ const InputField = ({
             type={type}
             size={size}
             onClick={onClick}
-            className={` ${Input_Size[iSize]} ${Margin_Top[mt]} ${className}`}
+            className={` ${Input_Size[iSize]} ${Margin_Top[mt]} ${className} ${Color_Type[cType]}`}
             {...rest}
         >
             {children}

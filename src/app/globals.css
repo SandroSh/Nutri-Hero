@@ -103,3 +103,8 @@
   color: black !important;
   margin-bottom: -10px !important;
 }
+
+.fixed-div{
+  position: absolute;
+  width: calc((1280px/2)-100px) !important;
+}

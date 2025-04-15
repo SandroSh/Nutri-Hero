@@ -20,7 +20,7 @@ const AuthButtons = ({className, ...rest}: AuthButtonsProps) => {
         <ButtonField className='px-[10px] py-[22px] bg-red-10  text-white' >{t('register')}</ButtonField>
       </Link>
       <Link href='/signin'>
-        <ButtonField className='text-red-10'  >{t('login')}</ButtonField>
+        <ButtonField className='text-red-10 shadow-none'  >{t('login')}</ButtonField>
       </Link>
     </div>
   )

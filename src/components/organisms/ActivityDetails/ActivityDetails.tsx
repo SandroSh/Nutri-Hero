@@ -1,9 +1,7 @@
 import { recepieCardDataType } from '@/components/molecules/Tabs/Tab.config'
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Hero from '../HeroSection/Hero'
-import { ImageField } from '@/components/atoms/ImageField'
 import { TitleField } from '@/components/atoms/TitleField'
-import { ActivityBadge } from '@/components/atoms/ActivityBadge'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { ActivityBadges } from '@/components/molecules/ActivityBadges'
@@ -26,6 +24,8 @@ import { CustomTable } from '@/components/atoms/CustomTable'
 const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
     const t = useTranslations('myPlanPage.ActivityDetailsPage');
     const t2 = useTranslations();
+    const [isScrolled, setIsScrolled] = useState(false);
+   
     const recepieTabsData = [
         { key: 'tab1', title: t2('myPlanPage.goalHome.recepieTabs.tabs.today'), content: <RecepiesCarousel data={recepieCarouselCardData} /> },
         { key: 'tab2', title: t2('myPlanPage.goalHome.recepieTabs.tabs.tomorrow'), content: <RecepiesCarousel data={shuffleArray(recepieCarouselCardData)} /> },
@@ -35,34 +35,68 @@ const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
         },
     ];
     const workoutTabsData = [
-        { key: 'tab1', title: t('exerciseTabs.tabs.today'), content: <RecepiesCarousel data={exerciesCarouselCardData} /> },
-        { key: 'tab2', title: t('exerciseTabs.tabs.tomorrow'), content: <RecepiesCarousel data={shuffleArray(exerciesCarouselCardData)} /> },
+        { key: 'tab1', title: t2('myPlanPage.goalHome.exerciseTabs.tabs.today'), content: <RecepiesCarousel data={exerciesCarouselCardData} /> },
+        { key: 'tab2', title: t2('myPlanPage.goalHome.exerciseTabs.tabs.tomorrow'), content: <RecepiesCarousel data={shuffleArray(exerciesCarouselCardData)} /> },
         {
-            key: 'tab3', title: t('exerciseTabs.tabs.weekAhead'), content:
+            key: 'tab3', title: t2('myPlanPage.goalHome.exerciseTabs.tabs.weekAhead'), content:
                 <WeeklyMenuCarousel cardsContent={exerciesCarouselCardData} />
         },
     ];
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > window.innerHeight - 100);
+
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+   
+
+  
+    const handlegoUp = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    }
+
+
     return (
         <div>
-            <Hero backgroundImg={data.imageUrl} outerClassName='items-center mt-[95px]' innerClassName='h-full' >
-                <div className='flex h-full flex-col items-center justify-between'>
-                    <div className='flex flex-col items-center justify-center mt-auto mb-auto'>
-                        <Image src={'/ic_play_circle_filled_24px.svg'} alt={'play icon'} width={50} height={50} />
-                        <TitleField text={t2(data.pText).toUpperCase()} className='text-white mt-[19px] text-7xl' />
-                    </div>
-                    <div className='flex flex-col items-center mb-4'>
-                        {
-                            data.key.includes('recepie') ?
-                                <ActivityBadges data={badgesData.recepie} />
-                                :
-                                <ActivityBadges data={badgesData.exercise} />
-                        }
-                    </div>
-                </div>
-            </Hero>
+            <div className={`${isScrolled ? 'relative h-[800px]' : ''}`}>
 
+                <Hero backgroundImg={data.imageUrl} outerClassName={`items-center mt-[95px] transition-all duration-500 ease-in-out ${isScrolled  ? 'fixed w-[calc(1280px/2-100px)] h-[240px] right-[calc((100%-1280px)/2)] top-10  rounded-lg shadow-lg z-50 rounded-none' : 'w-full'
+                    }`}
+                    innerClassName={`${isScrolled  ? 'h-full w-full' : 'h-full'}`}>
+
+                    <div className={`flex h-full flex-col items-center   justify-between ${isScrolled ? 'hidden' : ''}`}>
+                        <div className='flex flex-col items-center justify-center mt-auto mb-auto'>
+                            <Image src={'/ic_play_circle_filled_24px.svg'} alt={'play icon'} width={50} height={50} />
+                            <TitleField text={t2(data.pText).toUpperCase()} className='text-white mt-[19px] text-7xl' />
+                        </div>
+                        <div className='flex flex-col items-center mb-4'>
+                            {
+                                data.key.includes('recepie') ?
+                                    <ActivityBadges data={badgesData.recepie} />
+                                    :
+                                    <ActivityBadges data={badgesData.exercise} />
+                            }
+                        </div>
+                    </div>
+                    {
+                        isScrolled &&
+                        <div className='!w-full flex justify-between items-center m-[10px]'>
+                            <Image src="/ic_open_in_new_24px.svg" alt="icon" className='cursor-pointer' width={25} height={25} onClick={handlegoUp} />
+                            <Image src="/ic_close_24px.svg" alt="icon" className='cursor-pointer mr-[19px]' width={25} height={25} onClick={() => undefined} />
+                        </div>
+                    }
+
+                </Hero>
+            </div>
             <SectionContainer>
-                <div className='flex flex-col items-start justify-start self-start mt-[90px]'>
+                <div className={`flex flex-col items-start justify-start self-start mt-[90px]`}>
                     {
                         data.key.includes('recepie') ?
                             <>
@@ -86,10 +120,10 @@ const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
                 }
 
                 <div className=' w-full flex flex-wrap items-start justify-between mt-[50px] gap-[100px]'>
-                    <div className='flex flex-col w-[calc(100%/2-100px)]'>
+                    <div className='flex flex-col w-[calc(100%/2)]'>
                         {
                             [...new Array(5)].map((_, index) => (
-                                <div>
+                                <div key={index}>
                                     <CustomDivider key={index} prefixCls={t(`recepie.dividers.${index}.title`)} />
                                     <p className='mb-[40px] text-[19px]'>{t(`recepie.dividers.${index}.text`)}</p>
                                 </div>

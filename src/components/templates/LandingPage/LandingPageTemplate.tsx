@@ -1,4 +1,5 @@
 'use client'
+import { ButtonField } from '@/components/atoms/ButtonField'
 import { Navlink } from '@/components/atoms/NavLink'
 import Title from '@/components/atoms/TitleField/title.component'
 import { CarouselCard } from '@/components/molecules/CarouselCard'
@@ -16,7 +17,7 @@ import { useTranslations } from 'next-intl'
 
 
 const LandingPageTemplate = () => {
- 
+  const t = useTranslations('');
   const gymDisplay = useTranslations('Exercise Display');
   return (
     <div className='mt-[96px]'>
@@ -39,15 +40,15 @@ const LandingPageTemplate = () => {
         <InfoDisplay className='flex-col mt-[90px] '>
           <Title text={gymDisplay('title2')} className={`mt-[27px] mb-[25px] text-white`} />
 
-          <Tabs 
-          labels={tabsData.map((item, i) =>
-            <Navlink
-              className="mx-[29px] pt-[8px] pb-[8px]"
-              hoverAnimate={false}
-              key={i}
-            >
-              {gymDisplay(item.label)}
-            </Navlink>)}
+          <Tabs
+            labels={tabsData.map((item, i) =>
+              <Navlink
+                className="mx-[29px] pt-[8px] pb-[8px]"
+                hoverAnimate={false}
+                key={i}
+              >
+                {gymDisplay(item.label)}
+              </Navlink>)}
             children={tabsData.map((item, i) => <ExerciseCard pTitle={gymDisplay(item.pTitle)} pText={gymDisplay(item.pText)} imageUrl={item.imageUrl} key={i} className='!flex-row-reverse justify-between mt-[-100px] mb-[50px]' />)}
             className='second-tabs pb-[40px]'
           />
@@ -71,7 +72,10 @@ const LandingPageTemplate = () => {
       </SectionContainer>
 
       <SectionContainer className='bg-blue-1' >
-        <JoinCard />
+        <JoinCard>
+          <Title text={t('joinCard.title')} className='text-[30px]' />
+          <ButtonField className='bg-red-10 py-[25px] px-[37px] text-white'>{t('joinCard.buttonText')}</ButtonField>
+        </JoinCard>
       </SectionContainer>
 
 

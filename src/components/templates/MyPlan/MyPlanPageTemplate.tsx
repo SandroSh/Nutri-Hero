@@ -13,8 +13,7 @@ const MyPlanPageTemplate = () => {
   const pathname = usePathname();
   const [detailsData, setDetailsData] = useState<recepieCardDataType>();
   const key = pathname.split('/')[3];
-  console.log(pathname);
-  console.log(pathname.split('/'));
+ 
   useEffect(() => {
     if (key) {
       const obj = key.includes('recepie')

@@ -31,7 +31,7 @@ const ServingInfoPanel = ({ address }: { address: string }) => {
                             <div className='flex items-center'>
                                 <p>{(parseInt(t(`content.${i}.value`)) * serving).toString()} </p>
                                 {
-                                    t(`content.${i}.unit`).length < 10 && <p className='ml-[5px]'>{t(`content.${i}.unit`)}</p>
+                                    t(`content.${i}.unit`) && <p className='ml-[5px]'>{t(`content.${i}.unit`)}</p>
                                 }
 
                             </div>
