@@ -263,7 +263,6 @@ export const recepieCarouselCardData: recepieCardDataType[] = [
   },
 ];
 
-
 export const exerciesCarouselCardData: recepieCardDataType[] = [
   {
     key: "exercise-details-1",
@@ -304,56 +303,185 @@ export const exerciesCarouselCardData: recepieCardDataType[] = [
   },
 ];
 
-
 export interface ActivityBadgesProps {
   url: string;
-  title: string
-  info: string
+  title: string;
+  info: string;
 }
 
-export const badgesData: { recepie: ActivityBadgesProps[], exercise: ActivityBadgesProps[] } = {
+export const badgesData: {
+  recepie: ActivityBadgesProps[];
+  exercise: ActivityBadgesProps[];
+} = {
   recepie: [
-      {
-          url: '/Icon material-access-time.svg',
-          title: 'ActivityDetailsPage.recepie.badges.0.title',
-          info: 'ActivityDetailsPage.recepie.badges.0.text'
-      },
-      {
-          url: '/Icon material-access-time.svg',
-          title: 'ActivityDetailsPage.recepie.badges.1.title',
-          info: 'ActivityDetailsPage.recepie.badges.1.text'
-      },
-      {
-          url: '/Icon material-restaurant.svg',
-          title: 'ActivityDetailsPage.recepie.badges.2.title',
-          info: 'ActivityDetailsPage.recepie.badges.2.text'
-      },
-      {
-          url: '/Difficulty.svg',
-          title: 'ActivityDetailsPage.recepie.badges.3.title',
-          info: 'ActivityDetailsPage.recepie.badges.3.text'
-      }
+    {
+      url: "/Icon material-access-time.svg",
+      title: "ActivityDetailsPage.recepie.badges.0.title",
+      info: "ActivityDetailsPage.recepie.badges.0.text",
+    },
+    {
+      url: "/Icon material-access-time.svg",
+      title: "ActivityDetailsPage.recepie.badges.1.title",
+      info: "ActivityDetailsPage.recepie.badges.1.text",
+    },
+    {
+      url: "/Icon material-restaurant.svg",
+      title: "ActivityDetailsPage.recepie.badges.2.title",
+      info: "ActivityDetailsPage.recepie.badges.2.text",
+    },
+    {
+      url: "/Difficulty.svg",
+      title: "ActivityDetailsPage.recepie.badges.3.title",
+      info: "ActivityDetailsPage.recepie.badges.3.text",
+    },
   ],
   exercise: [
-      {
-          url: '/Calories.svg',
-          title: 'ActivityDetailsPage.exercise.badges.0.title',
-          info: 'ActivityDetailsPage.exercise.badges.0.text'
-      },
-      {
-          url: '/ic_fitness_center_24px.svg',
-          title: 'ActivityDetailsPage.exercise.badges.1.title',
-          info: 'ActivityDetailsPage.exercise.badges.1.text'
-      },
-      {
-          url: '/ic_accessibility_24px.svg',
-          title: 'ActivityDetailsPage.exercise.badges.2.title',
-          info: 'ActivityDetailsPage.exercise.badges.2.text'
-      },
-      {
-          url: '/Difficulty.svg',
-          title: 'ActivityDetailsPage.exercise.badges.3.title',
-          info: 'ActivityDetailsPage.exercise.badges.3.text'
-      }
-  ]
+    {
+      url: "/Calories.svg",
+      title: "ActivityDetailsPage.exercise.badges.0.title",
+      info: "ActivityDetailsPage.exercise.badges.0.text",
+    },
+    {
+      url: "/ic_fitness_center_24px.svg",
+      title: "ActivityDetailsPage.exercise.badges.1.title",
+      info: "ActivityDetailsPage.exercise.badges.1.text",
+    },
+    {
+      url: "/ic_accessibility_24px.svg",
+      title: "ActivityDetailsPage.exercise.badges.2.title",
+      info: "ActivityDetailsPage.exercise.badges.2.text",
+    },
+    {
+      url: "/Difficulty.svg",
+      title: "ActivityDetailsPage.exercise.badges.3.title",
+      info: "ActivityDetailsPage.exercise.badges.3.text",
+    },
+  ],
+};
+
+export interface recepieType extends recepieCardDataType {
+  type: "breakfast" | "lunch" | "dinner";
+  diet: "omnivore" | "vegetarian";
 }
+export const recepies: recepieType[] = [
+  {
+    key: "0",
+    imageUrl: "/Group 2264-0.png",
+    pTitle: "libraryExplorer.recepies.recepieCards.0.title",
+    pText: "libraryExplorer.recepies.recepieCards.0.p",
+    type: "dinner",
+    diet: "omnivore",
+  },
+  {
+    key: "1",
+    imageUrl: "/Group 2264-1.png",
+    pTitle: "libraryExplorer.recepies.recepieCards.1.title",
+    pText: "libraryExplorer.recepies.recepieCards.1.p",
+    type: "lunch",
+    diet: "omnivore",
+  },
+  {
+    key: "2",
+    imageUrl: "/Group 2264-0.png",
+    pTitle: "libraryExplorer.recepies.recepieCards.2.title",
+    pText: "libraryExplorer.recepies.recepieCards.2.p",
+    type: "breakfast",
+    diet: "vegetarian",
+  },
+  {
+    key: "3",
+    imageUrl: "/Group 2264-0.png",
+    pTitle: "libraryExplorer.recepies.recepieCards.0.title",
+    pText: "libraryExplorer.recepies.recepieCards.0.p",
+    type: "lunch",
+    diet: "vegetarian",
+  },
+  {
+    key: "4",
+    imageUrl: "/Group 2264-1.png",
+    pTitle: "libraryExplorer.recepies.recepieCards.1.title",
+    pText: "libraryExplorer.recepies.recepieCards.1.p",
+    type: "breakfast",
+    diet: "omnivore",
+  },
+  {
+    key: "5",
+    imageUrl: "/Group 2264-4.png",
+    pTitle: "libraryExplorer.recepies.recepieCards.2.title",
+    pText: "libraryExplorer.recepies.recepieCards.2.p",
+    type: "dinner",
+    diet: "vegetarian",
+  },
+  {
+    key: "6",
+    imageUrl: "/Group 2264-1.png",
+    pTitle: "libraryExplorer.recepies.recepieCards.0.title",
+    pText: "libraryExplorer.recepies.recepieCards.0.p",
+    type: "breakfast",
+    diet: "vegetarian",
+  },
+  {
+    key: "7",
+    imageUrl: "/Group 2264-4.png",
+    pTitle: "libraryExplorer.recepies.recepieCards.1.title",
+    pText: "libraryExplorer.recepies.recepieCards.1.p",
+    type: "dinner",
+    diet: "omnivore",
+  },
+  {
+    key: "8",
+    imageUrl: "/Group 2264-0.png",
+    pTitle: "libraryExplorer.recepies.recepieCards.2.title",
+    pText: "libraryExplorer.recepies.recepieCards.2.p",
+    type: "lunch",
+    diet: "vegetarian",
+  },
+  {
+    key: "9",
+    imageUrl: "/Group 2264-1.png",
+    pTitle: "libraryExplorer.recepies.recepieCards.0.title",
+    pText: "libraryExplorer.recepies.recepieCards.0.p",
+    type: "dinner",
+    diet: "vegetarian",
+  },
+  {
+    key: "9",
+    imageUrl: "/Group 2264-4.png",
+    pTitle: "libraryExplorer.recepies.recepieCards.1.title",
+    pText: "libraryExplorer.recepies.recepieCards.1.p",
+    type: "lunch",
+    diet: "omnivore",
+  },
+  {
+    key: "10",
+    imageUrl: "/Group 2264-1.png",
+    pTitle: "libraryExplorer.recepies.recepieCards.2.title",
+    pText: "libraryExplorer.recepies.recepieCards.2.p",
+    type: "breakfast",
+    diet: "omnivore",
+  },
+  {
+    key: "11",
+    imageUrl: "/Group 2264-0.png",
+    pTitle: "libraryExplorer.recepies.recepieCards.0.title",
+    pText: "libraryExplorer.recepies.recepieCards.0.p",
+    type: "lunch",
+    diet: "omnivore",
+  },
+  {
+    key: "12",
+    imageUrl: "/Group 2264-4.png",
+    pTitle: "libraryExplorer.recepies.recepieCards.1.title",
+    pText: "libraryExplorer.recepies.recepieCards.1.p",
+    type: "dinner",
+    diet: "vegetarian",
+  },
+  {
+    key: "13",
+    imageUrl: "/Group 2264-0.png",
+    pTitle: "libraryExplorer.recepies.recepieCards.2.title",
+    pText: "libraryExplorer.recepies.recepieCards.2.p",
+    type: "breakfast",
+    diet: "omnivore",
+  },
+];

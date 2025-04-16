@@ -513,13 +513,12 @@
             "4": {
               "title": "Pitted medjool dates, chopped",
               "value": "4",
-              "unit":""
+              "unit": ""
             },
             "5": {
               "title": "Banana, halved then sliced",
               "value": "0.5",
-              "unit":""
-
+              "unit": ""
             }
           },
           "allergens": "Allergens",
@@ -551,7 +550,7 @@
           }
         },
         "tags": {
-          "tagMainTitle":"Intense Extended Puppy Pose",
+          "tagMainTitle": "Intense Extended Puppy Pose",
           "tagTitle": "Tags",
           "0": {
             "title": "#Breakfast"
@@ -617,15 +616,72 @@
     }
   },
 
-  "library":{
-    "mainHero":{
+  "library": {
+    "mainHero": {
       "title": "Search over 500 videos",
-      "paragraph":"An ever growing library of recipes and workouts",
-      "inputPlaceholder":"Search",
-      "exerciseButton":"Workouts",
-      "recepieButton":"Recipes"
+      "paragraph": "An ever growing library of recipes and workouts",
+      "inputPlaceholder": "Search",
+      "exerciseButton": "Workouts",
+      "recepieButton": "Recipes"
+    },
+
+    "libraryExplorer": {
+      "title": "Recipes",
+      "title2": "Exercise",
+      "button": "Update Results",
+      
+      "recepies": {
+        "filtering": {
+          "recepieType": {
+            "title": "Recepie Type",
+            "options": {
+              "0": "breakfast",
+              "1": "lunch",
+              "2": "dinner"
+            }
+          },
+          "diet": {
+            "title": "Diet",
+            "options": {
+              "0": "omnivore",
+              "1": "vegetarian"
+            }
+          },
+          "excludeAllergens": {
+            "title": "Exclude Allergens",
+            "options": {
+              "0": "soybeans",
+              "1": "gluten",
+              "2": "sulphur dioxide",
+              "3": "mustard",
+              "4": "peanuts",
+              "5": "sesame seeds",
+              "6": "molluscs",
+              "7": "eggs",
+              "8": "crustaceans",
+              "9": "milk",
+              "10": "celery",
+              "11": "lupin",
+              "12": "tree nuts",
+              "13": "fish"
+            }
+          }
+        },
+        "recepieCards": {
+          "0": {
+            "title": "Museli",
+            "p": "Metatags"
+          },
+          "1": {
+            "title": "Tuna Salad",
+            "p": "Metatags"
+          },
+          "2": {
+            "title": "Thai Red Curry",
+            "p": "Metatags"
+          }
+        }
+      }
     }
   }
-
-
 }

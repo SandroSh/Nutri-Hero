@@ -13,7 +13,7 @@ const MyPlanPageTemplate = () => {
   const pathname = usePathname();
   const [detailsData, setDetailsData] = useState<recepieCardDataType>();
   const key = pathname.split('/')[3];
- 
+
   useEffect(() => {
     if (key) {
       const obj = key.includes('recepie')
@@ -33,7 +33,7 @@ const MyPlanPageTemplate = () => {
         return <GoalSummary />
       case '/my_plan/goal-home':
         return <GoalHome />
-        case `/my_plan/goal-home/${key}`:
+      case `/my_plan/goal-home/${key}`:
         if (detailsData) {
           console.log('detailsData', detailsData)
           return <ActivityDetails data={detailsData} />
