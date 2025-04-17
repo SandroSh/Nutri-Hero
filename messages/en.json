@@ -628,9 +628,9 @@
     "libraryExplorer": {
       "title": "Recipes",
       "title2": "Exercise",
-      "resultTitle":"Results",
+      "resultTitle": "Results",
       "button": "Update Results",
-      
+
       "recepies": {
         "filtering": {
           "recepieType": {
@@ -682,6 +682,72 @@
             "p": "Metatags"
           }
         }
+      }
+    }
+  },
+
+  "progress": {
+    "user": "Ruth Mendoza",
+    "date": {
+      "0": {
+        "time": "232",
+        "text": "Days"
+      },
+      "1": {
+        "time": "182",
+        "text": "Exercises"
+      },
+      "2": {
+        "time": "101",
+        "text": "Meals"
+      }
+    },
+    "parameters": {
+      "edit": "edit",
+
+      "0": {
+        "title": "Weight",
+        "amount": "54",
+        "unit": "kg"
+      },
+      "1": {
+        "title": "height",
+        "amount": "5'2",
+        "unit": "inches"
+      },
+      "2": {
+        "title": "Body Mass Index",
+        "amount": "22.5",
+        "conditions":{
+          "0":"Healthy",
+          "1":"Eat Healthy",
+          "2":"Go Gym"
+        }
+      }
+    },
+    "goalCard":{
+      "label":"ACTIVE GOAL",
+      "edit":"edit",
+      "title":"Drop down to size 8 for summer",
+      "paragraph":"A progressive plan, with an omnivore diet. Exercising three times per week at the gym. Focusing on your legs with yoga included to achieve fat loss."
+    },
+    "activateCard":{
+      "label":"PAST GOAL",
+      "title":"Yoga and veggie mont…",
+      "button":"Activate"
+    },
+    "carousel":{
+      "0":{
+        "title":"Hydration",
+        "paragraph":"Water comprises 60% of the human body and plays a vital role in most of the body’s processes and functions. Even a small amount of dehydration can interfere with these bodily processes, negatively affecting mood, physical and mental performance."
+      },
+      "1":{
+        "title":"Sleep",
+        "paragraph":"Sleep is essential for the body to rest, recover, and regenerate. It affects nearly every type of tissue and system in the body, from the brain and heart to metabolism and immune function. Inadequate sleep can impair memory, concentration, and decision-making, while also weakening the immune system and increasing the risk of chronic health issues."
+      },
+      "2":{
+        "title":"Nutrition",
+        "paragraph":"Proper nutrition fuels the body and provides the necessary vitamins and minerals for growth, repair, and energy. A balanced diet supports physical health, cognitive function, and emotional well-being. Poor dietary habits can lead to nutrient deficiencies, decreased energy, and an increased risk of illness and long-term disease."
       }
     }
   }
