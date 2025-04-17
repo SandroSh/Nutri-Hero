@@ -6,7 +6,7 @@ import { recepieCardDataType, RecepieTabItem, TabItem } from '../Tabs/Tab.config
 import { Link } from '@/i18n/navigation';
 import { recepieType } from '@/constants/dummyData';
 
-const GoalActivityCard = ({ data, className }:{ data: recepieCardDataType | recepieType, className?:string }) => {
+const GoalActivityCard = ({ data, className, innerClassName }:{ data: recepieCardDataType | recepieType, className?:string, innerClassName?:string }) => {
 
     const popoverContent = (
         <div className="flex items-center text-white bg-red-10 rounded-[4px] max-w-[165px] text-center ">
@@ -28,7 +28,7 @@ const GoalActivityCard = ({ data, className }:{ data: recepieCardDataType | rece
 
     return (
         <Link href={`/my_plan/goal-home/${data.key}`} className={`w-full reset-link ${className}`}>
-            <div className={`w-full max-w-[400px] mx-auto rounded-lg shadow-lg overflow-hidden mb-[15px] hover-card `}> <ImageField
+            <div className={`w-full ${innerClassName} mx-auto rounded-lg shadow-lg overflow-hidden mb-[15px] hover-card `}> <ImageField
                 src={data.imageUrl}
                 alt={data.pTitle}
                 className="object-contain"

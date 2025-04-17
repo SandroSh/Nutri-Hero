@@ -20,9 +20,9 @@ const RecepiesList = () => {
     return (
         <div>
 
-            <div className='flex flex-wrap justify-center items-center'>
+            <div className='flex flex-wrap justify-between items-center'>
                 {paginatedData.map((item, index) => (
-                    <GoalActivityCard data={{ ...item, pTitle: t(item.pTitle), pText: t(item.pText) }} key={index} className='max-w-[425px] mb-[10px]' />
+                    <GoalActivityCard data={{ ...item, pTitle: t(item.pTitle), pText: t(item.pText) }} key={index} className='max-w-[calc(1280px/3-10px)] ' />
                 ))}
             </div>
             <Pagination

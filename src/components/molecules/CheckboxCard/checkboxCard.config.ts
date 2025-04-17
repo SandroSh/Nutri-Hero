@@ -1,5 +1,5 @@
 export interface CheckBoxCardType {
     pText:string;
-    pClassName:string;
+    pClassName?:string;
     className?:string;
 }
