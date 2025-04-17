@@ -6,11 +6,11 @@ import { CheckBoxCardType } from './checkboxCard.config'
 
 
 
-const CheckboxCard = ({pText,pClassName }:CheckBoxCardType) => {
+const CheckboxCard = ({pText,pClassName, className }:CheckBoxCardType) => {
     return (
-        <div className='w-full flex justify-between items-center' >
-            <p className={`${pClassName}`}>{pText}</p>
+        <div className={` max-w-[100px] flex justify-start items-center ${className}`} >
             <CheckboxField/>
+            <p className={`${pClassName} ml-[10px]`}>{pText}</p>
         </div>
     )
 }

@@ -628,6 +628,7 @@
     "libraryExplorer": {
       "title": "Recipes",
       "title2": "Exercise",
+      "resultTitle":"Results",
       "button": "Update Results",
       
       "recepies": {

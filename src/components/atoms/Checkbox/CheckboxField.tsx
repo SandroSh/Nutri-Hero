@@ -6,7 +6,8 @@ import React from 'react'
 
 const CheckboxField = () => {
   return (
-    <Checkbox className='custom-checkbox max-w-0' />
+    <Checkbox className='custom-checkbox' />
+  
   )
 }
 

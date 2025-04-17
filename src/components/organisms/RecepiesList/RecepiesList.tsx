@@ -1,6 +1,6 @@
 import { recepies } from '@/constants/dummyData';
 import { Pagination } from 'antd';
-import React, { useState, useTransition } from 'react'
+import React, { useEffect, useState, useTransition } from 'react'
 import { GoalActivityCard } from '@/components/molecules/GoalActivityCard';
 import { useTranslations } from 'next-intl';
 
@@ -11,16 +11,18 @@ const RecepiesList = () => {
 
     const handlePageChange = (page: number) => {
         setCurrentPage(page);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
-
+   
     const startIndex = (currentPage - 1) * pageSize;
     const paginatedData = recepies.slice(startIndex, startIndex + pageSize);
 
     return (
-        <div  className='mt-[150px]'>
-            <div className='flex flex-wrap justify-center items-center gap-[16px]'>
+        <div>
+
+            <div className='flex flex-wrap justify-center items-center'>
                 {paginatedData.map((item, index) => (
-                    <GoalActivityCard data={{...item, pTitle:t(item.pTitle), pText:t(item.pText) }} key={index} className='max-w-[400px] mb-[-10px]' />
+                    <GoalActivityCard data={{ ...item, pTitle: t(item.pTitle), pText: t(item.pText) }} key={index} className='max-w-[425px] mb-[10px]' />
                 ))}
             </div>
             <Pagination
@@ -29,6 +31,7 @@ const RecepiesList = () => {
                 total={recepies.length}
                 onChange={handlePageChange}
                 className='mt-[15px]'
+                align='center'
             />
         </div>
     )

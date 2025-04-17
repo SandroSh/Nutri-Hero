@@ -19,8 +19,7 @@ const LibraryTemplate = () => {
             case '/library/explore-recepies':
                 return <RecepieExplorer />
             default:
-              
-
+                undefined
         }
     }
     return (

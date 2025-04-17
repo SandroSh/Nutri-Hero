@@ -11,6 +11,7 @@
   padding: 0 !important;
   box-sizing: border-box !important;
   font-family: "Lato", "sans-serif";
+
 }
 
 .hero-section {
@@ -104,7 +105,37 @@
   margin-bottom: -10px !important;
 }
 
-.fixed-div{
+.fixed-div {
   position: absolute;
-  width: calc((1280px/2)-100px) !important;
+  width: calc((1280px / 2)-100px) !important;
+}
+
+/* Pagination */
+
+.ant-pagination-item {
+  background-color: #f0f0f0 !important; /* light gray */
+  border: none;
+  margin: 0 5px !important;
+}
+.ant-pagination-item a {
+  font-weight: bold !important;
+}
+.ant-pagination-item-active {
+  background-color: #d9d9d9 !important; /* darker gray */
+  border-color: #d9d9d9 !important;
+  a {
+    color: #80334b;
+  }
+}
+.ant-pagination-item-active a {
+  color: #80334b !important;
+}
+.ant-pagination-item:hover {
+  background-color: #e0e0e0 !important;
+}
+
+
+/* Checkbox */
+.ant-checkbox-wrapper .ant-checkbox-wrapper-in-form-item .custom-checkbox .max-w-0 .css-dev-only-do-not-override-49qm{
+  max-width: unset !important;
 }

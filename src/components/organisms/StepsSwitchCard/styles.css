@@ -57,6 +57,11 @@
   transform: translateX(-50px);
   animation: slideIn 0.5s ease-in-out forwards;
 }
+.filter-cotnainer {
+  opacity: 0; 
+  transform: translatey(-50px);
+  animation: slideFrom 0.4s ease-in forwards;
+}
 .card-container1 {
   opacity: 0; 
   transform: translateX(-50px);
@@ -82,6 +87,16 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@keyframes slideFrom {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
