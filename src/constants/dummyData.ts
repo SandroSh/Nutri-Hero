@@ -485,3 +485,24 @@ export const recepies: recepieType[] = [
     diet: "omnivore",
   },
 ];
+
+
+export interface ProgressCarouselCardProps {
+  title: string;
+  paragraph: string;
+}
+
+export const progressCarouselData: ProgressCarouselCardProps[] = [
+  {
+    title: "progress.carousel.0.title",
+    paragraph: "progress.carousel.0.paragraph",
+  },
+  {
+    title: "progress.carousel.1.title",
+    paragraph: "progress.carousel.1.paragraph",
+  },
+  {
+    title: "progress.carousel.2.title",
+    paragraph: "progress.carousel.2.paragraph",
+  }
+]
