@@ -688,6 +688,7 @@
 
   "progress": {
     "user": "Ruth Mendoza",
+
     "date": {
       "0": {
         "time": "232",
@@ -704,7 +705,7 @@
     },
     "parameters": {
       "edit": "edit",
-
+      "button": "Save",
       "0": {
         "title": "Weight",
         "amount": "54",
@@ -718,36 +719,36 @@
       "2": {
         "title": "Body Mass Index",
         "amount": "22.5",
-        "conditions":{
-          "0":"Healthy",
-          "1":"Eat Healthy",
-          "2":"Go Gym"
+        "conditions": {
+          "0": "Underweight",
+          "1": "Healthy",
+          "2": "Overweight"
         }
       }
     },
-    "goalCard":{
-      "label":"ACTIVE GOAL",
-      "edit":"edit",
-      "title":"Drop down to size 8 for summer",
-      "paragraph":"A progressive plan, with an omnivore diet. Exercising three times per week at the gym. Focusing on your legs with yoga included to achieve fat loss."
+    "goalCard": {
+      "label": "ACTIVE GOAL",
+      "edit": "edit",
+      "title": "Drop down to size 8 for summer",
+      "paragraph": "A progressive plan, with an omnivore diet. Exercising three times per week at the gym. Focusing on your legs with yoga included to achieve fat loss."
     },
-    "activateCard":{
-      "label":"PAST GOAL",
-      "title":"Yoga and veggie mont…",
-      "button":"Activate"
+    "activateCard": {
+      "label": "PAST GOAL",
+      "title": "Yoga and veggie mont…",
+      "button": "Activate"
     },
-    "carousel":{
-      "0":{
-        "title":"Hydration",
-        "paragraph":"Water comprises 60% of the human body and plays a vital role in most of the body’s processes and functions. Even a small amount of dehydration can interfere with these bodily processes, negatively affecting mood, physical and mental performance."
+    "carousel": {
+      "0": {
+        "title": "Hydration",
+        "paragraph": "Water comprises 60% of the human body and plays a vital role in most of the body’s processes and functions. Even a small amount of dehydration can interfere with these bodily processes, negatively affecting mood, physical and mental performance."
       },
-      "1":{
-        "title":"Sleep",
-        "paragraph":"Water comprises 60% of the human body and plays a vital role in most of the body’s processes and functions. Even a small amount of dehydration can interfere with these bodily processes, negatively affecting mood, physical and mental performance."
+      "1": {
+        "title": "Sleep",
+        "paragraph": "Water comprises 60% of the human body and plays a vital role in most of the body’s processes and functions. Even a small amount of dehydration can interfere with these bodily processes, negatively affecting mood, physical and mental performance."
       },
-      "2":{
-        "title":"Nutrition",
-        "paragraph":"Water comprises 60% of the human body and plays a vital role in most of the body’s processes and functions. Even a small amount of dehydration can interfere with these bodily processes, negatively affecting mood, physical and mental performance."
+      "2": {
+        "title": "Nutrition",
+        "paragraph": "Water comprises 60% of the human body and plays a vital role in most of the body’s processes and functions. Even a small amount of dehydration can interfere with these bodily processes, negatively affecting mood, physical and mental performance."
       }
     }
   }
