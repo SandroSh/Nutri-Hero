@@ -18,7 +18,10 @@ const GoalHomeHero = () => {
                 <div className='flex items-start justify-start max-w-[50%] w-full ' >
                     <div className='w-full flex flex-col items-start justify-start'>
                         <div className='w-full flex justify-start items-center'>
-                            {timeTitleData.map((item, i) => <TimeTitle numText={item.numText} text={t(item.text)} key={i} />)}
+                            {timeTitleData.map((item, i) => <TimeTitle numText={item.numText} text={t(item.text)} key={i}
+                            className='mr-[77px]' tClassName='text-8xl'
+                            pClassName=''
+                            />)}
                         </div>
 
                         <div className=' w-full text-center flex items-end justify-between gap-[10px] mt-[45px]'>

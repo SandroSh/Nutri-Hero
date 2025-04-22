@@ -139,3 +139,8 @@
 .ant-checkbox-wrapper .ant-checkbox-wrapper-in-form-item .custom-checkbox .max-w-0 .css-dev-only-do-not-override-49qm{
   max-width: unset !important;
 }
+
+.ant-input-affix-wrapper{
+  border:none !important;
+  box-shadow: none !important;
+}

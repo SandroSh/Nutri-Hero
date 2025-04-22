@@ -13,7 +13,7 @@ export interface ProgressActivityCardProps {
 
 const ProgressActivityCard = ({ className, title, label, paragraph }:ProgressActivityCardProps) => {
   return (
-    <div className={`w-full bg-gray-3 rounded-[5px] ${className}`} >
+    <div className={`w-full bg-gray-0 rounded-[5px] ${className}`} >
       <div className='w-full flex flex-col justify-start items-start  pt-[16px] px-[25px] pb-[30px]'>
         <div className='w-full flex justify-between items-center mb-[10px]' >
           <p className='text-gray-7'>{label}</p>

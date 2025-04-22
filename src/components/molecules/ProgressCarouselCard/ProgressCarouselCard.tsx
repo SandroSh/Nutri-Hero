@@ -12,9 +12,9 @@ export interface ProgressCarouselCardProps {
 
 const ProgressCarouselCard = ({ className, title, paragraph }: ProgressCarouselCardProps) => {
     return (
-        <div className={`flex flex-col items-start ${className}`}>
+        <div className={`flex w-full flex-col  items-start ${className}`}>
             <Image src={'/Hydration.svg'} alt={'hydration icon'} width={70} height={70} />
-            <ParagraphField title={title} paragraph={paragraph} />
+            <ParagraphField title={title} paragraph={paragraph} className='mt-[20px]' pClassName='text-gray-7 text-base' />
         </div>
     )
 }

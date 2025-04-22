@@ -13,10 +13,10 @@ import React from 'react';
 
 const SwiperCarousel = ({ children, className, slidesPerView }: { children: React.ReactNode, className?: string, slidesPerView: number }) => {
     return (
-        <div className={className}>
+        <div className={` w-full h-full ${className}`}>
             <Swiper
                 spaceBetween={50}
-                slidesPerView={slidesPerView}
+                slidesPerView={1}
                 pagination={true}
                 history={{
                     key: 'slide',

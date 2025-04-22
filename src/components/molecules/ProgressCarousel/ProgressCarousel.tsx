@@ -17,8 +17,8 @@ const ProgressCarousel = ({ className }: { className: string }) => {
             <SwiperCarousel slidesPerView={1}>
                 {
                     progressCarouselData.map((item, i) => (
-                        <SwiperSlide key={i} data-history={i + 1}>
-                           <ProgressCarouselCard title={t(item.title)} paragraph={t(item.title)} />
+                        <SwiperSlide key={i} data-history={i + 1} className='mr-[50px]'>
+                           <ProgressCarouselCard title={t(item.title)} paragraph={t(item.paragraph)} />
                         </SwiperSlide>
                     ))
                 }
