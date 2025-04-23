@@ -486,7 +486,6 @@ export const recepies: recepieType[] = [
   },
 ];
 
-
 export interface ProgressCarouselCardProps {
   title: string;
   paragraph: string;
@@ -506,3 +505,64 @@ export const progressCarouselData: ProgressCarouselCardProps[] = [
     paragraph: "progress.carousel.2.paragraph",
   }
 ]
+
+export interface BlogCardProps {
+  title: string
+  author: string
+  paragraph: string
+  imgUrl: string
+  date: string
+}
+
+
+export const blogs:BlogCardProps[] = [
+  {
+    title: "blog.posts.0.title",
+    author: "blog.posts.0.author",
+    paragraph: "blog.posts.0.paragraph",
+    date: "blog.posts.0.date",
+    imgUrl:'/Blog2.png'
+  },
+  {
+    title: "blog.posts.1.title",
+    author: "blog.posts.1.author",
+    paragraph: "blog.posts.1.paragraph",
+    date: "blog.posts.1.date",
+    imgUrl:'/Blog1.png'
+  },
+  {
+    title: "blog.posts.0.title",
+    author: "blog.posts.0.author",
+    paragraph: "blog.posts.0.paragraph",
+    date: "blog.posts.0.date",
+    imgUrl:'/Group 3614.png'
+  },
+  {
+    title: "blog.posts.1.title",
+    author: "blog.posts.1.author",
+    paragraph: "blog.posts.1.paragraph",
+    date: "blog.posts.1.date",
+    imgUrl:'/Blog3.png'
+  },  {
+    title: "blog.posts.1.title",
+    author: "blog.posts.1.author",
+    paragraph: "blog.posts.1.paragraph",
+    date: "blog.posts.1.date",
+    imgUrl:'/Blog1.png'
+  },
+  {
+    title: "blog.posts.0.title",
+    author: "blog.posts.0.author",
+    paragraph: "blog.posts.0.paragraph",
+    date: "blog.posts.0.date",
+    imgUrl:'/Group 3614.png'
+  },
+  {
+    title: "blog.posts.1.title",
+    author: "blog.posts.1.author",
+    paragraph: "blog.posts.1.paragraph",
+    date: "blog.posts.1.date",
+    imgUrl:'/Blog3.png'
+  }
+];
+

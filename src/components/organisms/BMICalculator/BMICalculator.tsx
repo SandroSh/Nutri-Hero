@@ -7,7 +7,6 @@ const BMICalculator = () => {
     const t = useTranslations('progress.parameters');
     const [weight, setWeight] = useState(54);
     const [height, setHeight] = useState(170);
-    const [bmiText, setBmiText] = useState('Healthy');
     const calculateBMI = () => {
         const heightInMeters = height / 100;
         return (weight / (heightInMeters * heightInMeters)).toFixed(2);
