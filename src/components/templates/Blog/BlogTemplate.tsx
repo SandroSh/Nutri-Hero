@@ -1,16 +1,40 @@
-import { TitleField } from '@/components/atoms/TitleField'
-import Hero from '@/components/organisms/HeroSection/Hero'
-import React from 'react'
+'use client'
+import { BlogDetails } from '@/components/organisms/BlogDetails'
+import { BlogHome } from '@/components/organisms/BlogHome'
+import { BlogCardProps, blogs } from '@/constants/dummyData'
+import { usePathname } from '@/i18n/navigation'
+
+import React, { useEffect, useState } from 'react'
 
 
 
 
 const BlogTemplate = () => {
+    const pathname = usePathname();
+    const [blogData, setBlogData] = useState<BlogCardProps>(blogs[0]);
+    const key = pathname.split('/')[3];
+
+    useEffect(() => {
+        if (key) {
+            const obj = blogs.find(item => item.key.includes(key))
+            if (obj) {
+                setBlogData(obj);
+            }
+        }
+    }, [pathname, key]);
+
+    const renderComponents = () => {
+        switch (pathname) {
+            case '/blog/home':
+                return <BlogHome />
+            case `/blog/${key}`:
+                <BlogDetails data={blogData} />
+                return null;
+        }
+    }
     return (
         <div className='mt-[95px]'>
-            <Hero backgroundImg='/Hero Girl_2.png' outerClassName='max-h-[360px] !bg-top items-center ' imgFilter='bg-black/30 max-h-[360px]' >
-                <TitleField text={'News'} className='text-white text-7xl'/>
-            </Hero>
+            {renderComponents()}
         </div>
     )
 }
