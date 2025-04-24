@@ -503,82 +503,99 @@ export const progressCarouselData: ProgressCarouselCardProps[] = [
   {
     title: "progress.carousel.2.title",
     paragraph: "progress.carousel.2.paragraph",
-  }
-]
-
-export interface BlogCardProps {
-  key: string
-  title: string
-  author: string
-  paragraph: string
-  imgUrl: string
-  date: string
-}
-
-
-export const blogs:BlogCardProps[] = [
-  {
-    title: "blog.posts.0.title",
-    author: "blog.posts.0.author",
-    paragraph: "blog.posts.0.paragraph",
-    date: "blog.posts.0.date",
-    imgUrl: '/Blog2.png',
-    key: "0"
-  },
-  {
-    title: "blog.posts.1.title",
-    author: "blog.posts.1.author",
-    paragraph: "blog.posts.1.paragraph",
-    date: "blog.posts.1.date",
-    imgUrl: '/Blog1.png',
-    key: "1"
-  },
-  {
-    title: "blog.posts.0.title",
-    author: "blog.posts.0.author",
-    paragraph: "blog.posts.0.paragraph",
-    date: "blog.posts.0.date",
-    imgUrl: '/Group 3614.svg',
-    key: "2"
-  },
-  {
-    title: "blog.posts.1.title",
-    author: "blog.posts.1.author",
-    paragraph: "blog.posts.1.paragraph",
-    date: "blog.posts.1.date",
-    imgUrl: '/Blog3.png',
-    key: "3"
-  },  {
-    title: "blog.posts.1.title",
-    author: "blog.posts.1.author",
-    paragraph: "blog.posts.1.paragraph",
-    date: "blog.posts.1.date",
-    imgUrl: '/Blog1.png',
-    key: "4"
-  },
-  {
-    title: "blog.posts.0.title",
-    author: "blog.posts.0.author",
-    paragraph: "blog.posts.0.paragraph",
-    date: "blog.posts.0.date",
-    imgUrl: '/Group 3614.svg',
-    key: "5"
-  },
-  {
-    title: "blog.posts.1.title",
-    author: "blog.posts.1.author",
-    paragraph: "blog.posts.1.paragraph",
-    date: "blog.posts.1.date",
-    imgUrl: '/Blog3.png',
-    key: "6"
-  },
-  {
-    title: "blog.posts.0.title",
-    author: "blog.posts.0.author",
-    paragraph: "blog.posts.0.paragraph",
-    date: "blog.posts.0.date",
-    imgUrl: '/Group 3614.svg',
-    key: "7"
   },
 ];
 
+export interface BlogCardProps {
+  key: string;
+  title: string;
+  author: string;
+  paragraph: string;
+  imgUrl: string;
+  date: string;
+}
+
+export const blogs = [
+  {
+    title: "blog.posts.0.title",
+    author: "blog.posts.0.author",
+    paragraph: "blog.posts.0.paragraph",
+    date: "blog.posts.0.date",
+    imgUrl: "/Blog2.png",
+    key: "0",
+  },
+  {
+    title: "blog.posts.1.title",
+    author: "blog.posts.1.author",
+    paragraph: "blog.posts.1.paragraph",
+    date: "blog.posts.1.date",
+    imgUrl: "/Blog1.png",
+    key: "1",
+  },
+  {
+    title: "blog.posts.0.title",
+    author: "blog.posts.0.author",
+    paragraph: "blog.posts.0.paragraph",
+    date: "blog.posts.0.date",
+    imgUrl: "/Group 3614.svg",
+    key: "2",
+  },
+
+  {
+    title: "blog.posts.1.title",
+    author: "blog.posts.1.author",
+    paragraph: "blog.posts.1.paragraph",
+    date: "blog.posts.1.date",
+    imgUrl: "/Blog3.png",
+    key: "3",
+  },
+  {
+    title: "blog.posts.1.title",
+    author: "blog.posts.1.author",
+    paragraph: "blog.posts.1.paragraph",
+    date: "blog.posts.1.date",
+    imgUrl: "/Blog1.png",
+    key: "4",
+  },
+  {
+    title: "blog.posts.0.title",
+    author: "blog.posts.0.author",
+    paragraph: "blog.posts.0.paragraph",
+    date: "blog.posts.0.date",
+    imgUrl: "/Group 3614.svg",
+    key: "5",
+  },
+
+  {
+    title: "blog.posts.1.title",
+    author: "blog.posts.1.author",
+    paragraph: "blog.posts.1.paragraph",
+    date: "blog.posts.1.date",
+    imgUrl: "/Blog3.png",
+    key: "6",
+  },
+  {
+    title: "blog.posts.0.title",
+    author: "blog.posts.0.author",
+    paragraph: "blog.posts.0.paragraph",
+    date: "blog.posts.0.date",
+    imgUrl: "/Group 3614.svg",
+    key: "7",
+  },
+  {
+    title: "blog.posts.0.title",
+    author: "blog.posts.0.author",
+    paragraph: "blog.posts.0.paragraph",
+    date: "blog.posts.0.date",
+    imgUrl: "/Group 3614.svg",
+    key: "8",
+  },
+  {
+    title: "blog.posts.1.title",
+    author: "blog.posts.1.author",
+    paragraph: "blog.posts.1.paragraph",
+    date: "blog.posts.1.date",
+    imgUrl: "/Blog3.png",
+    key: "9",
+  },
+];

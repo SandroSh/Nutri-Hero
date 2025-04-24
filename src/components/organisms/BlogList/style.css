@@ -1,0 +1,8 @@
+.my-masonry-column {
+  padding-left: 1rem;
+  background-clip: padding-box;
+}
+
+.my-masonry-column > div {
+  margin-bottom: 1rem;
+}

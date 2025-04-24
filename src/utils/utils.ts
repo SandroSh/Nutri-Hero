@@ -1,4 +1,3 @@
-import { recepieCardDataType } from "@/components/molecules/Tabs/Tab.config";
 
 export function shuffleArray(arr:any) {
   let shuffled = [...arr];
