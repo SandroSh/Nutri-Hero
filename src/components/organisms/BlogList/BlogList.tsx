@@ -3,49 +3,44 @@ import InfiniteScroll from 'react-infinite-scroll-component'
 import Masonry from 'react-masonry-css'
 import { SectionContainer } from '../SectionContainer'
 import { BlogCardProps, blogs } from '@/constants/dummyData'
-import { shuffleArray } from '@/utils/utils'
+import { shuffleArray, transferText } from '@/utils/utils'
 import { BlogCard } from '@/components/molecules/BlogCard'
 import { useTranslations } from 'next-intl'
+import BlogDetailsCard from '@/components/molecules/BlogDetailsCard/BlogDetailsCard'
 
-const ITEMS_PER_LOAD = 6
 
-const breakpointColumnsObj = {
-  default: 3,
-  1100: 2,
-  700: 1,
-}
 
-const BlogList = () => {
+const BlogList = ({ column = 3, itemsPerLoad = 6, isDetailed = false, render }: {
+  column?: number,
+  itemsPerLoad?: number,
+  render?: (data: BlogCardProps, index: number) => React.ReactNode, isDetailed?: boolean
+}) => {
+
+  const breakpointColumnsObj = {
+    default: column,
+    1100: 2,
+    700: 1,
+  }
   const t = useTranslations('')
   const [shuffledBlogs, setShuffledBlogs] = useState<BlogCardProps[]>([])
   const [visibleBlogs, setVisibleBlogs] = useState<BlogCardProps[]>([])
   const [hasMore, setHasMore] = useState(true)
-  const transferText = (blog: BlogCardProps): BlogCardProps => {
-    const newBlog = { ...blog }
-    for (const key in newBlog) {
-      if (key !== 'imgUrl' && key !== 'key') {
-        const typedKey = key as keyof BlogCardProps
-        newBlog[typedKey] = t(newBlog[typedKey])
-      }
-    }
-    return newBlog
-  }
 
   useEffect(() => {
     const repeated = Array.from({ length: 5 }, () => shuffleArray(blogs)).flat()
     setShuffledBlogs(repeated)
-    setVisibleBlogs(repeated.slice(0, ITEMS_PER_LOAD))
+    setVisibleBlogs(repeated.slice(0, itemsPerLoad))
   }, [])
-  
-  
+
+
   const fetchMoreData = () => {
     const nextElements = shuffledBlogs.slice(
       visibleBlogs.length,
-      visibleBlogs.length + ITEMS_PER_LOAD
+      visibleBlogs.length + itemsPerLoad
     )
     setVisibleBlogs(prev => [...prev, ...nextElements])
 
-    if (visibleBlogs.length + ITEMS_PER_LOAD >= shuffledBlogs.length) {
+    if (visibleBlogs.length + itemsPerLoad >= shuffledBlogs.length) {
       setHasMore(false)
     }
   }
@@ -69,9 +64,11 @@ const BlogList = () => {
           className="flex w-auto gap-[16px]"
           columnClassName="my-masonry-column"
         >
-          {visibleBlogs.map((card, i) => (
-            <BlogCard key={card.key || i} data={transferText(card)} className="mb-4" />
-          ))}
+          {visibleBlogs.map((card, i) => {
+            const blogProps = { data: transferText(card, t), key: i }
+            const translated = transferText(card, t)
+            if (render) return render(translated, i)
+          })}
         </Masonry>
       </InfiniteScroll>
     </SectionContainer>

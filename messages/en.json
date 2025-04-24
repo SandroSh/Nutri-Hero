@@ -754,6 +754,15 @@
   },
   "blog": {
     "title": "NEWS",
+    "blogDetails": {
+      "title1": "How to meal prep your breakfast on a budget",
+      "title2": "Five rules for calisthenics",
+      "icons":{
+        "facebook":"Share",
+        "twitter":"Tweet",
+        "copy":"Copy Link"
+      }
+    },
     "posts": {
       "0": {
         "title": "Post Title",

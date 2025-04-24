@@ -12,7 +12,7 @@ import React, { useEffect, useState } from 'react'
 const BlogTemplate = () => {
     const pathname = usePathname();
     const [blogData, setBlogData] = useState<BlogCardProps>(blogs[0]);
-    const key = pathname.split('/')[3];
+    const key = pathname.split('/')[2];
 
     useEffect(() => {
         if (key) {
@@ -28,8 +28,7 @@ const BlogTemplate = () => {
             case '/blog/home':
                 return <BlogHome />
             case `/blog/${key}`:
-                <BlogDetails data={blogData} />
-                return null;
+                return <BlogDetails data={blogData} />
         }
     }
     return (

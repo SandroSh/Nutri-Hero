@@ -18,7 +18,8 @@ const BlogHome = () => {
             <Hero backgroundImg='/Hero Girl_2.png' outerClassName='max-h-[360px] !bg-top items-center ' imgFilter='bg-black/30 max-h-[360px]' >
                 <TitleField text={t('title').toUpperCase()} className='text-white text-7xl' />
             </Hero>
-            <BlogList />
+            <BlogList render={(data, i) => <BlogCard key={i} data={data} className="mb-4" />} />
+               
         </div>
     )
 }

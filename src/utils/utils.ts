@@ -1,3 +1,4 @@
+import { BlogCardProps } from "@/constants/dummyData";
 
 export function shuffleArray(arr:any) {
   let shuffled = [...arr];
@@ -30,3 +31,18 @@ export function generateDates(currentDate: Date): DateCardType[] {
   return days;
 }
 
+type TranslateFn = (value: string) => string
+
+export const transferText = (
+  blog: BlogCardProps,
+  t: TranslateFn
+): BlogCardProps => {
+  const newBlog = { ...blog }
+  for (const key in newBlog) {
+    if (key !== 'imgUrl' && key !== 'key') {
+      const typedKey = key as keyof BlogCardProps
+      newBlog[typedKey] = t(newBlog[typedKey] as string)
+    }
+  }
+  return newBlog
+}

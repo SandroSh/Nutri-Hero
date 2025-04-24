@@ -8,6 +8,7 @@ import {
   TabItem,
 } from "@/components/molecules/Tabs/Tab.config";
 import { RecepiesCarousel } from "@/components/organisms/RecepiesCarousel";
+import { title } from "process";
 import React from "react";
 export const tabsData: TabItem[] = [
   {
@@ -516,7 +517,7 @@ export interface BlogCardProps {
 }
 
 export const blogs = [
-  {
+  { 
     title: "blog.posts.0.title",
     author: "blog.posts.0.author",
     paragraph: "blog.posts.0.paragraph",
@@ -599,3 +600,4 @@ export const blogs = [
     key: "9",
   },
 ];
+
