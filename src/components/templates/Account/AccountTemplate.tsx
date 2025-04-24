@@ -2,7 +2,9 @@ import React from 'react'
 
 const AccountTemplate = () => {
   return (
-    <div>AccountTemplate</div>
+    <div>
+      
+    </div>
   )
 }
 
