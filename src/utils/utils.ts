@@ -31,7 +31,7 @@ export function generateDates(currentDate: Date): DateCardType[] {
   return days;
 }
 
-type TranslateFn = (value: string) => string
+export type TranslateFn = (value: string) => string
 
 export const transferText = (
   blog: BlogCardProps,

@@ -1,0 +1,22 @@
+.ant-collapse-header {
+  justify-content: space-around !important;
+  width: 100% !important;
+  flex-direction: row-reverse;
+  padding: 19px 25px !important;
+  
+  margin:15px 0 0 0 !important;
+  border-radius: 10px !important;
+  background-color: #EFEFF4 !important;
+}
+
+.ant-collapse-content-box {
+    padding: 19px 25px !important;
+    background-color: white !important;
+    line-height: 31px;
+    font-weight: 600 !important;
+}
+.ant-collapse-header-text{
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #000000 !important;
+}

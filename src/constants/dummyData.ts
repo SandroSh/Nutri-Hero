@@ -8,6 +8,7 @@ import {
   TabItem,
 } from "@/components/molecules/Tabs/Tab.config";
 import { RecepiesCarousel } from "@/components/organisms/RecepiesCarousel";
+import { TranslateFn } from "@/utils/utils";
 import { title } from "process";
 import React from "react";
 export const tabsData: TabItem[] = [
@@ -517,7 +518,7 @@ export interface BlogCardProps {
 }
 
 export const blogs = [
-  { 
+  {
     title: "blog.posts.0.title",
     author: "blog.posts.0.author",
     paragraph: "blog.posts.0.paragraph",
@@ -601,3 +602,24 @@ export const blogs = [
   },
 ];
 
+export const getItems = (panelStyle: any, t: TranslateFn) => [
+  {
+    key: "1",
+    label: t("contact.faq.cards.0.title"),
+    children: t("contact.faq.cards.0.paragraph"),
+    style: panelStyle,
+  },
+  {
+    key: "2",
+    label: t("contact.faq.cards.1.title"),
+    children: t("contact.faq.cards.1.paragraph"),
+    style: panelStyle,
+  },
+
+  {
+    key: "3",
+    label: t("contact.faq.cards.2.title"),
+    children: t("contact.faq.cards.2.paragraph"),
+    style: panelStyle,
+  },
+];

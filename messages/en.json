@@ -757,10 +757,10 @@
     "blogDetails": {
       "title1": "How to meal prep your breakfast on a budget",
       "title2": "Five rules for calisthenics",
-      "icons":{
-        "facebook":"Share",
-        "twitter":"Tweet",
-        "copy":"Copy Link"
+      "icons": {
+        "facebook": "Share",
+        "twitter": "Tweet",
+        "copy": "Copy Link"
       }
     },
     "posts": {
@@ -775,6 +775,36 @@
         "author": "AUTHOR",
         "paragraph": "Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean at leo tellus. Morbi eu leo sapien. Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce justo ipsum, placerat vitae erat ac, porttitor tincidunt lacus. In fermentum nulla nec fermentum tempus.",
         "date": "18 JAN 2019"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "faq": {
+      "title": "Faq’s",
+      "cards": {
+        "0": {
+          "title": "How do I complete an exercise?",
+          "paragraph": "To complete an exercise, follow the steps outlined in the instructions provided. Make sure to understand the goal of the task, perform the required actions, and submit your results if necessary. You can always review example solutions or hints if you're stuck. Once you've finished, you'll receive feedback or a completion notification."
+        },
+        "1": {
+          "title": "Can I modify my existing goal?",
+          "paragraph": "Yes, you can modify your existing goal at any time. Simply navigate to your goals section, select the goal you'd like to change, and click 'Edit'. From there, you can update the target, change the deadline, or adjust any related tasks. Your progress will remain intact unless you choose to reset it."
+        },
+        "2": {
+          "title": "How do I track my progress?",
+          "paragraph": "Progress tracking is available in your dashboard. It shows an overview of your completed tasks, current streaks, and milestones. Make sure to log your activities consistently so the system can provide accurate insights and recommendations based on your performance."
+        }
+      },
+      "form":{
+        "title": "Get in touch",
+        "paragraph": "One of our team will be in touch with you shortly",
+        "email": "Email",
+        "message": "Message",
+        "button": "Save",
+        "nameRequired": "Name is required",
+        "emailRequired": "Email is required",
+        "messageRequired": "Message is required"
       }
     }
   }
