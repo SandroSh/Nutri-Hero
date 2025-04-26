@@ -623,3 +623,22 @@ export const getItems = (panelStyle: any, t: TranslateFn) => [
     style: panelStyle,
   },
 ];
+
+
+export const accountSidebarLinks: {text:string, isActive:boolean, link:string}[] = [
+  {
+    text:'sidebar.personalDetails',
+    isActive:true,
+    link:'/account/personal-details'
+  },
+  {
+    text:'sidebar.allergens',
+    isActive:false,
+    link:'/account/allergens'
+  },
+  {
+    text:'sidebar.Settings',
+    isActive:false,
+    link:'/account/settings'
+  }
+]

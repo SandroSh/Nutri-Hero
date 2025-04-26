@@ -810,5 +810,74 @@
       "emailRequired": "Email is required",
       "messageRequired": "Message is required"
     }
+  },
+  "account": {
+    "bodyMeasurements": {
+      "Title": "Body Measurements",
+      "BMI": "Body Mass Index",
+      "Healthy": "Healthy",
+      "Height": "Height",
+      "Weight": "Weight",
+      "Waist": "Waist",
+      "Edit": "Edit",
+      "UnitOfMeasure": "Unit of Measure",
+      "Imperial": "Imperial"
+    },
+    "personalDetails": {
+      "Title": "Personal Details",
+      "Username": "Username",
+      "FirstName": "First Name",
+      "LastName": "Last Name",
+      "Gender": "Gender",
+      "DateOfBirth": "Date of Birth"
+    },
+    "address": {
+      "Title": "Address",
+      "Address": "Address",
+      "City": "City",
+      "PostCode": "Post Code"
+    },
+    "contactDetails": {
+      "Title": "Contact Details",
+      "MobileNumber": "Mobile Number",
+      "EmailAddress": "Email Address"
+    },
+    "buttons": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "logout": "Logout"
+    },
+    "sidebar": {
+      "name": "Ruth Mendoza",
+      "personalDetails": "Personal Details",
+      "allergens": "allergens",
+      "Settings": "Settings",
+      "date": {
+        "0": {
+          "time": "232",
+          "text": "Days"
+        },
+        "1": {
+          "time": "182",
+          "text": "Exercises"
+        },
+        "2": {
+          "time": "101",
+          "text": "Meals"
+        }
+      }
+    },
+    "userProfile": {
+      "Days": "Days",
+      "Reviews": "Reviews",
+      "Marks": "Marks"
+    },
+    "validation": {
+      "Required": "This field is required",
+      "InvalidEmail": "Please enter a valid email address",
+      "InvalidPhone": "Please enter a valid mobile number",
+      "InvalidPostCode": "Please enter a valid post code",
+      "InvalidDate": "Please enter a valid date"
+    }
   }
 }

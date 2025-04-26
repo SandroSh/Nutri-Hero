@@ -7,6 +7,8 @@ import { routing } from '@/i18n/routing';
 import 'antd/dist/reset.css';
 import { Navbar } from "@/components/organisms/Navbarr";
 import { Footer } from "@/components/organisms/Footer";
+import { usePathname } from "@/i18n/navigation";
+import { ConditionalFooter } from "@/components/organisms/ConditionalFooter";
 export default async function LocaleLayout({
   children,
   params
@@ -18,6 +20,8 @@ export default async function LocaleLayout({
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
+
+
   const messages = await getMessages();
 
   return (
@@ -26,7 +30,8 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Navbar/>
           {children}
-          <Footer />
+         
+          <ConditionalFooter/>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -19,8 +19,8 @@ const GoalHomeHero = () => {
                     <div className='w-full flex flex-col items-start justify-start'>
                         <div className='w-full flex justify-start items-center'>
                             {timeTitleData.map((item, i) => <TimeTitle numText={item.numText} text={t(item.text)} key={i}
-                            className='mr-[77px]' tClassName='text-8xl'
-                            pClassName=''
+                            className='mr-[77px]' tClassName='text-8xl text-white'
+                            pClassName='text-white'
                             />)}
                         </div>
 

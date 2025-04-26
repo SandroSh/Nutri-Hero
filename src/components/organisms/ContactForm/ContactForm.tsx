@@ -12,7 +12,7 @@ const ContactForm = () => {
   const t = useTranslations('contact')
   return (
     <div className="w-full flex flex-col justify-start">
-      <div className='w-full flex gap-[16px]'>
+      <div className='w-full flex gap-[16px] max-sm:flex-col'>
         <Form.Item name="emai;" className='w-full'
           rules={[{ required: true, message: t('form.emailRequired') }]}>
           <CustomInputField placeholder={t('form.email')} type={'email'} />

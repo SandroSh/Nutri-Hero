@@ -1,16 +1,18 @@
-import { TitleField } from '@/components/atoms/TitleField'
-import Hero from '@/components/organisms/HeroSection/Hero'
+
+import { AccountSidebar } from '@/components/organisms/AccountSidebar'
+import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 import React from 'react'
 
 
-
 const AccountTemplate = () => {
-  
+  const t = useTranslations('account')
   return (
-    <div>
-      <Hero backgroundImg='/Hero Girl_2.png' outerClassName='max-h-[360px] !bg-top items-center ' imgFilter='bg-black/30 max-h-[360px]' >
-        <TitleField text={''} className='text-white text-7xl' />
-      </Hero>
+    <div className='mt-[95px]'>
+      <AccountSidebar/>
+      <div className='h-[700px]'>
+
+      </div>
     </div>
   )
 }
