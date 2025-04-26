@@ -1,5 +1,6 @@
 import { TitleField } from '@/components/atoms/TitleField';
 import { CustomCollapse } from '@/components/molecules/CustomCollapse';
+import { ContactForm } from '@/components/organisms/ContactForm';
 import Hero from '@/components/organisms/HeroSection/Hero';
 import { SectionContainer } from '@/components/organisms/SectionContainer';
 import { useTranslations } from 'next-intl';
@@ -21,6 +22,9 @@ const ContactTemplate = () => {
         <div className='w-full max-w-[700px]'>
           <TitleField text={t('faq.title').toUpperCase()} className='text-4xl font-bold mb-[19px]' />
           <CustomCollapse />
+          <TitleField text={t('form.title')} className='text-4xl font-bold mt-[40px]' />
+          <p className='text-gray-5 mb-[30px]'>{t('form.paragraph')}</p>
+          <ContactForm/>
         </div>
       </SectionContainer>
     </div >

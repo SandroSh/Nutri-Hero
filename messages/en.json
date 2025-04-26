@@ -795,17 +795,20 @@
           "title": "How do I track my progress?",
           "paragraph": "Progress tracking is available in your dashboard. It shows an overview of your completed tasks, current streaks, and milestones. Make sure to log your activities consistently so the system can provide accurate insights and recommendations based on your performance."
         }
-      },
-      "form":{
-        "title": "Get in touch",
-        "paragraph": "One of our team will be in touch with you shortly",
-        "email": "Email",
-        "message": "Message",
-        "button": "Save",
-        "nameRequired": "Name is required",
-        "emailRequired": "Email is required",
-        "messageRequired": "Message is required"
       }
+    },
+    "form": {
+      "title": "Get in touch",
+      "paragraph": "One of our team will be in touch with you shortly",
+      "email": "Email address",
+      "message": "Message",
+      "name": "Your Name",
+      "subject": "Subject",
+      "button": "Save",
+      "subjectRequired": "Subject is required",
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "messageRequired": "Message is required"
     }
   }
 }
