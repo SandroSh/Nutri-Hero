@@ -3,11 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 @import "../components/atoms/Checkbox/style.css";
-/* @import '../components/molecules/SwiperCarousel/styles.css'; */
+
 @import "../components/organisms/Carousel/styles.css";
 @import "../components/organisms/StepsSwitchCard/styles.css";
 @import "../components/organisms/BlogList/style.css";
 @import "../components/molecules/CustomCollapse/style.css";
+@import "../components/atoms/CustomToggleSwitch/style.css";
 * {
   margin: 0 !important;
   padding: 0 !important;
