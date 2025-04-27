@@ -1,0 +1,1 @@
+export {default as AllergensForm} from './AllergensForm'

@@ -4,10 +4,10 @@ import { ButtonField } from '../ButtonField';
 import { InputField } from '../InputField';
 import { EditField } from '../EditField';
 
-const BodyMassInput = ({ label, unit, button, value, width, onChange }: { label: string; unit: string; button: string; value: number; width: string, onChange: (e: ChangeEvent<HTMLInputElement>) => void; }) => {
+const BodyMassInput = ({ label, unit, button, className, value, width, onChange }: { label: string; unit: string; button: string;className?:string, value: number; width: string, onChange: (e: ChangeEvent<HTMLInputElement>) => void; }) => {
     const [isEditig, setIsEditing] = useState(false);
     return (
-        <div className="w-full  bg-white h-[125px] flex flex-col justify-between pb-[18px] pr-[10px] pl-[19px] rounded-[5px] shadow-md">
+        <div className={`w-full  bg-white h-[125px] flex flex-col justify-between pb-[18px] pr-[10px] pl-[19px] rounded-[5px] shadow-md ${className}`}>
             <div className="mt-3 text-xl">{label}</div>
             <div className="flex justify-between items-center">
                 <InputField
