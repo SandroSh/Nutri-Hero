@@ -2,6 +2,7 @@ import { ButtonField } from '@/components/atoms/ButtonField'
 import { CustomToggleSwitch } from '@/components/atoms/CustomToggleSwitch'
 import { ParagraphField } from '@/components/atoms/ParagraphFIeld'
 import { TitleField } from '@/components/atoms/TitleField'
+import { AccountToggleCard } from '@/components/molecules/AccountFormCard'
 import { Form } from 'antd'
 import { useTranslations } from 'next-intl'
 import React from 'react'
@@ -27,11 +28,14 @@ const AllergensForm = () => {
             key={t(`inputs.${i}.text`)}
             name={t(`inputs.${i}.text`)}
           >
-
-            <div className='w-full flex justify-between items-center px-[19px] py-[15px] border-gray-2 border-[1px] rounded-[5px] mb-[11px]'>
-              <p className='text-black font-bold text-base'>{t(`inputs.${i}.text`)}</p>
-              <CustomToggleSwitch onText={t('inputs.toggleOnText')} offText={t('inputs.toggleOffText')} />
-            </div>
+            <AccountToggleCard
+              label={t(`inputs.${i}.text`)}
+              onText={t('inputs.toggleOnText')}
+              offText={t('inputs.toggleOffText')}
+              value={form.getFieldValue(`allergen_${i}`)}
+              onChange={(checked) => form.setFieldValue(`allergen_${i}`, checked)}
+              className='max-h-[50px]'
+            />
           </Form.Item>
         )
       }

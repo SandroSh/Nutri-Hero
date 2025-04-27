@@ -830,26 +830,27 @@
       "waist": "Waist",
       "edit": "Edit",
       "unitOfMeasure": "Unit of Measure",
+      "metric": "Metric",
       "imperial": "Imperial"
     },
     "personalDetails": {
-      "Title": "Personal Details",
-      "Username": "Username",
-      "FirstName": "First Name",
-      "LastName": "Last Name",
-      "Gender": "Gender",
-      "DateOfBirth": "Date of Birth"
+      "title": "Personal Details",
+      "username": "Username",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "gender": "Gender",
+      "dateOfBirth": "Date of Birth"
     },
     "address": {
-      "Title": "Address",
-      "Address": "Address",
-      "City": "City",
-      "PostCode": "Post Code"
+      "title": "Address",
+      "address": "Address",
+      "city": "City",
+      "postCode": "Post Code"
     },
     "contactDetails": {
-      "Title": "Contact Details",
-      "MobileNumber": "Mobile Number",
-      "EmailAddress": "Email Address"
+      "title": "Contact Details",
+      "mobileNumber": "Mobile Number",
+      "emailAddress": "Email Address"
     },
     "buttons": {
       "save": "Save",
