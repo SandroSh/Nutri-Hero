@@ -19,7 +19,7 @@ const AccountSidebar = () => {
                 </div>
                 {
                     <div className='flex  justify-center  mt-[35px]'>
-                        {[... new Array(3)].map((_, i) => <TimeTitle numText={t(`sidebar.date.${i}.time`)} text={t(`sidebar.date.${i}.text`)} key={i} tClassName='font-normal !text-[29px] !text-black leading-[14px]' pClassName='font-normal text-[15px] leading-[8px] mt-[15px] !text-black' className={i == 1 ? 'mx-[40px]' : ''} />)}
+                        {[... new Array(3)].map((_, i) => <TimeTitle numText={t(`sidebar.date.${i}.time`)} text={t(`sidebar.date.${i}.text`)} key={i} tClassName='font-normal !text-[1.4em] !text-black leading-[14px]' pClassName='font-normal text-[15px] leading-[8px] mt-[15px] !text-black' className={i == 1 ? 'mx-[40px]' : ''} />)}
                     </div>
                 }
 

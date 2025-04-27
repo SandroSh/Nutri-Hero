@@ -5,7 +5,7 @@ import { useLocale } from 'next-intl';
 import Image from 'next/image';
 import { useTransition } from 'react';
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher = ({className}:{className?:string}) => {
   const router = useRouter();
   const pathname = usePathname();
   const currentLocale = useLocale();
@@ -19,7 +19,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="self-center">
+    <div className={`self-center ${className}`}>
       <Image
         src={currentLocale === 'en' ? '/ENG.svg' : '/GE.svg'}
         width={35}

@@ -9,6 +9,7 @@ import {
 } from "@/components/molecules/Tabs/Tab.config";
 import { RecepiesCarousel } from "@/components/organisms/RecepiesCarousel";
 import { TranslateFn } from "@/utils/utils";
+import { link } from "fs";
 import { title } from "process";
 import React from "react";
 export const tabsData: TabItem[] = [
@@ -624,21 +625,47 @@ export const getItems = (panelStyle: any, t: TranslateFn) => [
   },
 ];
 
+export const accountSidebarLinks: {
+  text: string;
+  isActive: boolean;
+  link: string;
+}[] = [
+  {
+    text: "sidebar.personalDetails",
+    isActive: true,
+    link: "/account/personal-details",
+  },
+  {
+    text: "sidebar.allergens",
+    isActive: false,
+    link: "/account/allergens",
+  },
+  {
+    text: "sidebar.Settings",
+    isActive: false,
+    link: "/account/settings",
+  },
+];
 
-export const accountSidebarLinks: {text:string, isActive:boolean, link:string}[] = [
+export const navbarAuthenticatedLinks = [
   {
-    text:'sidebar.personalDetails',
-    isActive:true,
-    link:'/account/personal-details'
+    text: "link5",
+    link: "/my_plan/sign-up",
   },
   {
-    text:'sidebar.allergens',
-    isActive:false,
-    link:'/account/allergens'
+    text: "link6",
+    link: "/library/home",
   },
   {
-    text:'sidebar.Settings',
-    isActive:false,
-    link:'/account/settings'
-  }
-]
+    text: "link7",
+    link: "/progress/home",
+  },
+  {
+    text: "link8",
+    link: "/blog/home",
+  },
+  {
+    text: "link9",
+    link: "/account/personal-details",
+  },
+];

@@ -9,6 +9,7 @@ import { Navbar } from "@/components/organisms/Navbarr";
 import { Footer } from "@/components/organisms/Footer";
 import { usePathname } from "@/i18n/navigation";
 import { ConditionalFooter } from "@/components/organisms/ConditionalFooter";
+import { NavProvider } from "@/context/NavContext";
 export default async function LocaleLayout({
   children,
   params
@@ -28,10 +29,11 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <Navbar/>
-          {children}
-         
-          <ConditionalFooter/>
+          <NavProvider>
+            <Navbar />
+            {children}
+            <ConditionalFooter />
+          </NavProvider>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -4,7 +4,11 @@
     "link2": "Nutrition",
     "link3": "Expertise",
     "link4": "App",
-    "about": "Go to the about page"
+    "link5": "My Plan",
+    "link6": "Library",
+    "link7": "Progress",
+    "link8": "Blog",
+    "link9": "Account"
   },
   "authButtons": {
     "login": "Login",
