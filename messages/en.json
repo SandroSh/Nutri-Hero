@@ -728,6 +728,11 @@
           "1": "Healthy",
           "2": "Overweight"
         }
+      },
+      "3": {
+        "title": "Waist",
+        "amount": "100",
+        "unit": "cm"
       }
     },
     "goalCard": {
@@ -817,15 +822,15 @@
   },
   "account": {
     "bodyMeasurements": {
-      "Title": "Body Measurements",
+      "title": "Body Measurements",
       "BMI": "Body Mass Index",
-      "Healthy": "Healthy",
-      "Height": "Height",
-      "Weight": "Weight",
-      "Waist": "Waist",
-      "Edit": "Edit",
-      "UnitOfMeasure": "Unit of Measure",
-      "Imperial": "Imperial"
+      "healthy": "Healthy",
+      "height": "Height",
+      "weight": "Weight",
+      "waist": "Waist",
+      "edit": "Edit",
+      "unitOfMeasure": "Unit of Measure",
+      "imperial": "Imperial"
     },
     "personalDetails": {
       "Title": "Personal Details",
@@ -882,6 +887,32 @@
       "InvalidPhone": "Please enter a valid mobile number",
       "InvalidPostCode": "Please enter a valid post code",
       "InvalidDate": "Please enter a valid date"
+    },
+    "allergens": {
+      "title": "Allergens",
+      "paragraph1": "Select the allergens you wish to exclude from your ",
+      "span":" meal plan suggestions.",
+      "paragraph2": "Meals in the library do not exclude allergens unless you use the search filter.",
+      "inputs": {
+        "toggleOffText":"OFF",
+        "toggleOnText":"ON",
+        "cancel":"Cancel",
+        "save":"Save",
+        "0": { "text": "Sesame Seeds" },
+        "1": { "text": "Soy Beans" },
+        "2": { "text": "Lupin" },
+        "3": { "text": "Eggs" },
+        "4": { "text": "Molluscs" },
+        "5": { "text": "Milk" },
+        "6": { "text": "Peanuts" },
+        "7": { "text": "Mustard" },
+        "8": { "text": "Sulphur Dioxide" },
+        "9": { "text": "Tree Nuts" },
+        "10": { "text": "Celery" },
+        "11": { "text": "Gluten" },
+        "12": { "text": "Crustaceans" },
+        "13": { "text": "Fish" }
+      }
     }
   }
 }

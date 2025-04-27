@@ -18,6 +18,7 @@ export enum Color_Type {
     gray_green = "!bg-gray-2 !text-green font-bold",
     gray_red = "!bg-gray-2 !text-red-1 font-bold",
     gray_blue = "!bg-gray-2 !text-blue-1 font-bold",
+    gray_white = "!bg-gray-2 !text-white font-bold",
     blue_white = "!bg-blue-1 !text-white font-bold",
 }
 export enum Margin_Top {

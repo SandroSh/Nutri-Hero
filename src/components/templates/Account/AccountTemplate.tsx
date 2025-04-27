@@ -1,5 +1,5 @@
 'use client'
-import { AccountSettings } from '@/components/organisms/AccountSettings'
+import { AccountSettings } from '@/components/organisms/Settings'
 import { AccountSidebar } from '@/components/organisms/AccountSidebar'
 import { AllergensForm } from '@/components/organisms/AllergensForm'
 import { PersonalDetailsForm } from '@/components/organisms/PersonalDetailsForm'
@@ -31,7 +31,7 @@ const AccountTemplate = () => {
       <SectionContainer  innerWrapperClassName='w-full flex justify-end'>
         {renderForms()}
       </SectionContainer>
-
+      
     </div>
   )
 }
