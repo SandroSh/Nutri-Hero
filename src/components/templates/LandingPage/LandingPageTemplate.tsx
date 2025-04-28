@@ -38,7 +38,7 @@ const LandingPageTemplate = () => {
 
         </InfoDisplay>
         <InfoDisplay className='flex-col mt-[90px] '>
-          <Title text={gymDisplay('title2')} className={`mt-[27px] mb-[25px] text-white max-sm:text-center`} />
+          <Title text={gymDisplay('title2')} className={`mt-[27px] mb-[25px] text-white max-mdp:text-center`} />
 
           <Tabs
             labels={tabsData.map((item, i) =>
@@ -71,7 +71,7 @@ const LandingPageTemplate = () => {
         <DownloadAppSection />
       </SectionContainer>
 
-      <SectionContainer className='bg-blue-1 max-mdp:px-[50px]' >
+      <SectionContainer className='bg-blue-1 px-[50px]' >
         <JoinCard>
           <Title text={t('joinCard.title')} className='text-[30px] max-mdp:text-[19px]  max-mdp:text-center' />
           <ButtonField className='bg-red-10 py-[25px] px-[37px] text-white'>{t('joinCard.buttonText')}</ButtonField>

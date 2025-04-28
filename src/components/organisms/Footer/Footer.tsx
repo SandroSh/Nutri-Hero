@@ -13,9 +13,9 @@ const Footer = () => {
     return (
         <div className='w-full flex justify-center bg-white '>
             <div className=' flex flex-col justify-between  w-full  max-w-screen-xl' >
-                <div className=' w-full flex justify-between items-start gap-[100px] mt-[40px]'>
-                    <DownloadCard />
-                    <div className='flex justify-evenly items-start w-[70%]'>
+                <div className=' w-full flex justify-between items-start gap-[100px] mt-[40px] max-mdp:justify-center'>
+                    <DownloadCard className='' />
+                    <div className='flex justify-evenly items-start w-[70%] max-md:hidden'>
                         {
                             Object.entries(footerNavData).map(([section, keys], index) => {
                                 const translatedArray = keys.map(key => t(`nav.${section}.${key}`));
@@ -24,7 +24,7 @@ const Footer = () => {
                         }
                     </div>
                 </div>
-                <div className='flex flex-col items-start justify-start gap-[15px] mt-[15p] mb-[30px]'>
+                <div className='flex flex-col items-start justify-start gap-[15px] mt-[15p] mb-[30px]  max-mdp:items-center max-mdp:mt-[40px]'>
                     <Logo />
                     <p className='text-gray-7'>{t('copyright')}</p>
                 </div>
