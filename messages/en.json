@@ -892,13 +892,13 @@
     "allergens": {
       "title": "Allergens",
       "paragraph1": "Select the allergens you wish to exclude from your ",
-      "span":" meal plan suggestions.",
+      "span": " meal plan suggestions.",
       "paragraph2": "Meals in the library do not exclude allergens unless you use the search filter.",
       "inputs": {
-        "toggleOffText":"OFF",
-        "toggleOnText":"ON",
-        "cancel":"Cancel",
-        "save":"Save",
+        "toggleOffText": "OFF",
+        "toggleOnText": "ON",
+        "cancel": "Cancel",
+        "save": "Save",
         "0": { "text": "Sesame Seeds" },
         "1": { "text": "Soy Beans" },
         "2": { "text": "Lupin" },
@@ -914,6 +914,16 @@
         "12": { "text": "Crustaceans" },
         "13": { "text": "Fish" }
       }
+    },
+    "accountSettings": {
+      "title": "Payment Method",
+      "pTitle": "Your subscription is active",
+      "paragraph": "If you cancel your plan now you will be able to continue using Nutriheros until ",
+      "stripePlaceholder":"",
+      "paypalPlaceholder":"om@r.ge",
+      "date": "31/05/2020",
+      "customerId": "Customer ID: 029819",
+      "cancelSubscription": "Cancel Subscription"
     }
   }
 }

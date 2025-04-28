@@ -15,6 +15,7 @@ export enum Color_Type {
     white_red = "!bg-white !text-red-10 font-bold",
     red_white = "!bg-red-10 !text-white font-bold",
     red_blue = "!bg-red-10 !text-blue-1 font-bold",
+    lightred_white = "!bg-red-0 !text-blue-1 font-bold",
     gray_green = "!bg-gray-2 !text-green font-bold",
     gray_red = "!bg-gray-2 !text-red-1 font-bold",
     gray_blue = "!bg-gray-2 !text-blue-1 font-bold",

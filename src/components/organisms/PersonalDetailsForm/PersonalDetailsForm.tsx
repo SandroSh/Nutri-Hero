@@ -17,9 +17,9 @@ const PersonalDetailsForm = () => {
   
   const [form] = Form.useForm()
   return (
-    <div className='w-full max-w-[800px] flex flex-col justify-end mt-[70px] pb-[270px] text- '>
-      <TitleField text={t('bodyMeasurements.title')} className='mb-[19px] !text-[1.5rem]' />
-      <ComplexBMICalculator />
+    <div className='w-full max-w-[800px] flex flex-col justify-end mt-[70px] pb-[270px]'>
+      <TitleField text={t('bodyMeasurements.title')} className='mb-[19px] !text-[1.4rem]' />
+      <ComplexBMICalculator  />
       <AccountToggleCard
         label={t('bodyMeasurements.unitOfMeasure')}
         onText={t('bodyMeasurements.metric')}
@@ -29,7 +29,7 @@ const PersonalDetailsForm = () => {
       />
 
       <div className='mt-[50px]'>
-        <TitleField text={t('personalDetails.title')} className='mb-[19px] !text-[1.5rem]' />
+        <TitleField text={t('personalDetails.title')} className='mb-[19px] !text-[1.4rem]' />
         <Form.Item
           key={t(`personalDetails.username`)}
           name={t(`personalDetails.username`)}
@@ -71,7 +71,7 @@ const PersonalDetailsForm = () => {
       </div>
 
       <div>
-        <TitleField text={t('address.title')} className='mb-[19px] !text-[1.5rem]' />
+        <TitleField text={t('address.title')} className='mb-[19px] !text-[1.4rem]' />
         <Form.Item
           key={t(`address.address`)}
           name={t(`address.address`)}
@@ -98,7 +98,7 @@ const PersonalDetailsForm = () => {
       </div>
 
       <div>
-        <TitleField text={t('contactDetails.title')} className='mb-[19px] !text-[1.5rem]' />
+        <TitleField text={t('contactDetails.title')} className='mb-[19px] !text-[1.4rem]' />
         <Form.Item
           key={t(`contactDetails.mobileNumber`)}
           name={t(`contactDetails.mobileNumber`)}

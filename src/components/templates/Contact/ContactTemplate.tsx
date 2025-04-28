@@ -15,7 +15,7 @@ const ContactTemplate = () => {
   return (
     <div className='mt-[95px]'>
       <Hero backgroundImg='/Hero Girl_2.png' outerClassName='max-h-[360px] !bg-top items-center ' imgFilter='bg-black/30 max-h-[360px]' >
-        <TitleField text={t('title').toUpperCase()} className='text-white text-6xl' />
+        <TitleField text={t('title').toUpperCase()} className='text-white text-6xl max-sm:text-2xl' />
       </Hero>
 
       <SectionContainer className='mt-[40px]' innerWrapperClassName='flex justify-center px-[50px]'>

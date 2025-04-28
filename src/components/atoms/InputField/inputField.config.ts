@@ -22,10 +22,14 @@ export enum Margin_Top {
     nm = "!mt-[12px]",
     xl = "!mt-[24px]"
 }
-
+export enum Border {
+    idle = '',
+    gray= "b-gray"
+}
 
 export interface InputFieldType extends InputProps{
     iSize?: keyof typeof Input_Size
     cType?:keyof typeof Color_Type
     mt?: keyof typeof Margin_Top
+    border?: keyof typeof Border
 }

@@ -6,7 +6,7 @@ const CustomTextArea = ({ placeholder}: { placeholder: string}) => {
         <div className="flex min-w-full justify-center items-center">
             <div className="w-full relative">
                 <textarea
-                    className="peer w-full min-h-[150px] p-4 pt-8 pr-4 text-black font-bold text-base bg-inherit border-2 rounded-md outline-none transition disabled:opacity-70 disabled:cursor-not-allowed border-gray-2"
+                    className="peer w-full min-h-[150px] p-4 pt-8 pr-4 text-black font-bold text-base bg-inherit border-2 rounded-md outline-none transition disabled:opacity-70 disabled:cursor-not-allowed border-gray-2 max-sm:"
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                 />
