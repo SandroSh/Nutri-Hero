@@ -43,9 +43,10 @@ module.exports = {
           1:'#80334B',
         },
       },
-      sc: {
+      screens: {
         sm: "640px",
         md: "768px",
+        mdp: '850px',
         lg: "1024px",
         xl: "1300px",
       },

@@ -15,7 +15,7 @@ const CustomCarousel = ({ children, className, slidesToShow, autoplay = true }: 
                 autoplaySpeed={3000}
                 slidesToShow={slidesToShow}
                 className={`${className} ${isGrabbing ? 'cursor-grabbing' : 'cursor-grab'}`}
-                autoplay = {autoplay}
+                // autoplay = {autoplay}
             >
                 {children}
             </Carousel>

@@ -32,13 +32,13 @@ const LandingPageTemplate = () => {
           <Tabs
             centered={true}
             className={'pb-[40px]'}
-            labels={tabsData.map((item, i) => <Navlink className="mx-[29px] pt-[8px] pb-[8px]" hoverAnimate={false} key={i} >{gymDisplay(item.label)}</Navlink>)}
-            children={tabsData.map((item, i) => <ExerciseCard pTitle={gymDisplay(item.pTitle)} pText={gymDisplay(item.pText)} imageUrl={item.imageUrl} key={i} />)}
+            labels={tabsData.map((item, i) => <Navlink className="mx-[29px] pt-[8px] pb-[8px] " hoverAnimate={false} key={i} >{gymDisplay(item.label)}</Navlink>)}
+            children={tabsData.map((item, i) => <ExerciseCard pTitle={gymDisplay(item.pTitle)} pText={gymDisplay(item.pText)} imageUrl={item.imageUrl} key={i} className='max-[830px]:flex-col-reverse' />)}
           />
 
         </InfoDisplay>
         <InfoDisplay className='flex-col mt-[90px] '>
-          <Title text={gymDisplay('title2')} className={`mt-[27px] mb-[25px] text-white`} />
+          <Title text={gymDisplay('title2')} className={`mt-[27px] mb-[25px] text-white max-sm:text-center`} />
 
           <Tabs
             labels={tabsData.map((item, i) =>
@@ -49,20 +49,20 @@ const LandingPageTemplate = () => {
               >
                 {gymDisplay(item.label)}
               </Navlink>)}
-            children={tabsData.map((item, i) => <ExerciseCard pTitle={gymDisplay(item.pTitle)} pText={gymDisplay(item.pText)} imageUrl={item.imageUrl} key={i} className='!flex-row-reverse justify-between mt-[-100px] mb-[50px]' />)}
+            children={tabsData.map((item, i) => <ExerciseCard pTitle={gymDisplay(item.pTitle)} pText={gymDisplay(item.pText)} imageUrl={item.imageUrl} key={i} className='!flex-row-reverse justify-between mt-[-100px] mb-[50px] max-[830px]:flex-col-reverse max-[830px]:mt-[10px]' />)}
             className='second-tabs pb-[40px]'
           />
         </InfoDisplay>
       </SectionContainer>
       <SectionContainer innerWrapperClassName='max-w-[1700px] w-full'>
-        <CustomCarousel slidesToShow={1}>
+        <CustomCarousel slidesToShow={1} className=''>
           {
-            carouselData.map((item, i) => <CarouselCard data={item} key={i} />)
+            carouselData.map((item, i) => <CarouselCard data={item} key={i} outerClassName='max-mdp:flex-col-reverse' />)
           }
         </CustomCarousel>
         <CustomCarousel slidesToShow={1}>
           {
-            carouselData.map((item, i) => <CarouselCard data={item} key={i} outerClassName='flex-row-reverse' />)
+            carouselData.map((item, i) => <CarouselCard data={item} key={i} outerClassName='flex-row-reverse max-mdp:flex-col-reverse' />)
           }
         </CustomCarousel>
       </SectionContainer>
@@ -71,9 +71,9 @@ const LandingPageTemplate = () => {
         <DownloadAppSection />
       </SectionContainer>
 
-      <SectionContainer className='bg-blue-1' >
+      <SectionContainer className='bg-blue-1 max-mdp:px-[50px]' >
         <JoinCard>
-          <Title text={t('joinCard.title')} className='text-[30px]' />
+          <Title text={t('joinCard.title')} className='text-[30px] max-mdp:text-[19px]  max-mdp:text-center' />
           <ButtonField className='bg-red-10 py-[25px] px-[37px] text-white'>{t('joinCard.buttonText')}</ButtonField>
         </JoinCard>
       </SectionContainer>

@@ -15,7 +15,6 @@
   padding: 0 !important;
   box-sizing: border-box !important;
   font-family: "Lato", "sans-serif";
-
 }
 
 .hero-section {
@@ -138,16 +137,28 @@
   background-color: #e0e0e0 !important;
 }
 
-
 /* Checkbox */
-.ant-checkbox-wrapper .ant-checkbox-wrapper-in-form-item .custom-checkbox .max-w-0 .css-dev-only-do-not-override-49qm{
+.ant-checkbox-wrapper
+  .ant-checkbox-wrapper-in-form-item
+  .custom-checkbox
+  .max-w-0
+  .css-dev-only-do-not-override-49qm {
   max-width: unset !important;
 }
 
-.ant-input-affix-wrapper{
-  border:none !important;
+.ant-input-affix-wrapper {
+  border: none !important;
   box-shadow: none !important;
 }
-.end{
+.end {
   align-items: flex-end !important;
+}
+
+@media (max-width: 830px) {
+  .second-tabs .ant-tabs-nav-wrap {
+    justify-content: center !important;
+  }
+  .slick-list{
+    justify-content: space-between !important;
+  }
 }
