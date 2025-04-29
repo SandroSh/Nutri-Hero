@@ -19,9 +19,13 @@ const SignIn = ({ resetFunction }: { resetFunction: Dispatch<SetStateAction<bool
         router.push('/')
     }
     return (
-        <div className='max-w-[500px] bg-white rounded-md w-full flex flex-col items-center justify-center py-[40px] px-[85px] mt-[60px]'>
-            <TitleField text={t('title')} className='mb-[30px] text-center text-[1.5em]' />
-            <Input size='large' suffix={<p onClick={() => resetFunction((state) => !state)} className={inputInnerIconStyle}>{t('forget')}</p>} placeholder={t('username')} className={grayInputStyle} />
+        <div className='max-w-[500px] bg-white rounded-md w-full flex flex-col items-center justify-center py-[40px] px-[85px] mt-[60px]  max-sm:px-[19px]  max-sm:h-[50%]' >
+            <TitleField text={t('title')} className='mb-[30px] text-center text-[1.5em] max-sm:text-[19px]' />
+            <Input 
+            size='large' 
+            suffix={<p onClick={() => resetFunction((state) => !state)} className={inputInnerIconStyle}>{t('forget')}</p>} placeholder={t('username')} 
+            className={`${grayInputStyle} max-sm:w-[100%]`} />
+
             <Input size='large' type='password' suffix={<p onClick={() => resetFunction((state) => !state)} className={inputInnerIconStyle}>{t('forget')}</p>} placeholder={t('password')} className={grayInputStyle} />
 
             <Divider orientation='center' className='before:mx-[15px] after:mx-[15px] text-gray-3 mb-[19px]' >  {t('divider')}  </Divider>

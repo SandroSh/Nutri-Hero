@@ -11,7 +11,7 @@ const AccountSidebar = () => {
     const pathname = usePathname();
 
     return (
-        <div className='w-[400px] bg-gray-0 h-[100%] fixed top-0 left-0 pt-[130px] flex justify-center'>
+        <div className='w-[400px] max-mdp:hidden bg-gray-0 h-[100%] fixed top-0 left-0 pt-[130px] flex justify-center'>
             <div className='flex flex-col items-start absolute left-[120px]  '>
                 <div className='flex flex-col'>
                     <Image src={'/Avatar.png'} alt={'image'} width={130} height={130} />
@@ -36,3 +36,5 @@ const AccountSidebar = () => {
 }
 
 export default AccountSidebar
+
+

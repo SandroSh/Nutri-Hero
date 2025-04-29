@@ -39,6 +39,7 @@ const BMICalculator = () => {
             <CalculatedBMICard
                 bmi={parseFloat(calculateBMI())}
                 title={t('2.title')}
+                className='max-w-[410px]'
             />
         </div>
 

@@ -6,8 +6,8 @@ import React from 'react'
 
 const RegistrationTemplate = () => {
   return (
-    <div className='mt-[96px]'>
-      <Hero innerClassName='!w-full mt-[90px] ' outerClassName='hero-section'>
+    <div className='mt-[96px] max-  '>
+      <Hero innerClassName='!w-full mt-[90px] max-xl:px-[19px] max-mdp:pb-[70px]' outerClassName='hero-section max-mdp:h-max max-mdp:mb-[50px]' >
         <RegistrationCard/>
       </Hero>
     </div>

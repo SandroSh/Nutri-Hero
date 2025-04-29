@@ -14,12 +14,15 @@ import { ButtonField } from '@/components/atoms/ButtonField';
 
 const PersonalDetailsForm = () => {
   const t = useTranslations('account');
-  
+
   const [form] = Form.useForm()
+
   return (
-    <div className='w-full max-w-[800px] flex flex-col justify-end mt-[70px] pb-[270px]'>
-      <TitleField text={t('bodyMeasurements.title')} className='mb-[19px] !text-[1.4rem]' />
-      <ComplexBMICalculator  />
+    <div className='w-full max-w-[800px] flex flex-col justify-end mt-[70px] pb-[270px] max-[1224px]:items-end max-[1224px]:pr-[50px]'>
+      <div className='flex flex-col justify-start'>
+        <TitleField text={t('bodyMeasurements.title')} className='mb-[19px] !text-[1.4rem] ' />
+        <ComplexBMICalculator />
+      </div>
       <AccountToggleCard
         label={t('bodyMeasurements.unitOfMeasure')}
         onText={t('bodyMeasurements.metric')}

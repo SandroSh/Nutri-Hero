@@ -10,8 +10,8 @@ import React, { useState } from 'react'
 const SignInPageTemplate = () => {
   const [isReseting, setIsReseting] = useState<boolean>(false)
   return (
-    <div className='mt-[96px]' >
-      <Hero outerClassName='!items-start hero-section'>
+    <div className='mt-[96px] ' >
+      <Hero outerClassName='!items-start hero-section max-sm:px-[19px] max-sm:h-[50%]' innerClassName='max-sm:!mb-[50px]'>
         {
           isReseting ?
             <ResetCard resetFunction={setIsReseting} />
