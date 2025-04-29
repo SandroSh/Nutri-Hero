@@ -28,7 +28,7 @@ const AccountTemplate = () => {
   return (
     <div className='mt-[110px] flex justify-around '>
       <AccountSidebar />
-      <SectionContainer  innerWrapperClassName='w-full flex justify-end max-[1224px]:justify-center'>
+      <SectionContainer  innerWrapperClassName='w-full flex justify-end max-xl:px-[19px] max-mdp:justify-center'>
         {renderForms()}
       </SectionContainer>
       

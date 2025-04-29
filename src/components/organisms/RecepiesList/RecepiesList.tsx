@@ -18,9 +18,9 @@ const RecepiesList = () => {
     const paginatedData = recepies.slice(startIndex, startIndex + pageSize);
 
     return (
-        <div>
+        <div className='max-xl:px-[19px] '>
 
-            <div className='flex flex-wrap justify-between items-center'>
+            <div className='flex flex-wrap justify-between max-xl:justify-evenly max-xl:gap-[30px] items-center'>
                 {paginatedData.map((item, index) => (
                     <GoalActivityCard data={{ ...item, pTitle: t(item.pTitle), pText: t(item.pText) }} key={index} className='max-w-[calc(1280px/3-10px)] ' />
                 ))}

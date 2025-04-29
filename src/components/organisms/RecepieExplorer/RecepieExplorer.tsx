@@ -36,16 +36,16 @@ const RecepieExplorer = () => {
     };
     return (
         <div>
-            <SectionContainer className='mt-[70px]'>
-                <div className='mt-[70px] mb-[19px] flex justify-between items-center'>
+            <SectionContainer className='mt-[70px]' innerWrapperClassName=' max-xl:flex  max-xl:flex-col '>
+                <div className='mt-[70px] mb-[19px] flex justify-between items-center  max-xl:px-[10%]  max-xl:px-[5%]  '>
                     {
                         isFilteringOpen ?
                             <TitleField text={t('libraryExplorer.resultTitle')} className='text-black   '  />
                             :
                             <div className='flex flex-wrap justify-start items-center gap-[10px]'>
-                                <TitleField text={t('libraryExplorer.title')} className={`cursor-pointer ${isRecepiesList ? 'text-blue-1' : 'text-gray-5'}`} onClick={() => setIsRecepiesList(true)} />
-                                <span className='text-2xl text-gray-5'>/</span>
-                                <TitleField text={t('libraryExplorer.title2')} className={`cursor-pointer ${isRecepiesList ? 'text-gray-5' : 'text-blue-1'}`} onClick={() => setIsRecepiesList(false)} />
+                                <TitleField text={t('libraryExplorer.title')} className={`cursor-pointer ${isRecepiesList ? 'text-blue-1' : 'text-gray-5'} max-sm:text-2xl  max-esm:text-base`} onClick={() => setIsRecepiesList(true)} />
+                                <span className='text-2xl text-gray-5  max-sm:text-xl max-esm:text-base'>/</span>
+                                <TitleField text={t('libraryExplorer.title2')} className={`cursor-pointer ${isRecepiesList ? 'text-gray-5' : 'text-blue-1'}  max-sm:text-2xl max-esm:text-base`} onClick={() => setIsRecepiesList(false)} />
                             </div>
                     }
                     <div className='h-full flex justify-center items-baseline'>

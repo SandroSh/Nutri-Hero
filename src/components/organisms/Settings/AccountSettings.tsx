@@ -13,7 +13,7 @@ const AccountSettings = () => {
     <div className='w-full max-w-[800px] flex flex-col justify-end mt-[70px] pb-[110px]'>
 
       <div className='mt-[19px]'>
-        <TitleField text={t('accountSettings.title')} className='mb-[19px] !text-[22px]' />
+        <TitleField text={t('accountSettings.title')} className='mb-[19px] !text-[22px] max-sm:!text-[19px]' />
         <Form.Item key={'stripe-pay'} name={'stripe-pay'}>
           <InputField
             className='h-[50px] px-[19px] mb-[10px]'
@@ -25,14 +25,14 @@ const AccountSettings = () => {
         </Form.Item>
         <Form.Item key={'paypal-pay'} name={'paypal-pay'}>
           <InputField
-            className='h-[50px] px-[19px]'
+            className='h-[50px] px-[19px] '
             prefix={<Image src='/paypal.svg' alt='icon' width={70} height={30} className='mr-[5px]' />}
             suffix={<Image src='/Edit_Blue.svg' alt='icon' width={22} height={22} />}
             border='gray'
           />
         </Form.Item>
-        <TitleField text={t('accountSettings.pTitle')} className='mt-[30px] !text-[22px]' />
-        <p className='text-gray-5 mt-[12px] mb-[40px]'>
+        <TitleField text={t('accountSettings.pTitle')} className='mt-[30px] !text-[22px]  max-sm:!text-[19px]' />
+        <p className='text-gray-5 mt-[12px] mb-[40px]  max-sm:!text-[15px]'>
           {t('accountSettings.paragraph')}
           <span className='text-red-10 font-bold'>{t('accountSettings.date')}</span>
         </p>

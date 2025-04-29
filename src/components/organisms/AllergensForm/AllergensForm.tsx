@@ -15,7 +15,7 @@ const AllergensForm = () => {
   const t = useTranslations('account.allergens')
   const [form] = Form.useForm()
   return (
-    <div className='w-full max-w-[800px] flex flex-col justify-end mt-[110px] pb-[280px]'>
+    <div className='w-full max-w-[800px] flex flex-col justify-end mt-[110px] pb-[280px] max-xl:max-w-[55%] max-mdp:max-w-[90%]  max-mdp:!justify-center '>
       <TitleField text={t('title')} />
       <p className='text-gray-5 mt-[12px] mb-[25px]'>
         {t('paragraph1')}

@@ -73,7 +73,7 @@ const Navbar = () => {
 
 
             {menuOpen && (
-                <div className={`absolute top-full left-0 w-full bg-white shadow-md flex  items-start py-4 px-[19px]  md:hidden z-50 ${pathname.includes('account') ? 'justify-between' : 'justify-end'} `}>
+                <div className={`absolute top-full left-0 w-full bg-white shadow-md flex  items-start py-4 px-[19px]  mdp:hidden z-50 ${pathname.includes('account') ? 'justify-between' : 'justify-end'} `}>
                     {
                         pathname.includes('account') &&
                         <div className='flex flex-col items-start justify-start '>
