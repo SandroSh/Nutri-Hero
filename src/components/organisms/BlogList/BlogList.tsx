@@ -10,8 +10,9 @@ import BlogDetailsCard from '@/components/molecules/BlogDetailsCard/BlogDetailsC
 
 
 
-const BlogList = ({ column = 3, itemsPerLoad = 6, isDetailed = false, render }: {
+const BlogList = ({ column = 3, itemsPerLoad = 6, isDetailed = false, className, render }: {
   column?: number,
+  className?:string;
   itemsPerLoad?: number,
   render?: (data: BlogCardProps, index: number) => React.ReactNode, isDetailed?: boolean
 }) => {
@@ -46,7 +47,7 @@ const BlogList = ({ column = 3, itemsPerLoad = 6, isDetailed = false, render }: 
   }
 
   return (
-    <SectionContainer>
+    <SectionContainer className={`${className}`}>
       <InfiniteScroll
         dataLength={visibleBlogs.length}
         next={fetchMoreData}

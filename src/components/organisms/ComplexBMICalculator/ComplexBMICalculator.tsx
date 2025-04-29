@@ -17,16 +17,23 @@ const ComplexBMICalculator = () => {
 
   return (
 
-    <div className=' relative w-full flex flex-wrap justify-between items-center gap-[16px] max-[1224px]:flex-col
-    max-[1224px]:items-end'>
-      <CalculatedBMICard bmi={parseFloat(calculateBMI())} title={t('2.title')} className='!max-w-[390px]' />
+    <div className=' relative w-full flex flex-wrap justify-between items-center gap-[16px] 
+    max-[1224px]:flex-col
+    max-[1224px]:items-end  
+   
+    '>
+      <CalculatedBMICard bmi={parseFloat(calculateBMI())} title={t('2.title')} 
+      className='
+      !max-w-[390px] 
+      max-[1224px]:max-w-[90%]' 
+      />
       <BodyMassInput
         label={t('1.title')}
         unit={t('1.unit')}
         button={t('button')}
         width='w-[105px]'
         value={height}
-        className='w-full max-w-[390px]'
+        className='w-full max-w-[390px]  max-[1224px]:max-w-[90%]'
         onChange={(e) => setHeight(parseInt(e.target.value))}
       />
       <BodyMassInput
@@ -34,7 +41,7 @@ const ComplexBMICalculator = () => {
         unit={t('0.unit')}
         button={t('button')}
         width='w-[105px]'
-        className='w-full max-w-[390px]'
+        className='w-full max-w-[390px] max-[1224px]:max-w-[90%]'
         value={weight}
         onChange={(e) => setWeight(parseInt(e.target.value))}
       />
@@ -45,7 +52,7 @@ const ComplexBMICalculator = () => {
         button={t('button')}
         width='w-[105px]'
         value={waist}
-        className='w-full max-w-[390px]'
+        className='w-full max-w-[390px] max-[1224px]:max-w-[90%]'
         onChange={(e) => setWaist(parseInt(e.target.value))}
       />
 

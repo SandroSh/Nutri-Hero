@@ -20,10 +20,10 @@ const ContactTemplate = () => {
 
       <SectionContainer className='mt-[40px]' innerWrapperClassName='flex justify-center px-[50px]'>
         <div className='w-full max-w-[700px]'>
-          <TitleField text={t('faq.title').toUpperCase()} className='text-4xl font-bold mb-[19px]' />
+          <TitleField text={t('faq.title').toUpperCase()} className='text-4xl font-bold mb-[19px] max-[500px]:text-2xl' />
           <CustomCollapse />
-          <TitleField text={t('form.title')} className='text-4xl font-bold mt-[40px]' />
-          <p className='text-gray-5 mb-[30px]'>{t('form.paragraph')}</p>
+          <TitleField text={t('form.title')} className='text-4xl font-bold mt-[40px] max-[500px]:text-2xl' />
+          <p className='text-gray-5 mb-[30px] max-[500px]:text-[10px] '>{t('form.paragraph')}</p>
           <ContactForm/>
         </div>
       </SectionContainer>

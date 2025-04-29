@@ -18,20 +18,26 @@ const PersonalDetailsForm = () => {
   const [form] = Form.useForm()
 
   return (
-    <div className='w-full max-w-[800px] flex flex-col justify-end mt-[70px] pb-[270px] max-[1224px]:items-end max-[1224px]:pr-[50px]'>
-      <div className='flex flex-col justify-start'>
-        <TitleField text={t('bodyMeasurements.title')} className='mb-[19px] !text-[1.4rem] ' />
-        <ComplexBMICalculator />
-      </div>
-      <AccountToggleCard
-        label={t('bodyMeasurements.unitOfMeasure')}
-        onText={t('bodyMeasurements.metric')}
-        offText={t('bodyMeasurements.imperial')}
-        className='max-h-[50px] mt-[40px]'
-        toggleSm={true}
-      />
+    <div className='w-full max-w-[800px] flex flex-col justify-end mt-[70px] pb-[270px] max-[1224px]:items-center max-[1224px]:ml-[35px]'>
 
-      <div className='mt-[50px]'>
+      <div className='flex flex-col 
+      max-[1224px]:self-end  
+      max-[1224px]:w-[60%]
+      '>
+        <div className='flex flex-col justify-start max-[1224px]:w-full'>
+          <TitleField text={t('bodyMeasurements.title')} className='mb-[19px] !text-[1.4rem] ' />
+          <ComplexBMICalculator />
+        </div>
+        <AccountToggleCard
+          label={t('bodyMeasurements.unitOfMeasure')}
+          onText={t('bodyMeasurements.metric')}
+          offText={t('bodyMeasurements.imperial')}
+          className='max-h-[50px] mt-[40px] '
+          toggleSm={true}
+        />
+      </div>
+
+      <div className='mt-[50px] max-[1224px]:w-[60%] max-[1224px]:self-end'>
         <TitleField text={t('personalDetails.title')} className='mb-[19px] !text-[1.4rem]' />
         <Form.Item
           key={t(`personalDetails.username`)}

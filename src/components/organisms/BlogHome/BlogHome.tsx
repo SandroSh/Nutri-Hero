@@ -15,10 +15,10 @@ const BlogHome = () => {
 
     return (
         <div>
-            <Hero backgroundImg='/Hero Girl_2.png' outerClassName='max-h-[360px] !bg-top items-center ' imgFilter='bg-black/30 max-h-[360px]' >
-                <TitleField text={t('title').toUpperCase()} className='text-white text-7xl' />
+            <Hero backgroundImg='/Hero Girl_2.png' outerClassName='max-h-[360px] !bg-top items-center ' imgFilter='bg-black/30 max-h-[360px] '>
+                <TitleField text={t('title').toUpperCase()} className='text-white text-7xl max-[1224px]:text-5xl max-[400px]:text-2xl' />
             </Hero>
-            <BlogList render={(data, i) => <BlogCard key={i} data={data} className="mb-4" />} />
+            <BlogList className='max-sm:px-[19px]' render={(data, i) => <BlogCard key={i} data={data} className="mb-4 " />} />
                
         </div>
     )

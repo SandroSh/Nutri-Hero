@@ -21,7 +21,7 @@ const CalculatedBMICard = ({ bmi, title, className }: BMIResultCardProps) => {
         }
     }
     return (
-        <div className={`w-full  gap-[16px] h-[125px]  flex flex-col justify-between pb-[18px] pr-[10px] pl-[19px] rounded-[5px] shadow-md text-white ${handleColorChange().color} ${className}`}>
+        <div className={`w-full  gap-[16px] h-[125px]  flex flex-col justify-between pb-[18px] pr-[10px] pl-[19px] rounded-[5px] shadow-md text-white ${handleColorChange().color} ${className} `}>
             <div className="mt-3 text-xl">{title}</div>
             <div className="flex justify-start items-center gap-[10px]">
                 <span className="text-4xl">{bmi}</span>

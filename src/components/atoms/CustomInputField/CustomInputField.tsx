@@ -6,7 +6,7 @@ const CustomInputField = ({placeholder, className, type}:{placeholder:string; ty
         <div className={`flex min-w-full justify-center items-center ${className}`}>
             <div className="w-full relative">
                 <input
-                    className="peer w-full h-[70px] p-4 pt-6 pr-4 text-black font-bold text-base bg-inherit border-2 rounded-md outline-none transition disabled:opacity-70 disabled:cursor-not-allowed border-gray-2"
+                    className="peer w-full h-[70px] max-mdp:h-[50px] p-4 pt-6 pr-4 text-black font-bold text-base bg-inherit border-2 rounded-md outline-none transition disabled:opacity-70 disabled:cursor-not-allowed border-gray-2"
                     type={type}
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
