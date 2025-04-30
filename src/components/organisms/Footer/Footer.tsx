@@ -3,15 +3,16 @@ import { ListField } from '@/components/atoms/ListField';
 import { Logo } from '@/components/atoms/Logo';
 import { DownloadCard } from '@/components/molecules/DownloadCard'
 import { footerNavData } from '@/constants/dummyData';
+import { usePathname } from '@/i18n/navigation';
 import React from 'react'
 import { useTranslations } from 'use-intl'
 
 const Footer = () => {
-
+    const pathname = usePathname();
     const t = useTranslations('footer');
 
     return (
-        <div className='w-full flex justify-center bg-white '>
+        <div className={`w-full flex justify-center bg-white ${pathname.includes('my_plan/') ? '' : ''} self-end justify-self-end `}>
             <div className=' flex flex-col justify-between  w-full  max-w-screen-xl' >
                 <div className=' w-full flex justify-between items-start gap-[100px] mt-[40px] max-mdp:justify-center'>
                     <DownloadCard className='' />

@@ -9,7 +9,7 @@ const ExerciseCard = ({ pTitle, pText, imageUrl, className }: { pTitle: string, 
                 alt='Exercise Image'
                 className='w-[570px]  rounded-[5px]  ' />
             <ParagraphField title={pTitle} paragraph={pText}
-                className='max-w-[410px] max-xl:mt-[59px] 'pClassName='max-mdp:text-center' tClassName='max-mdp:text-center' />
+                className='max-w-[410px] max-xl:mt-[59px] max-mdp:mt-[19px] 'pClassName='max-mdp:text-center' tClassName='max-mdp:text-center' />
         </div>
     )
 }

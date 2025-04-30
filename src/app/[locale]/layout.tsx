@@ -29,10 +29,12 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <NavProvider>
+          <NavProvider >
+
             <Navbar />
             {children}
             <ConditionalFooter />
+
           </NavProvider>
         </NextIntlClientProvider>
       </body>

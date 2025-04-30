@@ -22,7 +22,7 @@ const LandingPageTemplate = () => {
   return (
     <div className='mt-[96px]'>
 
-      <Hero outerClassName='items-center hero-section max-sm:h-[60vh]'>
+      <Hero outerClassName='items-center hero-section max-mdp:h-[60vh]'>
         <Intro textAddress={'LandingHero'} />
       </Hero>
 

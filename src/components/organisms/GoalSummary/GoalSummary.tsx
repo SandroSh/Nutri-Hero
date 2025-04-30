@@ -19,9 +19,9 @@ const GoalSummary = () => {
         <div className={`w-full flex flex-col justify-center items-center mt-[95px]  `} >
             <ImageField src={'/goal_summary.png'} alt={'goal summary image'} width={100} height={400} className='w-screen h-[400px] object-cover object-top' />
             <div className={`max-w-[1700px] w-full flex justify-center items-center`} >
-                <div className='max-w-[650px] w-full flex flex-col justify-center items-center'>
+                <div className='max-w-[650px] w-full flex flex-col justify-center items-center max-xl:px-[19px]'>
                     <TitleField text={t('title')} className='my-[40px] self-start' />
-                    <div className='w-full'>
+                    <div className='w-full '>
 
                         {
                             goalSummaryCards.map((card, i) => (

@@ -19,7 +19,7 @@ const MyGoal = () => {
     };
   
     return (
-        <SectionContainer innerWrapperClassName="!max-w-[1801px] !w-full">
+        <SectionContainer innerWrapperClassName="!max-w-[1701px] !w-full">
             {
                 stage == 0 ?
                     <div>
@@ -30,7 +30,7 @@ const MyGoal = () => {
                             pTitleClassName='text-xl'
                             pText={t(goalFormData[0].pText)}
                             className="!h-[100vh]"
-                            buttonClass="mt-[95px]"
+                            buttonClass="mt-[95px] max-mdp:mt-[50px]"
                             functionCall={() => setStage(1)}
                             bText={t(goalFormData[0].bText)}
                         >

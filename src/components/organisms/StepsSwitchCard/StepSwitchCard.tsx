@@ -19,12 +19,12 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
     const t = useTranslations('myPlanPage.goal')
     const [_, setRender] = useState(false);
 
-  
+
     const steps = [
         {
             content: (
                 <div>
-                    <Form.Item name="goal_preference"  key={1} rules={[{ required: true, message: t('card1.select1.required') }]}>
+                    <Form.Item name="goal_preference" key={1} rules={[{ required: true, message: t('card1.select1.required') }]}>
                         <SelectorCard title={t('card1.select1.title')} className="mt-[30px]">
                             {
                                 [... new Array(2)].map((_, i) => (
@@ -35,13 +35,13 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
                                         checked={form.getFieldValue("goal_preference") == `card1.select1.op${i + 1}`}
                                         onChange={() => handleChange('goal_preference', `card1.select1.op${i + 1}`)}
                                         key={i}
-                                        
+
                                     />
                                 ))
                             }
                         </SelectorCard>
                     </Form.Item>
-                    <FormItem name="workout_frequency"  rules={[{ required: true, message: t('card1.select1.required') }]}>
+                    <FormItem name="workout_frequency" rules={[{ required: true, message: t('card1.select1.required') }]}>
                         <SelectorCard title={t('card1.select2.title')}>
                             {
                                 [... new Array(3)].map((_, i) => (
@@ -63,7 +63,7 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
         {
             content: (
                 <div className="card-container" >
-                    <Form.Item name="focus"  rules={[{ required: true, message: t('card2.select1.required') }]}>
+                    <Form.Item name="focus" rules={[{ required: true, message: t('card2.select1.required') }]}>
                         <SelectorCard title={t('card2.select1.title')} className="mt-[30px]">
                             {
                                 [... new Array(2)].map((_, i) => (
@@ -72,14 +72,14 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
                                         value={t(`card2.select1.op${i + 1}`)}
                                         label={t(`card2.select1.op${i + 1}`)}
                                         checked={form.getFieldValue("focus") == `card2.select1.op${i + 1}`}
-                                        onChange={() => handleChange('focus',`card2.select1.op${i + 1}` )}
+                                        onChange={() => handleChange('focus', `card2.select1.op${i + 1}`)}
                                         key={i}
                                     />
                                 ))
                             }
                         </SelectorCard>
                     </Form.Item>
-                    <Form.Item name="focus_muscle_group"  rules={[{ required: true, message: t('card2.select1.required') }]}>
+                    <Form.Item name="focus_muscle_group" rules={[{ required: true, message: t('card2.select1.required') }]}>
                         <SelectorCard title={t('card2.select2.title')} className="mt-[10px]">
                             {
                                 [... new Array(4)].map((_, i) => (
@@ -188,7 +188,7 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
     ];
 
     const handleChange = (field: any, value: any) => {
-        form.setFieldValue(field,value);
+        form.setFieldValue(field, value);
         console.log(form.getFieldsValue())
         setRender((prev) => !prev);
     };
@@ -210,7 +210,7 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
 
     return (
 
-        <MyGoalCard imgUrl={handleImgRender(currentStep)}>
+        <MyGoalCard imgUrl={handleImgRender(currentStep)} className="max-mdp:flex  max-mdp:justify-center max-mdp:items-center max-mdp:h-[100vh] ">
 
             <Steps current={currentStep}>
                 {steps.map((step, index) => {
@@ -219,26 +219,28 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
                 }
                 )}
             </Steps>
+            <div className="max-mdp:bg-white max-mdp:rounded-[5px] !z-50 max-mdp:isolate max-mdp:p-[40px] max-mdp:mt-[50px]">
 
-            <div>{steps[currentStep].content}</div>
-            <div className="flex justify-end items-center mt-[75px]">
-                {currentStep > 0 && (
-                    <ButtonField onClick={prev} cType="gray_green" bSize="xl" className="mr-[16px]">
-                        {t('prev')}
-                    </ButtonField>
-                )}
-                {currentStep < steps.length - 1 && (
-                    <ButtonField onClick={next} cType="red_white" bSize="xl" className="disabled:bg-gray-5">
-                        {t('next')}
-                    </ButtonField>
-                )}
-                {currentStep === steps.length - 1 && (
-                    <Link href={"/my_plan/goal-summary"}>
-                    <ButtonField onClick={() => form.submit()}  cType="red_white" bSize="xl" className="ml-[16px]">
-                        {t('submit')}
-                    </ButtonField>
-                    </Link>
-                )}
+                <div className="">{steps[currentStep].content}</div>
+                <div className="flex justify-end items-center mt-[75px]">
+                    {currentStep > 0 && (
+                        <ButtonField onClick={prev} cType="gray_green" bSize="xl" className="mr-[16px]">
+                            {t('prev')}
+                        </ButtonField>
+                    )}
+                    {currentStep < steps.length - 1 && (
+                        <ButtonField onClick={next} cType="red_white" bSize="xl" className="disabled:bg-gray-5">
+                            {t('next')}
+                        </ButtonField>
+                    )}
+                    {currentStep === steps.length - 1 && (
+                        <Link href={"/my_plan/goal-summary"}>
+                            <ButtonField onClick={() => form.submit()} cType="red_white" bSize="xl" className="ml-[16px]">
+                                {t('submit')}
+                            </ButtonField>
+                        </Link>
+                    )}
+                </div>
             </div>
         </MyGoalCard >
 
