@@ -196,7 +196,7 @@
       "card2": {
         "title": "Success! Please check your email",
         "pText": "We’ve sent a confirmation link to your email address",
-        "questionLink": "Haven’t received a link? Click here to resend"
+        "questionLink": "Havent received a link? Click here to resend"
       },
       "card3": {
         "title": "Your account is ready, please login",
@@ -259,7 +259,7 @@
       },
       "card2": {
         "select1": {
-          "title": "What’s your focus?",
+          "title": "Whats your focus?",
           "op1": "Predominantly gym",
           "op2": "Predominantly home",
           "required": "Please select desired options"
@@ -354,8 +354,8 @@
             "category": "Lunch"
           },
           "2": {
-            "title": "Check back  for updates.",
-            "category": "You can browse the Library for inspiration"
+            "title": "Check for updates.",
+            "category": "browse Library for inspiration"
           }
         }
       },

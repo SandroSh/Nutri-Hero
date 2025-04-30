@@ -6,10 +6,10 @@ import { routing } from '@/i18n/routing';
 
 import 'antd/dist/reset.css';
 import { Navbar } from "@/components/organisms/Navbarr";
-import { Footer } from "@/components/organisms/Footer";
-import { usePathname } from "@/i18n/navigation";
 import { ConditionalFooter } from "@/components/organisms/ConditionalFooter";
 import { NavProvider } from "@/context/NavContext";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 export default async function LocaleLayout({
   children,
   params
@@ -21,7 +21,6 @@ export default async function LocaleLayout({
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
-
 
   const messages = await getMessages();
 

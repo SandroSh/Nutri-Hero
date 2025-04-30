@@ -13,12 +13,12 @@ import { WeeklyMenuCarousel } from '../WeeklyMenuCarousel'
 const GoalHome = () => {
   const t = useTranslations('myPlanPage.goalHome');
 
-   const recepieTabsData = [
+  const recepieTabsData = [
     { key: 'tab1', title: t('recepieTabs.tabs.today'), content: <RecepiesCarousel data={recepieCarouselCardData} /> },
     { key: 'tab2', title: t('recepieTabs.tabs.tomorrow'), content: <RecepiesCarousel data={shuffleArray(recepieCarouselCardData)} /> },
     {
       key: 'tab3', title: t('recepieTabs.tabs.weekAhead'), content:
-        <WeeklyMenuCarousel cardsContent = {recepieCarouselCardData} />
+        <WeeklyMenuCarousel cardsContent={recepieCarouselCardData} />
     },
   ];
   const workoutTabsData = [
@@ -26,7 +26,7 @@ const GoalHome = () => {
     { key: 'tab2', title: t('exerciseTabs.tabs.tomorrow'), content: <RecepiesCarousel data={shuffleArray(exerciesCarouselCardData)} /> },
     {
       key: 'tab3', title: t('exerciseTabs.tabs.weekAhead'), content:
-        <WeeklyMenuCarousel cardsContent = { exerciesCarouselCardData} />
+        <WeeklyMenuCarousel cardsContent={exerciesCarouselCardData} />
     },
   ];
   return (
