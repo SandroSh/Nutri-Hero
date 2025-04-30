@@ -12,7 +12,7 @@ const Footer = () => {
     const t = useTranslations('footer');
 
     return (
-        <div className={`w-full flex justify-center bg-white ${pathname.includes('my_plan/') ? '' : ''} self-end justify-self-end `}>
+        <div className={`w-full px-[15px] flex justify-center bg-white ${pathname.includes('my_plan/') ? '' : ''} self-end justify-self-end `}>
             <div className=' flex flex-col justify-between  w-full  max-w-screen-xl' >
                 <div className=' w-full flex justify-between items-start gap-[100px] mt-[40px] max-mdp:justify-center'>
                     <DownloadCard className='' />
