@@ -37,7 +37,7 @@ const RecepieExplorer = () => {
     return (
         <div>
             <SectionContainer className='mt-[70px]' innerWrapperClassName=' max-xl:flex  max-xl:flex-col '>
-                <div className='mt-[70px] mb-[19px] flex justify-between items-center  max-xl:px-[10%]  max-xl:px-[5%]  '>
+                <div className='mt-[70px] mb-[19px] flex justify-between items-center max-xl:px-[5%]  '>
                     {
                         isFilteringOpen ?
                             <TitleField text={t('libraryExplorer.resultTitle')} className='text-black   '  />

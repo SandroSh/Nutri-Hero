@@ -154,7 +154,7 @@
   align-items: flex-end !important;
 }
 
-@media (max-width: 830px) {
+@media (max-width: 900px) {
   .second-tabs .ant-tabs-nav-wrap {
     justify-content: center !important;
   }

@@ -22,22 +22,22 @@ const LandingPageTemplate = () => {
   return (
     <div className='mt-[96px]'>
 
-      <Hero outerClassName='items-center hero-section'>
+      <Hero outerClassName='items-center hero-section max-sm:h-[60vh]'>
         <Intro textAddress={'LandingHero'} />
       </Hero>
 
-      <SectionContainer className='bg-blue-1' innerWrapperClassName='mt-[-70px] '>
+      <SectionContainer className='bg-blue-1' innerWrapperClassName='mt-[-70px] max-xl:px-[15px] '>
         <InfoDisplay className='bg-white rounded-[5px] flex-col items-center justify-center  '>
           <Title text={gymDisplay('title')} className={`mt-[27px] mb-[25px]`} />
           <Tabs
             centered={true}
-            className={'pb-[40px]'}
+            className={'pb-[40px] max-xl:px-[10px]'}
             labels={tabsData.map((item, i) => <Navlink className="mx-[29px] pt-[8px] pb-[8px] " hoverAnimate={false} key={i} >{gymDisplay(item.label)}</Navlink>)}
-            children={tabsData.map((item, i) => <ExerciseCard pTitle={gymDisplay(item.pTitle)} pText={gymDisplay(item.pText)} imageUrl={item.imageUrl} key={i} className='max-[830px]:flex-col-reverse' />)}
+            children={tabsData.map((item, i) => <ExerciseCard pTitle={gymDisplay(item.pTitle)} pText={gymDisplay(item.pText)} imageUrl={item.imageUrl} key={i} className='max-mdp:flex-col-reverse' />)}
           />
 
         </InfoDisplay>
-        <InfoDisplay className='flex-col mt-[90px] '>
+        <InfoDisplay className='flex-col mt-[90px]'>
           <Title text={gymDisplay('title2')} className={`mt-[27px] mb-[25px] text-white max-mdp:text-center`} />
 
           <Tabs
@@ -49,7 +49,7 @@ const LandingPageTemplate = () => {
               >
                 {gymDisplay(item.label)}
               </Navlink>)}
-            children={tabsData.map((item, i) => <ExerciseCard pTitle={gymDisplay(item.pTitle)} pText={gymDisplay(item.pText)} imageUrl={item.imageUrl} key={i} className='!flex-row-reverse justify-between mt-[-100px] mb-[50px] max-[830px]:flex-col-reverse max-[830px]:mt-[10px]' />)}
+            children={tabsData.map((item, i) => <ExerciseCard pTitle={gymDisplay(item.pTitle)} pText={gymDisplay(item.pText)} imageUrl={item.imageUrl} key={i} className='!flex-row-reverse justify-between mt-[-100px] mb-[50px] max-mdp:flex-col-reverse max-mdp:mt-[10px]' />)}
             className='second-tabs pb-[40px]'
           />
         </InfoDisplay>

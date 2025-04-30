@@ -15,7 +15,7 @@ const FilterForm = ({ form }: { form: FormInstance<any> }) => {
     const t2 = useTranslations('library.libraryExplorer');
     return (
         <div className='flex flex-col'>
-            <div className='flex justify-start items-start gap-[100px] max-xl:justify-evenly max-xl:gap-[35px] max-xl:px-[15px]'>
+            <div className='flex justify-start items-start gap-[100px] max-xl:justify-evenly max-xl:gap-[15px] max-xl:px-[15px]'>
                 <div className='flex justify-between gap-[100px] max-mdp:flex-col  max-xl:gap-[55px]'>
                     <FilterFormCard label={t('recepieType.title')}>
                         <Form.Item name="recipeType">

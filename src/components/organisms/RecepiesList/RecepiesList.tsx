@@ -18,7 +18,7 @@ const RecepiesList = () => {
     const paginatedData = recepies.slice(startIndex, startIndex + pageSize);
 
     return (
-        <div className='max-xl:px-[19px] '>
+        <div className='max-xl:px-[25px] '>
 
             <div className='flex flex-wrap justify-between max-xl:justify-evenly max-xl:gap-[30px] items-center'>
                 {paginatedData.map((item, index) => (
