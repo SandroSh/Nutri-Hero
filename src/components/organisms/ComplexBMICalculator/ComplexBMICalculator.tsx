@@ -24,8 +24,7 @@ const ComplexBMICalculator = () => {
     '>
       <CalculatedBMICard bmi={parseFloat(calculateBMI())} title={t('2.title')} 
       className='
-      !max-w-[390px] 
-      max-[1224px]:max-w-[90%]' 
+      !max-w-[390px] max-xl:max-w-none' 
       />
       <BodyMassInput
         label={t('1.title')}
@@ -33,7 +32,7 @@ const ComplexBMICalculator = () => {
         button={t('button')}
         width='w-[105px]'
         value={height}
-        className='w-full max-w-[390px]  max-[1224px]:max-w-[90%]'
+        className='w-full max-w-[390px]  max-xl:max-w-none'
         onChange={(e) => setHeight(parseInt(e.target.value))}
       />
       <BodyMassInput
@@ -41,7 +40,7 @@ const ComplexBMICalculator = () => {
         unit={t('0.unit')}
         button={t('button')}
         width='w-[105px]'
-        className='w-full max-w-[390px] max-[1224px]:max-w-[90%]'
+        className='w-full max-w-[390px] max-xl:max-w-none'
         value={weight}
         onChange={(e) => setWeight(parseInt(e.target.value))}
       />
@@ -52,7 +51,7 @@ const ComplexBMICalculator = () => {
         button={t('button')}
         width='w-[105px]'
         value={waist}
-        className='w-full max-w-[390px] max-[1224px]:max-w-[90%]'
+        className='w-full max-w-[390px] max-xl:max-w-none'
         onChange={(e) => setWaist(parseInt(e.target.value))}
       />
 

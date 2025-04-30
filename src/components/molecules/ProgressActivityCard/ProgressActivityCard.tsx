@@ -20,7 +20,7 @@ const ProgressActivityCard = ({ className, title, label, paragraph, isEditVisibl
           <p className='text-gray-7'>{label}</p>
           {isEditVisible && <EditField />}
         </div>
-        <ParagraphField title={title.toUpperCase()} paragraph={paragraph} className='max-w-[615px]' tClassName='text-5xl' pClassName='text-gray-7' />
+        <ParagraphField title={title.toUpperCase()} paragraph={paragraph} className='max-w-[615px]' tClassName='text-5xl max-mdp:text-2xl max-sm:text-xl' pClassName='text-gray-7' />
       </div>
     </div>
   )

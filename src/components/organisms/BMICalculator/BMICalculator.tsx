@@ -14,7 +14,7 @@ const BMICalculator = () => {
     };
     return (
 
-        <div className=' relative w-full flex justify-between items-center gap-[16px] mt-[-30px] '>
+        <div className=' relative w-full flex justify-between items-center gap-[16px] mt-[-30px] max-xl:px-[19px] max-md:flex-wrap '>
 
             <BodyMassInput
                 label={t('0.title')}
@@ -39,7 +39,7 @@ const BMICalculator = () => {
             <CalculatedBMICard
                 bmi={parseFloat(calculateBMI())}
                 title={t('2.title')}
-                className='max-w-[410px]'
+                className='max-w-[410px] max-md:max-w-none max-md:mb-[50px]'
             />
         </div>
 

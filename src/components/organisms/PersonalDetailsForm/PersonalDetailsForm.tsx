@@ -18,13 +18,10 @@ const PersonalDetailsForm = () => {
   const [form] = Form.useForm()
 
   return (
-    <div className='w-full max-w-[800px] flex flex-col justify-end mt-[70px] pb-[270px] max-[1224px]:items-center max-[1224px]:ml-[35px]'>
+    <div className='w-full max-w-[800px] flex flex-col justify-end mt-[70px] pb-[270px] max-xl:!w-[60%]  max-lg:!w-[50%]  max-mdp:w-full'>
 
-      <div className='flex flex-col 
-      max-[1224px]:self-end  
-      max-[1224px]:w-[60%]
-      '>
-        <div className='flex flex-col justify-start max-[1224px]:w-full'>
+      <div className='flex flex-col'>
+        <div className='flex flex-col justify-start '>
           <TitleField text={t('bodyMeasurements.title')} className='mb-[19px] !text-[1.4rem] ' />
           <ComplexBMICalculator />
         </div>
@@ -37,7 +34,7 @@ const PersonalDetailsForm = () => {
         />
       </div>
 
-      <div className='mt-[50px] max-[1224px]:w-[60%] max-[1224px]:self-end'>
+      <div className='mt-[50px] '>
         <TitleField text={t('personalDetails.title')} className='mb-[19px] !text-[1.4rem]' />
         <Form.Item
           key={t(`personalDetails.username`)}
@@ -122,6 +119,7 @@ const PersonalDetailsForm = () => {
           <CustomInputField placeholder={t('contactDetails.emailAddress')} type={'text'} />
         </Form.Item>
       </div>
+
       <div className='flex justify-end mt-[15px]'>
         <ButtonField cType='gray_white' bSize='md' className='mr-[16px]'>{t('buttons.cancel')}</ButtonField>
         <ButtonField cType='red_white' bSize='md'>{t("buttons.save")}</ButtonField>
