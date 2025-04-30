@@ -19,7 +19,7 @@ const MyGoal = () => {
     };
   
     return (
-        <SectionContainer innerWrapperClassName="!max-w-[1701px] !w-full">
+        <SectionContainer innerWrapperClassName="!max-w-[1701px] !w-full max-mdp:px-[19px]">
             {
                 stage == 0 ?
                     <div>

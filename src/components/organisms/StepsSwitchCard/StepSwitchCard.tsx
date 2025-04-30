@@ -212,6 +212,7 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
 
         <MyGoalCard imgUrl={handleImgRender(currentStep)} className="max-mdp:flex  max-mdp:justify-center max-mdp:items-center max-mdp:h-[100vh] ">
 
+
             <Steps current={currentStep}>
                 {steps.map((step, index) => {
 
@@ -219,10 +220,11 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
                 }
                 )}
             </Steps>
-            <div className="max-mdp:bg-white max-mdp:rounded-[5px] !z-50 max-mdp:isolate max-mdp:p-[40px] max-mdp:mt-[50px]">
+
+            <div className="max-mdp:bg-white max-mdp:rounded-[5px] !z-50 max-mdp:isolate max-mdp:p-[40px] max-mdp:mt-[50px]  max-sm:w-full ">
 
                 <div className="">{steps[currentStep].content}</div>
-                <div className="flex justify-end items-center mt-[75px]">
+                <div className="flex justify-end items-center mt-[75px] max-mdp:justify-center">
                     {currentStep > 0 && (
                         <ButtonField onClick={prev} cType="gray_green" bSize="xl" className="mr-[16px]">
                             {t('prev')}

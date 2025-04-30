@@ -25,7 +25,7 @@ const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
     const t = useTranslations('myPlanPage.ActivityDetailsPage');
     const t2 = useTranslations();
     const [isScrolled, setIsScrolled] = useState(false);
-   
+
     const recepieTabsData = [
         { key: 'tab1', title: t2('myPlanPage.goalHome.recepieTabs.tabs.today'), content: <RecepiesCarousel data={recepieCarouselCardData} /> },
         { key: 'tab2', title: t2('myPlanPage.goalHome.recepieTabs.tabs.tomorrow'), content: <RecepiesCarousel data={shuffleArray(recepieCarouselCardData)} /> },
@@ -52,9 +52,9 @@ const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-   
 
-  
+
+
     const handlegoUp = () => {
         window.scrollTo({
             top: 0,
@@ -67,16 +67,16 @@ const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
         <div>
             <div className={`${isScrolled ? 'relative h-[800px]' : ''}`}>
 
-                <Hero backgroundImg={data.imageUrl} outerClassName={`items-center mt-[95px] transition-all duration-500 ease-in-out ${isScrolled  ? 'fixed w-[calc(1285px/2-100px)] h-[240px] right-[calc((100%-1280px)/2)] top-10  rounded-lg shadow-lg z-50 rounded-none' : 'w-full'
+                <Hero backgroundImg={data.imageUrl} outerClassName={`items-center mt-[95px] transition-all duration-500 ease-in-out ${isScrolled ? 'fixed !w-[calc(1285px/2-100px)] h-[240px] right-[calc((100%-1280px)/2)] top-10  rounded-lg shadow-lg z-50 rounded-none max-xl:w-[40%] max-xl:right-0 max-xl:h-[150px]' : 'w-full max-md:h-[70vh]  max-md:flex'
                     }`}
-                    innerClassName={`${isScrolled  ? 'h-full w-full' : 'h-full'}`}
-                    imgFilter='bg-black/10'
-                    >
+                    innerClassName={`${isScrolled ? 'h-full w-full' : 'h-full'}`}
+                    imgFilter={`bg-black/10 ${isScrolled ? "" : "max-md:h-[70vh]"}`}
+                >
 
                     <div className={`flex h-full flex-col items-center   justify-between ${isScrolled ? 'hidden' : ''}`}>
                         <div className='flex flex-col items-center justify-center mt-auto mb-auto'>
                             <Image src={'/ic_play_circle_filled_24px.svg'} alt={'play icon'} width={50} height={50} />
-                            <TitleField text={t2(data.pText).toUpperCase()} className='text-white mt-[19px] text-7xl' />
+                            <TitleField text={t2(data.pText).toUpperCase()} className='text-white mt-[19px] text-7xl max-md:text-4xl' />
                         </div>
                         <div className='flex flex-col items-center mb-4'>
                             {
@@ -97,8 +97,8 @@ const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
 
                 </Hero>
             </div>
-            <SectionContainer>
-                <div className={`flex flex-col items-start justify-start self-start mt-[90px]`}>
+            <SectionContainer innerWrapperClassName=''>
+                <div className={`flex flex-col items-start justify-start self-start mt-[90px] max-md:items-center`}>
                     {
                         data.key.includes('recepie') ?
                             <>
@@ -115,14 +115,14 @@ const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
                 </div>
                 {
                     data.key.includes('recepie') &&
-                    <div className='w-full flex justify-between items-center  mt-[65px]'>
-                        <ParagraphField title={t('recepie.table.pTitle')} paragraph={t('recepie.table.amount')} tClassName='text-[19px]' />
+                    <div className='w-full flex justify-between items-center mt-[65px] max-xl:px-[29px] max-md:flex-col'>
+                        <ParagraphField title={t('recepie.table.pTitle')} paragraph={t('recepie.table.amount')} tClassName='text-[19px]'  pClassName='max-md:mt-0' className='max-md:flex max-md:items-center max-md:gap-[15px] max-md:mb-[15px] max-md:self-start' />
                         <CustomTable textAddress={'myPlanPage.ActivityDetailsPage.recepie.table.content'} />
                     </div>
                 }
 
-                <div className=' w-full flex flex-wrap items-start justify-between mt-[50px] gap-[100px]'>
-                    <div className='flex flex-col w-[calc(100%/2)]'>
+                <div className=' w-full flex items-start justify-between mt-[50px] gap-[100px] max-xl:px-[19px] max-xl:gap-[50px] max-md:flex-col-reverse max-md:justify-center max-md:items-center '>
+                    <div className='flex flex-col w-[calc(100%/2)] max-md:w-full '>
                         {
                             [...new Array(5)].map((_, index) => (
                                 <div key={index}>
@@ -135,7 +135,7 @@ const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
                         {data.key.includes('recepie') ? <PrintData print={'printRecepie'} /> : <PrintData print={'printExercise'} />}
                     </div>
 
-                    <div className='flex flex-col w-[calc(100%/2-100px)]'>
+                    <div className='flex flex-col w-[calc(100%/2-100px)] max-md:w-full'>
                         <div className='flex flex-col items-center justify-center w-full'>
                             <p className='text-red-10 text-[19px] mb-[28px] ' >{t('buttons.preferenceText')}</p>
                             <ReactionButtons />
@@ -163,3 +163,5 @@ const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
 }
 
 export default ActivityDetails
+
+

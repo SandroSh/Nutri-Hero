@@ -161,4 +161,15 @@
   .slick-list{
     justify-content: space-between !important;
   }
+  .ant-steps{
+    flex-direction: row !important;
+    justify-content: center !important;
+  }
+  .ant-steps-item{
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .ant-steps-item-tail{
+    display: none !important;
+  }
 }
