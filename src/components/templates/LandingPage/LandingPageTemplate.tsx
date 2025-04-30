@@ -26,7 +26,7 @@ const LandingPageTemplate = () => {
         <Intro textAddress={'LandingHero'} />
       </Hero>
 
-      <SectionContainer className='bg-blue-1' innerWrapperClassName='mt-[-70px] max-xl:px-[15px] '>
+      <SectionContainer className='bg-blue-1' innerWrapperClassName='mt-[-70px] max-xl:px-[15px] max-xl:px-[15px] max-xl:mt-[-50px]'>
         <InfoDisplay className='bg-white rounded-[5px] flex-col items-center justify-center  '>
           <Title text={gymDisplay('title')} className={`mt-[27px] mb-[25px]`} />
           <Tabs

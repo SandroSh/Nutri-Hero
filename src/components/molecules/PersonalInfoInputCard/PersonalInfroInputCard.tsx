@@ -12,13 +12,14 @@ const PersonalInfroInputCard = () => {
   const t = useTranslations('myPlanPage');
   const form = Form.useFormInstance();
 
-  const [selectedGender, setSelectedGender] = useState<string>(t('card4.gender.0')); 
+  const [selectedGender, setSelectedGender] = useState<string>(t('signup.card4.gender.0'));
   const [dob, setDob] = useState<string>('');
 
   // Gender options
   const genderValues: PersonalInfoInputCardProps[] = [
-    { key: '1', label: t('card4.gender.1') }, 
-    { key: '2', label: t('card4.gender.2') },
+    { key: '0', label: t('signup.card4.gender.0') },
+    { key: '1', label: t('signup.card4.gender.1') },
+    { key: '2', label: t('signup.card4.gender.2') },
   ];
 
   const handleInputChange = (fieldName: string, value: any) => {
@@ -28,12 +29,12 @@ const PersonalInfroInputCard = () => {
       case 'gender':
         const selectedItem = genderValues.find((item) => item.key === value);
         if (selectedItem) {
-          setSelectedGender(selectedItem.label); 
+          setSelectedGender(selectedItem.label);
         }
         break;
       case 'birthDate':
         console.log('Date:', value ? value.format('YYYY-MM-DD') : '');
-        setDob(value ? value.format('YYYY-MM-DD') : ''); 
+        setDob(value ? value.format('YYYY-MM-DD') : '');
         break;
       default:
         break;
@@ -43,14 +44,14 @@ const PersonalInfroInputCard = () => {
   };
 
   return (
-    <div className="max-w-[410px] flex flex-col justify-start">
+    <div className="max-w-[410px] flex flex-col justify-start max-mdp:max-w-none">
       {/* Username Field */}
       <Form.Item
         name="username"
-        rules={[{ required: true, message: t('card4.usernameRequired') }]}
+        rules={[{ required: true, message: t('signup.card4.usernameRequired') }]}
       >
         <InputField
-          placeholder={t('card4.username')}
+          placeholder={t('signup.card4.username')}
           className={`w-full ${grayInputStyle}`}
         />
       </Form.Item>
@@ -59,21 +60,21 @@ const PersonalInfroInputCard = () => {
       <div className="w-full flex justify-between gap-[10px] mt-[10px]">
         <Form.Item
           name="firstName"
-          rules={[{ required: true, message: t('card4.firstnameRequired') }]}
+          rules={[{ required: true, message: t('signup.card4.firstnameRequired') }]}
           className="w-[50%]"
         >
           <InputField
-            placeholder={t('card4.firstname')}
+            placeholder={t('signup.card4.firstname')}
             className={grayInputStyle}
           />
         </Form.Item>
         <Form.Item
           name="lastName"
-          rules={[{ required: true, message: t('card4.lastnameRequired') }]}
+          rules={[{ required: true, message: t('signup.card4.lastnameRequired') }]}
           className="w-[50%]"
         >
           <InputField
-            placeholder={t('card4.lastname')}
+            placeholder={t('signup.card4.lastname')}
             className={grayInputStyle}
           />
         </Form.Item>
@@ -83,30 +84,30 @@ const PersonalInfroInputCard = () => {
       <div className="w-full flex justify-between gap-[10px] mt-[10px]">
         <Form.Item
           name="gender"
-          rules={[{ required: true, message: t('card4.genderRequired') }]}
-          className="w-[50%]"
+          rules={[{ required: true, message: t('signup.card4.genderRequired') }]}
+          className="w-[100%]"
         >
           <Dropdown
             menu={{
               items: genderValues,
-              onClick: (info) => handleInputChange('gender', info.key), 
+              onClick: (info) => handleInputChange('gender', info.key),
             }}
             trigger={['click']}
-            className={`font-bold ${grayInputStyle}`}
+            className={` ${grayInputStyle} !w-full`}
           >
-            <a onClick={(e) => e.preventDefault()}>
-              <Space>{selectedGender}</Space>
-            </a>
+            <div>
+              {selectedGender}
+            </div>
           </Dropdown>
         </Form.Item>
         <Form.Item
           name="birthDate"
-          rules={[{ required: false, message: t('card4.dobRequired') }]}
-          className="w-[50%]"
+          rules={[{ required: false, message: t('signup.card4.dobRequired') }]}
+          className="w-[100%]"
         >
           <CustomDatePicker
             className="w-full pr-[15px] font-bold"
-            onChange={(date) => handleInputChange('birthDate', date)} 
+            onChange={(date) => handleInputChange('birthDate', date)}
           />
         </Form.Item>
       </div>

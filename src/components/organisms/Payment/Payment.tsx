@@ -15,10 +15,10 @@ import { grayInputStyle } from '@/components/atoms/InputField/inputField.style'
 const Payment = () => {
     const t = useTranslations('paymentPage')
     return (
-        <InfoDisplay className='bg-white rounded-[5px] flex justify-between  px-[85px] pt-[90px] pb-[80px] mt-[120px] gap-[115px]'>
-            <div className='flex flex-col items-center justify-start max-w-[410px]  '>
-                <Title text={t('title')} className={`text-4xl`} />
-                <ParagraphField title={t('pTitle')} paragraph={t('pText')} className='mt-[15px]' pClassName='text-gray-4 text-[1.2rem]' />
+        <InfoDisplay className='bg-white rounded-[5px] flex justify-between  px-[85px] pt-[90px] pb-[80px] mt-[120px] gap-[115px] max-xl:gap-[70px]  max-mdp:flex-col max-mdp:mt-[50px] max-mdp:justify-center max-mdp:items-center max-mdp:px-[25px] max-mdp:pt-[50px] max-mdp:pb-[50px] '>
+            <div className='flex flex-col items-center justify-start max-mdp:justify-center max-mdp:items-center max-w-[410px] max-mdp:max-w-[325px]  max-mdp:w-full'>
+                <Title text={t('title')} className={`text-4xl max-mdp:text-2xl max-mdp:text-center`} />
+                <ParagraphField title={t('pTitle')} paragraph={t('pText')} className='mt-[15px]' pClassName='text-gray-4 text-[1.2rem] max-mdp:text-[12px] max-mdp:text-center '  tClassName='max-mdp:text-center'/>
             </div>
             <div className='flex flex-col items-center justify-start max-w-[325px] ' >
                 <InputField

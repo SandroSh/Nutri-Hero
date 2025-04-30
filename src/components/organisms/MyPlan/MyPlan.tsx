@@ -46,8 +46,8 @@ const MyPlan = () => {
             pTitle={t(myPlanCardData[0].pTitle)}
             pText={t(myPlanCardData[0].pText)}
             bText={t(myPlanCardData[0].bText)}
-            className="!h-[100vh]"
-            buttonClass="mt-[150px]"
+            className="!h-[100vh] "
+            buttonClass="mt-[150px] max-mdp:mt-[50px]"
             functionCall={handleNextStage}
           >
             <Form.Item
@@ -69,7 +69,7 @@ const MyPlan = () => {
             pText={t(myPlanCardData[1].pText)}
             bText={t(myPlanCardData[1].bText)}
             className="!h-[100vh]"
-            buttonClass="mt-[95px]"
+            buttonClass="mt-[95px] max-mdp:mt-[40px]"
             functionCall={handleNextStage}
           >
             <Form.Item
@@ -112,7 +112,7 @@ const MyPlan = () => {
             pTitle={t(myPlanCardData[2].pTitle)}
             pText={t(myPlanCardData[2].pText)}
             className="!h-[100vh]"
-            buttonClass="mt-[95px]"
+            buttonClass="mt-[95px] max-mdp:mt-[40px]"
             functionCall={handleNextStage}
           >
             <p
@@ -130,7 +130,7 @@ const MyPlan = () => {
             pTitle={t(myPlanCardData[3].pTitle)}
             bText={t(myPlanCardData[3].bText)}
             className="!h-[100vh]"
-            buttonClass="mt-[95px]"
+            buttonClass="mt-[95px] max-mdp:mt-[40px]"
             functionCall={handleNextStage}
           >
             <Form.Item
@@ -161,7 +161,7 @@ const MyPlan = () => {
             pTitle={t(myPlanCardData[4].pTitle)}
             bText={t(myPlanCardData[4].bText)}
             className="!h-[100vh]"
-            buttonClass="mt-[95px]"
+            buttonClass="mt-[95px] max-mdp:mt-[50px]"
             functionCall={handleNavigationClick}
           >
             <PersonalInfroInputCard /> 
@@ -174,7 +174,7 @@ const MyPlan = () => {
             pTitle={t(myPlanCardData[5].pTitle)}
             bText={t(myPlanCardData[5].bText)}
             className="!h-[100vh]"
-            buttonClass="mt-[95px]"
+            buttonClass="mt-[95px] max-mdp:mt-[50px]"
             functionCall={handleNavigationClick}
           />
         );
