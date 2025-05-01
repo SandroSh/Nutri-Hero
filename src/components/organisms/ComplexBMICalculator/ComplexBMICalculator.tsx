@@ -8,6 +8,7 @@ const ComplexBMICalculator = () => {
   const [weight, setWeight] = useState(105);
   const [waist, setWaist] = useState(100);
   const [height, setHeight] = useState(190);
+  
   const calculateBMI = () => {
     const heightInMeters = height / 100;
     const bmi = weight / (heightInMeters * heightInMeters);

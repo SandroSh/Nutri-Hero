@@ -6,13 +6,13 @@ const CustomCarousel = ({
     children,
     className,
     slidesToShow,
-    responsiveSlides,
+    responsiveSlides = [2,1],
     autoplay = true,
 }: {
     children: React.ReactNode
     className?: string
     slidesToShow: number
-    responsiveSlides?: number[]
+    responsiveSlides?: [number, number]
     autoplay?: boolean
 }) => {
     const [isGrabbing, setIsGrabbing] = useState(false)
@@ -28,20 +28,20 @@ const CustomCarousel = ({
                 infinite
                 draggable
                 slidesToShow={slidesToShow}
-                autoplay={autoplay}
+                // autoplay={autoplay}
                 autoplaySpeed={3000}
                 className={`${className || ''} ${isGrabbing ? 'cursor-grabbing' : 'cursor-grab'}`}
                 responsive={[
                     {
                         breakpoint: 1024,
                         settings: {
-                            slidesToShow: 2,
+                            slidesToShow: responsiveSlides[0],
                         },
                     },
                     {
                         breakpoint: 768,
                         settings: {
-                            slidesToShow: 1,
+                            slidesToShow: responsiveSlides[1],
                         },
                     },
                 ]}

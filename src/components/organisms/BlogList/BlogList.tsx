@@ -19,7 +19,7 @@ const BlogList = ({ column = 3, itemsPerLoad = 6, isDetailed = false, className,
 
   const breakpointColumnsObj = {
     default: column,
-    1100: 2,
+    1100: isDetailed ? 1 : 2,
     700: 1,
   }
   const t = useTranslations('')

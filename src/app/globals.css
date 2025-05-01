@@ -102,7 +102,9 @@
 .custom-date-picker .ant-picker-suffix {
   color: #151515;
 }
-
+.custom-date-picker2 {
+  border: 2px solid #efeff4 !important;
+}
 .reset-link h1 {
   color: black !important;
   margin-bottom: -10px !important;
@@ -158,18 +160,36 @@
   .second-tabs .ant-tabs-nav-wrap {
     justify-content: center !important;
   }
-  .slick-list{
+  .slick-list {
     justify-content: space-between !important;
   }
-  .ant-steps{
+  .ant-steps {
     flex-direction: row !important;
     justify-content: center !important;
   }
-  .ant-steps-item{
+  .ant-steps-item {
     display: flex !important;
     justify-content: center !important;
   }
-  .ant-steps-item-tail{
+  .ant-steps-item-tail {
     display: none !important;
   }
+}
+
+.custom-picker .ant-picker-input input::placeholder {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
+  font-weight: 500 !important;
+  &::hover {
+    border: none !important;
+  }
+}
+
+.ant-dropdown-menu li span {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
+  font-weight: 500 !important;
+  margin:5px 0 5px 5px !important;
+  color:#935870 !important;
+  font-weight: 700 ;
 }

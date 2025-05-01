@@ -22,7 +22,7 @@ const DateCarousel = ({ slideToShow, date, handleDateChange }: { slideToShow: nu
 
 
   return (
-    <CustomCarousel slidesToShow={slideToShow} className='recepie-carousel' autoplay={false}>
+    <CustomCarousel slidesToShow={slideToShow} className='recepie-carousel' autoplay={false} responsiveSlides={[4,3]}>
       {
         dates.map((item, i) => <CarouselDateCard date={item} key={i} onClickAction={() => handleDateClick(i)} />
         )}

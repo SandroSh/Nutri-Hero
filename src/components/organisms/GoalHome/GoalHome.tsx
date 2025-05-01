@@ -18,7 +18,7 @@ const GoalHome = () => {
     { key: 'tab2', title: t('recepieTabs.tabs.tomorrow'), content: <RecepiesCarousel data={shuffleArray(recepieCarouselCardData)} /> },
     {
       key: 'tab3', title: t('recepieTabs.tabs.weekAhead'), content:
-        <WeeklyMenuCarousel cardsContent={recepieCarouselCardData} />
+        <WeeklyMenuCarousel cardsContent={recepieCarouselCardData}  />
     },
   ];
   const workoutTabsData = [
@@ -32,7 +32,7 @@ const GoalHome = () => {
   return (
     <div>
       <GoalHomeHero />
-      <SectionContainer>
+      <SectionContainer className='max-xl:px-[19px]'>
         <InfoDisplay className='flex-col items-center justify-center  '>
           <TitleField text={t('recepieTabs.sectionTitle')} className={`mt-[70px] mb-[25px] !text-black`} />
         </InfoDisplay>

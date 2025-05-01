@@ -6,6 +6,7 @@ import { CustomDatePicker } from '@/components/atoms/DatePicker';
 import { useTranslations } from 'next-intl';
 import { PersonalInfoInputCardProps } from './PersonalInfoInputCard.config';
 import { grayInputStyle } from '@/components/atoms/InputField/inputField.style';
+import Image from 'next/image';
 
 
 const PersonalInfroInputCard = () => {
@@ -108,6 +109,7 @@ const PersonalInfroInputCard = () => {
           <CustomDatePicker
             className="w-full pr-[15px] font-bold"
             onChange={(date) => handleInputChange('birthDate', date)}
+            suffixIcon = {<Image src={'/Calander.svg'} alt={'dropdown icon'} width={25} height={25} />}
           />
         </Form.Item>
       </div>

@@ -55,12 +55,12 @@ const LandingPageTemplate = () => {
         </InfoDisplay>
       </SectionContainer>
       <SectionContainer innerWrapperClassName='max-w-[1700px] w-full'>
-        <CustomCarousel slidesToShow={1} className=''>
+        <CustomCarousel slidesToShow={1} responsiveSlides={[1,1]}>
           {
             carouselData.map((item, i) => <CarouselCard data={item} key={i} outerClassName='max-mdp:flex-col-reverse' />)
           }
         </CustomCarousel>
-        <CustomCarousel slidesToShow={1}>
+        <CustomCarousel slidesToShow={1} responsiveSlides={[1,1]}>
           {
             carouselData.map((item, i) => <CarouselCard data={item} key={i} outerClassName='flex-row-reverse max-mdp:flex-col-reverse' />)
           }

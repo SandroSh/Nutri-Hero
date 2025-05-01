@@ -67,7 +67,7 @@ const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
         <div>
             <div className={`${isScrolled ? 'relative h-[800px]' : ''}`}>
 
-                <Hero backgroundImg={data.imageUrl} outerClassName={`items-center mt-[95px] transition-all duration-500 ease-in-out ${isScrolled ? 'fixed !w-[calc(1285px/2-100px)] h-[240px] right-[calc((100%-1280px)/2)] top-10  rounded-lg shadow-lg z-50 rounded-none max-xl:w-[40%] max-xl:right-0 max-xl:h-[150px]' : 'w-full max-md:h-[70vh]  max-md:flex'
+                <Hero backgroundImg={data.imageUrl} outerClassName={`items-center mt-[95px] transition-all duration-500 ease-in-out ${isScrolled ? 'fixed !w-[calc(1284px/2-100px)] h-[240px] right-[calc((100%-1280px)/2)] top-10  rounded-lg shadow-lg z-50 rounded-none max-xl:w-[40%] max-xl:right-0 max-xl:h-[150px]' : 'w-full max-md:h-[70vh]  max-md:flex'
                     }`}
                     innerClassName={`${isScrolled ? 'h-full w-full' : 'h-full'}`}
                     imgFilter={`bg-black/10 ${isScrolled ? "" : "max-md:h-[70vh]"}`}
