@@ -14,7 +14,7 @@ const LibraryHero = () => {
     const t = useTranslations('library')
     return (
         <div>
-            <Hero backgroundImg='/Hero_Girl.png' outerClassName='mt-[95px] px-[19px] max-sm:h-[60vh]' innerClassName='h-full w-full flex flex-col justify-center items-center' imgFilter={'bg-black/40 '}>
+            <Hero backgroundImg='/Hero_Girl.png' outerClassName='mt-[95px] px-[19px] max-sm:h-[60vh]' innerClassName='h-full w-full flex flex-col justify-center items-center' imgFilter={'bg-black/40 max-sm:h-[60vh]'}>
                 <div className='!justify-self-center !self-center mb-[40px]'>
 
                     <TitleField text={t('mainHero.title')} className='text-6xl text-white max-mdp:text-6xl max-sm:text-2xl max-mdp:text-center  max-sm:mt-[50px]' />

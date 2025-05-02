@@ -25,6 +25,7 @@ const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
     const t = useTranslations('myPlanPage.ActivityDetailsPage');
     const t2 = useTranslations();
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isClosed, setIsClosed] = useState(false);
 
     const recepieTabsData = [
         { key: 'tab1', title: t2('myPlanPage.goalHome.recepieTabs.tabs.today'), content: <RecepiesCarousel data={recepieCarouselCardData} /> },
@@ -42,16 +43,21 @@ const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
                 <WeeklyMenuCarousel cardsContent={exerciesCarouselCardData} />
         },
     ];
-
+    
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > window.innerHeight - 100);
-
+            if (window.scrollY == 0) {
+                setIsClosed(false)
+                window.scrollTo({
+                    top: 700,
+                    behavior: 'smooth',
+                });
+            }
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-
 
 
 
@@ -67,10 +73,11 @@ const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
         <div>
             <div className={`${isScrolled ? 'relative h-[800px]' : ''}`}>
 
-                <Hero backgroundImg={data.imageUrl} outerClassName={`items-center mt-[95px] transition-all duration-500 ease-in-out ${isScrolled ? 'fixed !w-[calc(1284px/2-100px)] h-[240px] right-[calc((100%-1280px)/2)] top-10  rounded-lg shadow-lg z-50 rounded-none max-xl:w-[40%] max-xl:right-0 max-xl:h-[150px]' : 'w-full max-md:h-[70vh]  max-md:flex'
+                <Hero backgroundImg={data.imageUrl} outerClassName={`items-center mt-[95px] transition-all duration-500 ease-in-out ${isClosed ? 'hidden':''} ${isScrolled ? 'fixed !w-[calc(1280px/2-100px)] h-[240px] right-[calc((100%-1280px)/2)] top-10  rounded-lg shadow-lg z-50 rounded-none max-xl:w-[40%] max-xl:right-0 max-xl:h-[150px]' : 'w-full max-md:h-[70vh]  max-md:flex'
                     }`}
                     innerClassName={`${isScrolled ? 'h-full w-full' : 'h-full'}`}
                     imgFilter={`bg-black/10 ${isScrolled ? "" : "max-md:h-[70vh]"}`}
+
                 >
 
                     <div className={`flex h-full flex-col items-center   justify-between ${isScrolled ? 'hidden' : ''}`}>
@@ -91,7 +98,7 @@ const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
                         isScrolled &&
                         <div className='!w-full flex justify-between items-center m-[10px]'>
                             <Image src="/ic_open_in_new_24px.svg" alt="icon" className='cursor-pointer' width={25} height={25} onClick={handlegoUp} />
-                            <Image src="/ic_close_24px.svg" alt="icon" className='cursor-pointer mr-[19px]' width={25} height={25} onClick={() => undefined} />
+                            <Image src="/ic_close_24px.svg" alt="icon" className='cursor-pointer mr-[19px]' width={25} height={25} onClick={() => setIsClosed(true)} />
                         </div>
                     }
 
@@ -116,7 +123,7 @@ const ActivityDetails = ({ data }: { data: recepieCardDataType }) => {
                 {
                     data.key.includes('recepie') &&
                     <div className='w-full flex justify-between items-center mt-[65px] max-xl:px-[29px] max-md:flex-col'>
-                        <ParagraphField title={t('recepie.table.pTitle')} paragraph={t('recepie.table.amount')} tClassName='text-[19px]'  pClassName='max-md:mt-0' className='max-md:flex max-md:items-center max-md:gap-[15px] max-md:mb-[15px] max-md:self-start' />
+                        <ParagraphField title={t('recepie.table.pTitle')} paragraph={t('recepie.table.amount')} tClassName='text-[19px]' pClassName='max-md:mt-0' className='max-md:flex max-md:items-center max-md:gap-[15px] max-md:mb-[15px] max-md:self-start' />
                         <CustomTable textAddress={'myPlanPage.ActivityDetailsPage.recepie.table.content'} />
                     </div>
                 }
