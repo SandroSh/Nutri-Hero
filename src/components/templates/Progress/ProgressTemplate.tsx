@@ -36,7 +36,7 @@ const ProgressTemplate = () => {
                 <BMICalculator />
 
                 <div className='w-full h-full flex justify-between items-start gap-[15px]  mt-[30px] max-xl:px-[19px] max-md:flex-col max-md:justify-start '>
-                    <div className='w-[80%]  flex flex-col items-center justify-between max-md:w-full'>
+                    <div className='w-full  flex flex-col items-center justify-between max-md:w-full'>
                         <Link href={'/progress/editplan'} className='w-full'>
                             <ProgressActivityCard label={t('goalCard.label')} title={t('goalCard.title')} paragraph={t('goalCard.paragraph')} />
                         </Link>
@@ -50,7 +50,7 @@ const ProgressTemplate = () => {
                             </div>
                         </Link>
                     </div>
-                    <div className=' max-w-[325px] min-h-[400px] h-[70%] bg-gray-0 rounded-[5px]  flex justify-center items-center px-[19px] pt-[30px] max-md:w-full max-md:max-w-none z-10 max-md:mb-[100px] max-md:min-h-none max-md:h-[300px]'>
+                    <div className='w-[calc((100%-30px)/3)] min-h-[450px] h-[70%] bg-gray-0 rounded-[5px]  flex justify-center items-center px-[19px] pt-[30px] max-md:w-full max-md:max-w-none z-10 max-md:mb-[100px] max-md:min-h-none max-md:h-[300px]'>
                         <ProgressCarousel className='w-full h-full flex flex-col justify-between' />
                     </div>
                 </div>
