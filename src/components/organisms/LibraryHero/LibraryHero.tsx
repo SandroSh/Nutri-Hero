@@ -15,19 +15,18 @@ const LibraryHero = () => {
     return (
         <div>
             <Hero backgroundImg='/Hero_Girl.png' outerClassName='mt-[95px] px-[19px] max-sm:h-[60vh]' innerClassName='h-full w-full flex flex-col justify-center items-center' imgFilter={'bg-black/40 max-sm:h-[60vh]'}>
-                <div className='!justify-self-center !self-center mb-[40px]'>
-
+                <div className='!justify-self-center !self-center mb-[40px] max-mdp:w-full max-mdp:mb-0'>
                     <TitleField text={t('mainHero.title')} className='text-6xl text-white max-mdp:text-6xl max-sm:text-2xl max-mdp:text-center  max-sm:mt-[50px]' />
                     <p className='text-white text-center font-light text-2xl max-mdp:text-xl max-sm:text-[15px] mt-[15px]'>{t('mainHero.paragraph')}</p>
                 </div>
 
-                <JoinCard className='px-[55px]  '>
-                    <InputField iSize='full' cType='gray_red' placeholder={t('mainHero.inputPlaceholder')} prefix={<Image width={19} height={19} src='/search-svgrepo-com.svg' alt='icon' className='mr-[10px]' />}
+                <JoinCard className='px-[25px] !py-[30px] max-mdp:py-[25px]'>
+                    <InputField iSize='full' cType='gray_red'  placeholder={t('mainHero.inputPlaceholder')} prefix={<Image width={19} height={19} src='/search-svgrepo-com.svg' alt='icon' className='mr-[10px] ' />}
                     />
-                    <div className='flex xl:ml-[15px]'>
-                        <ButtonField cType='red_white' className='mr-[16px] py-[16px] px-[42px] h-full' bSize='xl'>{t('mainHero.exerciseButton')}</ButtonField>
-                        <Link href='/library/explore-recepies'>
-                            <ButtonField cType='blue_white' className='py-[16px] px-[42px] h-full' bSize='xl'>{t('mainHero.recepieButton')}</ButtonField>
+                    <div className='flex max-esm:flex-col max-esm:gap-[10px] xl:ml-[15px] max-mdp:w-full'>
+                        <ButtonField cType='red_white' className='mr-[16px] py-[16px] px-[42px] h-full  max-mdp:w-full max-mdp:mr-[10px]' bSize='xl'>{t('mainHero.exerciseButton')}</ButtonField>
+                        <Link href='/library/explore-recepies' className='max-mdp:w-full'>
+                            <ButtonField cType='blue_white' className='py-[16px] px-[42px] h-full max-mdp:w-full' bSize='xl'>{t('mainHero.recepieButton')}</ButtonField>
                         </Link>
                     </div>
                 </JoinCard>

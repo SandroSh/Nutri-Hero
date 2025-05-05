@@ -193,3 +193,7 @@
   color:#935870 !important;
   font-weight: 700 ;
 }
+
+.reg-card .ant-input-affix-wrapper{
+  border:1px solid gray !important;
+}

@@ -5,7 +5,7 @@ import React from 'react'
 
 const PaymentPageTemplate = () => {
     return (
-        <Hero outerClassName='mt-[95px] hero-section max-xl:px-[29px] max-xl:items-center'>
+        <Hero outerClassName='mt-[95px] hero-section max-xl:px-xl max-xl:items-center'>
             <Payment/>
         </Hero>
     )

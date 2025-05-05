@@ -25,7 +25,7 @@ const ProgressTemplate = () => {
                     </div>
                     {
                         <div className='w-full flex justify-end items-center max-sm:justify-center'>
-                            {[... new Array(3)].map((_, i) => <TimeTitle numText={t(`date.${i}.time`)} text={t(`date.${i}.text`)} key={i} tClassName='!text-4xl text-white' className='!mr-[1px] ml-[24px] ' pClassName='text-white' />)}
+                            {[... new Array(3)].map((_, i) => <TimeTitle numText={t(`date.${i}.time`)} text={t(`date.${i}.text`)} key={i} tClassName='!text-6xl text-white' className='!mr-[1px] ml-[53px]' pClassName='text-white text-[16px]' />)}
                         </div>
                     }
                 </InfoDisplay>

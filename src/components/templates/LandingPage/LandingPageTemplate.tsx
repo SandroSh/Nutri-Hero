@@ -33,7 +33,7 @@ const LandingPageTemplate = () => {
             centered={true}
             className={'pb-[40px] max-xl:px-[10px]'}
             labels={tabsData.map((item, i) => <Navlink className="mx-[29px] pt-[8px] pb-[8px] " hoverAnimate={false} key={i} >{gymDisplay(item.label)}</Navlink>)}
-            children={tabsData.map((item, i) => <ExerciseCard pTitle={gymDisplay(item.pTitle)} pText={gymDisplay(item.pText)} imageUrl={item.imageUrl} key={i} className='max-mdp:flex-col-reverse' />)}
+            children={tabsData.map((item, i) => <ExerciseCard pTitle={gymDisplay(item.pTitle)} pText={gymDisplay(item.pText)} imageUrl={item.imageUrl} key={i} className='max-mdp:flex-col-reverse max-sm:px-[25px]' />)}
           />
 
         </InfoDisplay>
@@ -71,7 +71,7 @@ const LandingPageTemplate = () => {
         <DownloadAppSection />
       </SectionContainer>
 
-      <SectionContainer className='bg-blue-1 px-[50px]' >
+      <SectionContainer className='bg-blue-1 px-mdp' >
         <JoinCard>
           <Title text={t('joinCard.title')} className='text-[30px] max-mdp:text-[19px]  max-mdp:text-center' />
           <ButtonField className='bg-red-10 py-[25px] px-[37px] text-white'>{t('joinCard.buttonText')}</ButtonField>

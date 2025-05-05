@@ -14,7 +14,7 @@ const ResetCard = ({resetFunction}:{resetFunction:Dispatch<SetStateAction<boolea
         setNextStage(false)
     }
     return (
-        <div className='max-w-[500px] bg-white rounded-md w-full flex flex-col items-center justify-center py-[40px] px-[85px] mt-[60px] max-sm:px-[10px] '>
+        <div className='max-w-[500px] bg-white rounded-md w-full flex flex-col items-center justify-center py-[40px] px-[85px] mt-[60px] max-mdp:p-xl '>
             {
                 nextStage ?
                     <Reset title={t('1.title')} pText={t('1.p')} bText={t('1.button')} functionCall={setNextStage}>

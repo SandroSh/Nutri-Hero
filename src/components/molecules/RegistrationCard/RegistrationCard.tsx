@@ -11,13 +11,13 @@ import React from 'react'
 const RegistrationCard = () => {
     const t = useTranslations('Registration')
     return (
-        <div className='bg-white rounded-[5px]  flex justify-evenly items-start pt-[119px] pb-[44px] max-mdp:flex-col max-mdp:items-center max-mdp:pt-[40px]' >
-            <div className='max-w-[400px]   max-mdp:max-w-[80%]'>
-                <TitleField text={t('title')} className='text-5xl max-mdp:text-center max-sm:text-2xl max-[450px]:text-xl' />
+        <div className='bg-white w-full max-w-[1000px] rounded-[5px] flex justify-between items-start pt-[119px] pb-[45px] px-[85px] max-mdp:max-w-[70%] max-mdp:flex-col max-mdp:items-center max-mdp:p-xl max-esm:max-w-[90%]' >
+            <div className='max-w-[400px]   max-mdp:w-full max-mdp:max-w-none'>
+                <TitleField text={t('title')} className='text-5xl max-mdp:text-center max-sm:text-4xl max-[450px]:text-2xl' />
                 <ParagraphField title={t('pTitle')} paragraph={t('pText')} className='mt-[30px] max-mdp:mb-[30px]' pClassName='text-[19px] text-gray-5 max-mdp:text-center max-sm:text-sm' tClassName='max-mdp:text-center max-sm:text-base' />
             </div>
-            <div className='max-w-[334px] w-full max-mdp:max-w-[80%]'>
-                <Input size='large' prefix={<img src='/Email.svg' className='mr-[10px]' />} placeholder={t('email')} className='py-[19px] pl-[12px] !rounded-md mb-[10px]  hover:border-red-10' />
+            <div className='max-w-[334px] w-full  max-mdp:max-w-none reg-card'>
+                <Input size='large' prefix={<img src='/Email.svg' className='mr-[10px]' />} placeholder={t('email')} className='py-[19px] pl-[12px] !rounded-md mb-[10px] !border !border-red '/>
                 {
                     registrationData.map((item, i) => <SignOption key={i} imgUrl={item.imgUrl} text={t(`${item.text}`)} />)
                 }

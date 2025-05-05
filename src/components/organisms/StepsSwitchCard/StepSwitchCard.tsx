@@ -221,10 +221,10 @@ const StepSwitchCard = ({ form }: { form: FormInstance<any> }) => {
                 )}
             </Steps>
 
-            <div className="max-mdp:bg-white max-mdp:rounded-[5px] !z-50 max-mdp:isolate max-mdp:p-[40px] max-mdp:mt-[50px]  max-sm:w-full ">
+            <div className="max-mdp:bg-white max-mdp:rounded-[5px] !z-50 max-mdp:isolate max-mdp:p-xl max-mdp:mt-[50px]  max-sm:w-full ">
 
                 <div className="">{steps[currentStep].content}</div>
-                <div className="flex justify-end items-center mt-[75px] max-mdp:justify-center">
+                <div className="flex justify-end items-center mt-[75px]">
                     {currentStep > 0 && (
                         <ButtonField onClick={prev} cType="gray_green" bSize="xl" className="mr-[16px]">
                             {t('prev')}

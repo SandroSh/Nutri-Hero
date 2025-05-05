@@ -10,6 +10,7 @@ import { ConditionalFooter } from "@/components/organisms/ConditionalFooter";
 import { NavProvider } from "@/context/NavContext";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Suspense } from "react";
 export default async function LocaleLayout({
   children,
   params
@@ -31,7 +32,9 @@ export default async function LocaleLayout({
           <NavProvider >
 
             <Navbar />
-            {children}
+            <Suspense fallback={<div className="h-[70vh] flex items-center justify-center "> loading</div>}>
+              {children}
+            </Suspense>
             <ConditionalFooter />
 
           </NavProvider>

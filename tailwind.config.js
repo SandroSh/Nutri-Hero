@@ -43,8 +43,12 @@ module.exports = {
           1:'#80334B',
         },
       },
+      padding: {
+        'md': '16px', 
+        'xl': '32px', 
+      },
       screens: {
-        esm:"390px",
+        esm:"450px",
         sm: "640px",
         md: "768px",
         mdp: '900px',
