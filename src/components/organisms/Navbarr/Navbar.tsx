@@ -73,33 +73,8 @@ const Navbar = () => {
 
 
             {menuOpen && (
-                <div className={`absolute top-full left-0 w-full bg-white shadow-md flex  items-start py-4 px-[19px]  mdp:hidden z-50 ${pathname.includes('account') ? 'justify-between' : 'justify-end'} `}>
-                    {
-                        pathname.includes('account') &&
-                        <div className='flex flex-col items-start justify-start '>
-
-                            <div className='flex flex-col gap-4'>
-                                {
-                                    accountSidebarLinks.map((item, i) => <Link href={item.link} key={i}><p className={` text-[16px]  ${item.link == pathname ? 'text-red-10' : 'text-black'}`}>{t2(item.text).toUpperCase()}</p></Link>)
-                                }
-                            </div>
-
-
-                            <div className='flex justify-start items-center gap-4  mt-[80px]'>
-                                <Image src={'/Avatar.png'} alt={'image'} width={30} height={30} />
-                                <TitleField text={t2('sidebar.name')} className='text-black  font-bold text-[15px]' />
-                            </div>
-
-
-
-                            {
-                                <div className='flex  justify-center self-start mt-[15px]'>
-                                    {[... new Array(3)].map((_, i) => <TimeTitle numText={t2(`sidebar.date.${i}.time`)} text={t2(`sidebar.date.${i}.text`)} key={i} tClassName='font-normal !text-[16px] !text-black leading-[10px]' pClassName='font-normal text-[10px] leading-[8px] mt-[15px] !text-black' className={i == 1 ? 'mx-[19px]' : ''} />)}
-                                </div>
-                            }
-
-                        </div>
-                    }
+                <div className={`absolute top-full left-0 w-full bg-white shadow-md flex  items-start py-4 px-[19px]  mdp:hidden z-50  justify-end`}>
+                    
                     <div className='flex flex-col'>
 
                         {isSignedIn ? (
