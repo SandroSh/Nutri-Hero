@@ -18,14 +18,14 @@ const ProgressTemplate = () => {
     return (
         <div className={`mt-[95px]`} >
             <div className='w-full flex justify-center items-center h-[190px] bg-blue-1 max-xl:px-[19px] max-md:h-[400px]'>
-                <InfoDisplay className='max-w-screen-xl justify-between items-center max-sm:flex-col  max-sm:justify-center max-sm:gap-[50px] '>
+                <InfoDisplay className='max-w-[1280px] justify-between items-center max-sm:flex-col  max-sm:justify-center max-sm:gap-[50px] '>
                     <div className='flex w-full justify-start items-center gap-[30px] max-sm:justify-center max-sm:flex-col'>
                         <Image src={'/Avatar.png'} alt={'image'} width={80} height={80} />
-                        <TitleField text={t('user')} className='text-white' />
+                        <TitleField text={t('user')} className='text-white max-esm:text-2xl' />
                     </div>
                     {
-                        <div className='w-full flex justify-end items-center max-sm:justify-center'>
-                            {[... new Array(3)].map((_, i) => <TimeTitle numText={t(`date.${i}.time`)} text={t(`date.${i}.text`)} key={i} tClassName='!text-6xl text-white' className='!mr-[1px] ml-[53px]' pClassName='text-white text-[16px]' />)}
+                        <div className='max-w-[calc((100%-30px)/3)] w-full flex justify-between items-center max-sm:justify-center max-sm:gap-[16px]'>
+                            {[... new Array(3)].map((_, i) => <TimeTitle numText={t(`date.${i}.time`)} text={t(`date.${i}.text`)} key={i} tClassName='text-6xl text-white max-mdp:text-4xl max-sm:text-2xl' className='!mr-[1px]  max-sm:ml-[0px]' pClassName='text-white text-[16px]' />)}
                         </div>
                     }
                 </InfoDisplay>

@@ -4,7 +4,6 @@ import { AccountSidebar } from '@/components/organisms/AccountSidebar'
 import { AllergensForm } from '@/components/organisms/AllergensForm'
 import { PersonalDetailsForm } from '@/components/organisms/PersonalDetailsForm'
 import { SectionContainer } from '@/components/organisms/SectionContainer'
-
 import { Link, usePathname } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 import React, { useState } from 'react'
@@ -56,11 +55,11 @@ const AccountTemplate = () => {
            <div className='flex flex-col items-start absolute  '>
                 <div className='flex flex-col mt-[50px]'>
                     <Image src={'/Avatar.png'} alt={'image'} width={45} height={45} />
-                    <TitleField text={t('sidebar.name')} className='text-black mt-[15px] font-bold text-[28px] leading-[22px]' />
+                    <TitleField text={t('sidebar.name')} className='text-black mt-[15px] font-bold text-[28px] leading-[22px] max-mdp:text-[19px]' />
                 </div>
                 {
                     <div className='flex  justify-center  mt-[35px]'>
-                        {[... new Array(3)].map((_, i) => <TimeTitle numText={t(`sidebar.date.${i}.time`)} text={t(`sidebar.date.${i}.text`)} key={i} tClassName='font-normal !text-[1.2em] !text-black leading-[14px]' pClassName='font-normal text-[12px] leading-[8px] mt-[15px] !text-black' className={i == 1 ? 'mx-[40px]' : ''} />)}
+                        {[... new Array(3)].map((_, i) => <TimeTitle numText={t(`sidebar.date.${i}.time`)} text={t(`sidebar.date.${i}.text`)} key={i} tClassName='font-normal !text-[1.2em] !text-black leading-[14px] max-mdp:text-[19px] max-esm:text-[14px]' pClassName='font-normal text-[12px] leading-[8px] mt-[15px] !text-black max-mdp:text-[12px] max-esm:text-[12px] max-mdp:mt-[10px] max-esm:mt-[5px] ' className={i == 1 ? 'mx-[40px] max-mdp:mx-[15px] max-esm:mx-[8px]' : ''} />)}
                     </div>
                 }
 
@@ -71,7 +70,6 @@ const AccountTemplate = () => {
                 </div>
                 <p className='font-semibold text-[16px] leading-[40px] mt-[60px]'>{t('buttons.logout')}</p>
             </div>
-
         </div>
       )}
     </div>

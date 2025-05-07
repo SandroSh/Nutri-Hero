@@ -22,7 +22,7 @@ const LandingPageTemplate = () => {
   return (
     <div className='mt-[96px]'>
 
-      <Hero outerClassName='items-center hero-section max-mdp:h-[60vh]'>
+      <Hero outerClassName='items-center hero-section max-mdp:h-[60vh]' innerClassName='max-mdp:px-xl'>
         <Intro textAddress={'LandingHero'} />
       </Hero>
 
@@ -31,9 +31,9 @@ const LandingPageTemplate = () => {
           <Title text={gymDisplay('title')} className={`mt-[27px] mb-[25px]`} />
           <Tabs
             centered={true}
-            className={'pb-[40px] max-xl:px-[10px]'}
+            className={'pb-[40px] '}
             labels={tabsData.map((item, i) => <Navlink className="mx-[29px] pt-[8px] pb-[8px] " hoverAnimate={false} key={i} >{gymDisplay(item.label)}</Navlink>)}
-            children={tabsData.map((item, i) => <ExerciseCard pTitle={gymDisplay(item.pTitle)} pText={gymDisplay(item.pText)} imageUrl={item.imageUrl} key={i} className='max-mdp:flex-col-reverse max-sm:px-[25px]' />)}
+            children={tabsData.map((item, i) => <ExerciseCard pTitle={gymDisplay(item.pTitle)} pText={gymDisplay(item.pText)} imageUrl={item.imageUrl} key={i} className='max-mdp:flex-col-reverse max-sm:px-xl' />)}
           />
 
         </InfoDisplay>
@@ -71,7 +71,7 @@ const LandingPageTemplate = () => {
         <DownloadAppSection />
       </SectionContainer>
 
-      <SectionContainer className='bg-blue-1 px-mdp' >
+      <SectionContainer className='bg-blue-1 max-mdp:px-md' >
         <JoinCard>
           <Title text={t('joinCard.title')} className='text-[30px] max-mdp:text-[19px]  max-mdp:text-center' />
           <ButtonField className='bg-red-10 py-[25px] px-[37px] text-white'>{t('joinCard.buttonText')}</ButtonField>

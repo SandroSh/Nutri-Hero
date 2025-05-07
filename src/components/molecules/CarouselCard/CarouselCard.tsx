@@ -17,7 +17,7 @@ const CarouselCard = ({data, outerClassName}:{data:carouselType, outerClassName?
         <div className='w-[50%] h-[720px] max-mdp:w-[100vw]  max-mdp:h-[500px]  '>
             <ImageField src={data.imgUrl} className='w-full h-full object-cover object-top' alt={'image'}/>
         </div>
-        <div className='w-[50%] flex flex-col items-center max-mdp:w-full max-mdp:px-[50px]  max-mdp:py-[70px] '>
+        <div className='w-[50%] flex flex-col items-center max-mdp:w-full max-mdp:px-xl  max-mdp:py-[70px] '>
           <div>
             <TitleField text={t('title')} className='mb-[30px] max-mdp:text-center' />
             <ParagraphField title={t('pTitle')} className='max-w-[410px]' paragraph={t('p1')} tClassName='max-mdp:text-center' pClassName='max-mdp:text-center'/>

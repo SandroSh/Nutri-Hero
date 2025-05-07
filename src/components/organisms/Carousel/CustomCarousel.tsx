@@ -47,7 +47,7 @@ const CustomCarousel = ({
                 ]}
             >
                 {React.Children.map(children, (child) => (
-                    <div className="px-2">{child}</div>
+                    <div className="">{child}</div>
                 ))}
             </Carousel>
         </div>

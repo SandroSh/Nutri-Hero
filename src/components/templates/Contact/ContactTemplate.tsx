@@ -18,7 +18,7 @@ const ContactTemplate = () => {
         <TitleField text={t('title').toUpperCase()} className='text-white text-6xl max-sm:text-2xl' />
       </Hero>
 
-      <SectionContainer className='mt-[40px]' innerWrapperClassName='flex justify-center px-[50px]'>
+      <SectionContainer className='mt-[40px]' innerWrapperClassName='flex justify-center px-xl'>
         <div className='w-full max-w-[700px]'>
           <TitleField text={t('faq.title').toUpperCase()} className='text-4xl font-bold mb-[19px] max-[500px]:text-2xl' />
           <CustomCollapse />

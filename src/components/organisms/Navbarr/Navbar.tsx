@@ -1,12 +1,10 @@
 'use client'
 import { Logo } from '@/components/atoms/Logo'
 import { Navlink } from '@/components/atoms/NavLink'
-import { TimeTitle } from '@/components/atoms/TimeTitle'
-import { TitleField } from '@/components/atoms/TitleField'
 import { AuthButtons } from '@/components/molecules/AuthButtons'
 import { LanguageSwitcher } from '@/components/molecules/LanguageSwitcher'
 import { NavLinks } from '@/components/molecules/NavLinks'
-import { accountSidebarLinks, navbarAuthenticatedLinks } from '@/constants/dummyData'
+import { navbarAuthenticatedLinks } from '@/constants/dummyData'
 import { Link, usePathname } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
@@ -31,7 +29,7 @@ const Navbar = () => {
 
     return (
         <div className='h-[100px] z-50  fixed top-0 w-full flex justify-center pt-[16px] pb-[16px] bg-white shadow-[0_4px_8px_rgba(0,0,0,0.1)] p-4'>
-            <div className='flex justify-between items-center w-full max-w-screen-xl '>
+            <div className='flex justify-between items-center w-full max-w-[1280px] '>
                 <Logo width={124} height={24} />
 
                 <div className='hidden mdp:flex justify-center items-baseline gap-[30px] '>
@@ -58,7 +56,7 @@ const Navbar = () => {
                 </div>
 
 
-                <div className='flex mdp:hidden'>
+                <div className='flex mdp:hidden mt-[7px]'>
                     <button onClick={toggleMenu}>
                         <Image
                             src="/burger-icon.svg"
@@ -74,7 +72,7 @@ const Navbar = () => {
 
             {menuOpen && (
                 <div className={`absolute top-full left-0 w-full bg-white shadow-md flex  items-start py-4 px-[19px]  mdp:hidden z-50  justify-end`}>
-                    
+
                     <div className='flex flex-col'>
 
                         {isSignedIn ? (
